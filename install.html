@@ -14,7 +14,7 @@
 <header class="top">
   <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
   <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
-  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1551 기준</span>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1108.154 기준</span>
   <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
   <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
   <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
@@ -32,13 +32,14 @@
 <h2 id="설치-파일-받기"><a class="hash" href="#설치-파일-받기" aria-hidden="true">#</a>설치 파일 받기</h2>
 <p>설치 파일은 <a href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE Releases 페이지</a>에서만 받습니다. 다른 곳에서 받은 파일은 FMLE가 업데이트할 때 쓰는 서명을 확인할 수 없습니다.</p>
 <p>페이지에 파일이 여러 개 보이지만 받을 것은 <strong><code>FMLE_판번호_x64-setup.exe</code> 하나</strong>입니다.</p>
-<div class="table"><table><thead><tr><th>파일</th><th>받아야 하나</th><th>무엇인가</th></tr></thead><tbody><tr><td><code>FMLE_…_x64-setup.exe</code></td><td>받습니다</td><td>설치 파일입니다.</td></tr><tr><td><code>FMLE_…_x64-setup.exe.sig</code></td><td>받지 않습니다</td><td>설치 파일의 서명입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td><code>latest.json</code></td><td>받지 않습니다</td><td>새 판 안내문입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td>Source code (zip, tar.gz)</td><td>받지 않습니다</td><td>GitHub가 자동으로 붙이는 묶음입니다. FMLE 프로그램이 아닙니다.</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th>파일</th><th>받아야 하나</th><th>무엇인가</th></tr></thead><tbody><tr><td><code>FMLE_…_x64-setup.exe</code></td><td>받습니다</td><td>설치 파일입니다.</td></tr><tr><td><code>FMLE_…_x64-setup.exe.sig</code></td><td>받지 않습니다</td><td>설치 파일의 서명입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td><code>latest.json</code></td><td>받지 않습니다</td><td>새 판 안내문입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td><code>fmle-release.json</code>과 <code>.sig</code></td><td>받지 않습니다</td><td>함께 배포된 파일을 확인하는 목록과 서명입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td>Source code (zip, tar.gz)</td><td>받지 않습니다</td><td>GitHub가 자동으로 붙이는 묶음입니다. FMLE 프로그램이 아닙니다.</td></tr></tbody></table></div>
 <h2 id="설치하기"><a class="hash" href="#설치하기" aria-hidden="true">#</a>설치하기</h2>
 <ol><li>받은 <code>FMLE_…_x64-setup.exe</code>를 실행합니다.</li><li>파란 <strong>"Windows의 PC 보호"</strong> 창이 뜨면 <strong>추가 정보</strong>를 누르고 <strong>실행</strong>을 누릅니다.</li><li><strong>다음 → 설치 → 마침</strong>을 누릅니다. 마침 화면에서 <strong>바탕화면 바로가기 만들기</strong>를 켜 두면 바탕화면에도 FMLE가 생깁니다.</li></ol>
 <p>"Windows의 PC 보호" 창은 FMLE에 유료 코드 서명 인증서가 없어서 뜹니다. 위 Releases 페이지에서 받은 파일이라면 실행해도 됩니다. 브라우저가 받는 단계에서 비슷한 경고를 띄울 수도 있습니다.</p>
 <p>설치하면 이렇게 됩니다.</p>
 <ul><li>내 Windows 계정에만 설치됩니다(<code>%LOCALAPPDATA%\FMLE</code>). <strong>관리자 권한은 필요 없습니다.</strong></li><li>시작 메뉴에 <strong>FMLE</strong>가 생깁니다.</li><li>Windows <strong>설정 → 앱 → 설치된 앱</strong>에 FMLE가 생깁니다. 지울 때 여기서 지웁니다.</li></ul>
 <p>설치가 끝나면 <a href="start.html#3-fmle-켜고-연결-확인하기">처음 시작하기</a>로 넘어갑니다.</p>
+<p>설치 폴더의 파일은 함께 둡니다. <strong><code>fmle.exe</code> 하나만 다른 폴더로 옮기거나 서로 다른 판의 파일을 섞지 않습니다.</strong> 필요한 파일이 빠지거나 손상되면 FMLE가 실행을 멈추고 안내합니다. 이때는 위 Releases 페이지의 설치 파일로 다시 설치합니다. 설정과 목록을 남기려면 <strong>"애플리케이션 데이터 삭제하기"</strong> 를 체크하지 않습니다.</p>
 <h2 id="새-판으로-업데이트하기"><a class="hash" href="#새-판으로-업데이트하기" aria-hidden="true">#</a>새 판으로 업데이트하기</h2>
 <p>설치한 FMLE는 켜고 몇 초 뒤 새 판이 있는지 한 번 확인합니다. 새 판이 있으면 <strong>"새 판 …이 나왔습니다 · 지금 쓰는 판은 …입니다"</strong> 알림이 <strong>설치</strong> 단추와 함께 30초 동안 뜹니다.</p>
 <ol><li>알림의 <strong>설치</strong>를 누릅니다.</li><li><strong>"새 판 …으로 바꾸시겠습니까?"</strong> 창이 뜹니다. <strong>설치</strong>를 누르면 진행하고, <strong>나중에</strong>를 누르면 그만둡니다.</li><li>'새 판을 받고 있습니다'와 받은 양(%)이 보입니다.</li><li>'설치를 준비하고 있습니다 · FMLE가 곧 꺼졌다가 다시 켜집니다'가 뜨고 FMLE가 닫힙니다.</li><li>설치가 끝나면 새 판 FMLE가 저절로 켜집니다.</li></ol>
