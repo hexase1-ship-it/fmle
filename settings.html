@@ -14,7 +14,7 @@
 <header class="top">
   <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
   <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
-  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1108.456 기준</span>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1108.729 기준</span>
   <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
   <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
   <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
@@ -37,6 +37,8 @@
 <aside class="note is-warn"><b>주의</b><p>켜기 전에 세이브를 따로 저장해 두세요.</p></aside>
 <h3 id="fmle를-다시-켜면-지난번-상태-그대로"><a class="hash" href="#fmle를-다시-켜면-지난번-상태-그대로" aria-hidden="true">#</a>FMLE를 다시 켜면 지난번 상태 그대로</h3>
 <ul><li>켜 두면 FMLE를 끌 때 켜져 있던 치트, 고정, 남자팀 자격 유지를 다음에 다시 켭니다. 게임에서 어떤 세이브를 열었는지 확인한 뒤 그 세이브의 것만 켭니다.</li><li>끄면 모두 멈춘 채로 시작합니다. 각 화면에서 다시 켤 수 있습니다.</li><li><a href="localize.html">현지화</a>의 자동 번역과 <a href="appearance.html">경기 외형</a> 적용도 이 설정을 따릅니다.</li></ul>
+<h3 id="호환-모드"><a class="hash" href="#호환-모드" aria-hidden="true">#</a>호환 모드</h3>
+<ul><li>스킨의 숨은 능력치 표시, 재생성·은퇴 패치처럼 다른 모드가 <code>game_plugin.dll</code>을 조금 고쳤어도 연결합니다. 처음에는 꺼져 있습니다.</li><li>파일 구조가 FM27 원본과 같고 바뀐 곳이 적을 때만 연결합니다. 다른 게임 판이나 크게 바뀐 파일에는 연결하지 않습니다.</li><li>값 읽기와 편집, 고정은 그대로 됩니다. 게임 코드를 바꾸는 FMLE 기능 중 다른 모드가 같은 곳을 고친 것만 꺼집니다. 꺼진 기능은 연결 상태 창의 <strong>꺼진 기능</strong>에 나오고, 치트 화면의 그 줄에 <strong>못 켬</strong>으로 나옵니다.</li><li>호환 모드로 연결하면 연결 표시가 <strong>FM27 연결됨 · 호환</strong>으로 바뀝니다.</li><li>남자팀 자격 유지는 호환 모드에서 쓸 수 없습니다.</li></ul>
 <h3 id="금액-통화와-급여-표시"><a class="hash" href="#금액-통화와-급여-표시" aria-hidden="true">#</a>금액 통화와 급여 표시</h3>
 <ul><li>게임은 돈을 파운드로 기억합니다. 환율은 게임에 들어 있는 값을 씁니다. 설명에 지금 '1파운드 = ₩…'이 보입니다.</li><li>게임은 급여를 주급으로 기억합니다. 한 달은 52주 ÷ 12로 계산합니다.</li><li>둘 다 화면에 보이는 단위만 바꿉니다. 게임에는 그대로 파운드·주급으로 저장됩니다.</li></ul>
 <h3 id="ca-pa-숨기기"><a class="hash" href="#ca-pa-숨기기" aria-hidden="true">#</a>CA·PA 숨기기</h3>
@@ -58,7 +60,7 @@
     </article>
     <nav class="pn"><a class="prev" href="graphics.html"><small>이전</small>그래픽 팩</a><a class="next" href="faq.html"><small>다음</small>자주 묻는 질문</a></nav>
   </main>
-  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#설정-화면">설정 화면</a><a class="lv3" href="#정상-범위보다-높게-쓰기-실험">정상 범위보다 높게 쓰기 (실험)</a><a class="lv3" href="#fmle를-다시-켜면-지난번-상태-그대로">FMLE를 다시 켜면 지난번 상태 그대로</a><a class="lv3" href="#금액-통화와-급여-표시">금액 통화와 급여 표시</a><a class="lv3" href="#ca-pa-숨기기">CA·PA 숨기기</a><a class="lv3" href="#선수-화면에-능력치-효율-보이기-실험">선수 화면에 능력치 효율 보이기 (실험)</a><a class="lv3" href="#유리-효과">유리 효과</a><a class="lv3" href="#시즌-끝-기록-남기기">시즌 끝 기록 남기기</a><a class="lv3" href="#설정-초기화">설정 초기화</a><a class="lv2" href="#업데이트-노트-화면">업데이트 노트 화면</a></aside>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#설정-화면">설정 화면</a><a class="lv3" href="#정상-범위보다-높게-쓰기-실험">정상 범위보다 높게 쓰기 (실험)</a><a class="lv3" href="#fmle를-다시-켜면-지난번-상태-그대로">FMLE를 다시 켜면 지난번 상태 그대로</a><a class="lv3" href="#호환-모드">호환 모드</a><a class="lv3" href="#금액-통화와-급여-표시">금액 통화와 급여 표시</a><a class="lv3" href="#ca-pa-숨기기">CA·PA 숨기기</a><a class="lv3" href="#선수-화면에-능력치-효율-보이기-실험">선수 화면에 능력치 효율 보이기 (실험)</a><a class="lv3" href="#유리-효과">유리 효과</a><a class="lv3" href="#시즌-끝-기록-남기기">시즌 끝 기록 남기기</a><a class="lv3" href="#설정-초기화">설정 초기화</a><a class="lv2" href="#업데이트-노트-화면">업데이트 노트 화면</a></aside>
 </div>
 <div class="zoom" id="zoom" hidden><img alt=""></div>
 <script src="assets/wiki.js?v=cb3a699b31"></script>
