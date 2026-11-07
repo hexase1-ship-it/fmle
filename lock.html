@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>고정 · FMLE 사용법</title>
+<meta name="description" content="고정한 값은 FMLE가 켜져 있는 동안 게임이 바꿔도 다시 그 값으로 돌려놓습니다. 값 하나씩 자물쇠로, 또는 미리 고른 값 묶음을 &#x27;고정&#x27; 단추로 한 번에 고정합니다.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="lock">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1326 기준</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMLE 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html">목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html" class=is-on aria-current=page>고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">치트</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">도구</p>
+      <h1>고정</h1>
+      <p class="lead">고정한 값은 FMLE가 켜져 있는 동안 게임이 바꿔도 다시 그 값으로 돌려놓습니다. 값 하나씩 자물쇠로, 또는 미리 고른 값 묶음을 '고정' 단추로 한 번에 고정합니다.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/tool-lock-light.webp" data-dark="img/tool-lock-dark.webp"><img class="for-light" src="img/tool-lock-light.webp" alt="고정 화면. 왼쪽은 &#x27;고정&#x27; 단추로 고정할 값, 오른쪽은 지금 고정 중인 값입니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/tool-lock-dark.webp" alt="고정 화면. 왼쪽은 &#x27;고정&#x27; 단추로 고정할 값, 오른쪽은 지금 고정 중인 값입니다." width="1320" height="840" loading="lazy"></a><figcaption>고정 화면. 왼쪽은 '고정' 단추로 고정할 값, 오른쪽은 지금 고정 중인 값입니다.</figcaption></figure>
+<h2 id="고정이란"><a class="hash" href="#고정이란" aria-hidden="true">#</a>고정이란</h2>
+<p>고정한 값은 FMLE가 켜져 있는 동안 정한 간격(처음에는 1초)마다 게임 값을 확인합니다. 게임이 값을 바꿨으면 고정한 값으로 다시 씁니다.</p>
+<ul><li><strong>게임 날짜와 상관없이</strong> 확인합니다. 게임을 멈춰 두어도 고정은 계속 돕니다.</li><li><strong>FMLE가 켜져 있을 때만</strong> 지킵니다. FMLE를 끄면 게임이 값을 바꿀 수 있습니다.</li><li>고정을 풀면 게임 값은 그때 값 그대로 남습니다.</li><li>고정은 <strong>세이브마다 따로</strong> 기억합니다(<a href="saves.html">세이브마다 따로 기억하는 것</a>). 화면 위쪽의 '이 세이브: …'가 지금 목록이 어느 세이브의 것인지 알려 줍니다.</li></ul>
+<aside class="note is-now"><b>게임에 바로 씁니다</b><p>고정은 게임에 직접 씁니다. '저장'을 누르지 않아도 게임이 바꾼 값을 곧바로 되돌립니다.</p></aside>
+<h2 id="값-하나-고정하기-자물쇠"><a class="hash" href="#값-하나-고정하기-자물쇠" aria-hidden="true">#</a>값 하나 고정하기: 자물쇠</h2>
+<ol><li>편집 탭에서 값 줄에 마우스를 올리면 값 옆에 자물쇠가 보입니다(툴팁 '이 값 고정').</li><li>자물쇠를 누르면 <strong>게임에서 지금 읽은 값</strong>으로 고정합니다. 자물쇠가 잠긴 모양으로 바뀝니다.</li><li>다시 누르면 고정을 풉니다.</li></ol>
+<p>고정한 값의 자물쇠는 마우스를 올리지 않아도 늘 강조 색으로 보입니다.</p>
+<ul><li>숫자 값에만 자물쇠가 있습니다. 고정할 수 없는 칸에는 자물쇠가 없습니다.</li><li>탭이 게임에서 값을 읽기 전에는 '게임에서 읽은 뒤에 고정할 수 있습니다'라고 알립니다.</li><li>바꾸고 아직 저장하지 않은 칸을 고정하면 <strong>게임 값</strong>으로 고정합니다. 그 뒤 '저장'을 누르면 고정 값도 새 값으로 바뀝니다.</li><li>고정한 값을 탭에서 고쳐 저장하거나, 프리셋·게임 에디터로 바꾸면 고정 값도 그 새 값으로 따라갑니다.</li></ul>
+<aside class="note is-tip"><b>알아 두기</b><p>처음 고정하면 고정이 자동으로 켜집니다.</p></aside>
+<h2 id="여러-값을-한-번에-고정-단추"><a class="hash" href="#여러-값을-한-번에-고정-단추" aria-hidden="true">#</a>여러 값을 한 번에: '고정' 단추</h2>
+<p>편집 탭 위쪽 오른쪽의 <strong>고정</strong> 단추(자물쇠 모양)는 고정 화면의 <strong>'고정 버튼으로 고정할 값'</strong>에 고른 값만 지금 게임 값으로 한꺼번에 고정합니다. 다시 누르면 그 값들을 풉니다. 그 값이 모두 고정되어 있으면 단추가 켜진 색으로 보입니다.</p>
+<p>고른 값이 없으면 '고정할 값을 먼저 골라 주세요' 알림과 <strong>'고정 설정 열기'</strong> 단추가 나옵니다.</p>
+<h3 id="여러-명-고정하기"><a class="hash" href="#여러-명-고정하기" aria-hidden="true">#</a>여러 명 고정하기</h3>
+<ul><li>목록에서 여러 명을 고르면 아래 막대에 <strong>'선택 고정'</strong>이 나옵니다.</li><li>오른쪽 클릭 메뉴의 <strong>'값 고정'</strong>(여러 명이면 'N명 값 고정')도 같습니다.</li></ul>
+<p>누르면 'N명 고정' 확인 창이 '고정 버튼으로 고정할 값 N개(…)를 지금 게임 값으로 고정합니다'라고 묻습니다. '고정'을 누르면 게임에서 값을 읽어 고정합니다. 이 두 단추는 고정할 값을 하나 이상 골라 두었을 때만 보입니다.</p>
+<h2 id="고정-화면"><a class="hash" href="#고정-화면" aria-hidden="true">#</a>고정 화면</h2>
+<p>왼쪽 도구 목록의 <strong>고정</strong>을 누르거나, 창 위쪽의 <strong>'고정 N'</strong> 표시를 누르면 열립니다.</p>
+<h3 id="상태-줄과-단추"><a class="hash" href="#상태-줄과-단추" aria-hidden="true">#</a>상태 줄과 단추</h3>
+<div class="table"><table><thead><tr><th>상태</th><th>뜻</th></tr></thead><tbody><tr><td>고정한 값이 없습니다</td><td>고정 중인 값이 하나도 없습니다</td></tr><tr><td>켜져 있습니다. 게임 값을 지키는 중입니다</td><td>정상으로 돌고 있습니다</td></tr><tr><td>멈춰 있습니다. 게임 값을 지키지 않습니다</td><td>'모두 멈추기'를 눌렀습니다. 목록은 남아 있습니다</td></tr><tr><td>게임을 기다리는 중입니다 (…)</td><td>게임에 연결되지 않았거나 세이브를 불러오는 중입니다</td></tr></tbody></table></div>
+<p>상태 줄 오른쪽에는 'N번 다시 씀 · N초마다 확인'이 나옵니다. 게임이 바꾼 값을 지금까지 몇 번 되돌렸는지입니다.</p>
+<ul><li><strong>모두 멈추기 / 다시 켜기</strong>: 목록은 두고 지키기만 멈추거나 다시 켭니다.</li><li><strong>모두 풀기</strong>: 확인 창('고정한 값 N개를 모두 풉니다. 게임 값은 지금 값 그대로 남습니다.') 뒤에 목록을 모두 비웁니다.</li></ul>
+<h3 id="고정-버튼으로-고정할-값"><a class="hash" href="#고정-버튼으로-고정할-값" aria-hidden="true">#</a>고정 버튼으로 고정할 값</h3>
+<p>종류(선수, 스태프, 구단 등)를 오른쪽 위에서 고르고, 그 종류에서 '고정' 단추와 '선택 고정'이 고정할 값을 정합니다.</p>
+<ol><li><strong>'값 추가'</strong>를 누르고 칸을 고릅니다. 묶음 제목 옆 '묶음 전체'를 누르면 그 묶음의 칸을 모두 넣습니다.</li><li>줄마다 방식을 고릅니다.<ul><li><strong>값 유지</strong>: 게임이 값을 올려도 내려도 고정한 값으로 되돌립니다.</li><li><strong>오르는 건 허용</strong>: 게임이 값을 올리는 것은 두고, 내리는 것만 막습니다. 값이 오르면 고정 값도 그 값으로 따라 올라갑니다.</li></ul></li><li>휴지통 단추로 줄을 뺍니다.</li></ol>
+<p>선수는 처음에 <strong>부상 빈도</strong>와 <strong>더티 플레이</strong>가 들어 있습니다. 바꿔도 됩니다.</p>
+<h3 id="고정-중"><a class="hash" href="#고정-중" aria-hidden="true">#</a>고정 중</h3>
+<p>고정한 값이 사람·구단별로 묶여 나옵니다.</p>
+<ul><li>이름 옆 <strong>열기</strong>: 그 탭을 엽니다.</li><li><strong>모두 풀기</strong>: 그 사람의 고정을 모두 풉니다.</li><li>값 칩: '칸 이름 값'. '오르는 건 허용'이면 '↑허용'이 붙습니다. 칩의 × 단추로 그 값만 풉니다.</li></ul>
+<h2 id="찾지-못한-대상"><a class="hash" href="#찾지-못한-대상" aria-hidden="true">#</a>찾지 못한 대상</h2>
+<p>게임에서 그 사람이나 구단을 찾지 못하면 '고정 중' 목록에 <strong>'게임에서 찾지 못함'</strong>이 붙고, 상태 줄에 '찾지 못한 대상 N개'가 나옵니다. 창 위쪽 '고정 N' 표시도 경고 색이 됩니다.</p>
+<p>다른 세이브를 불러왔거나, 게임에서 그 대상이 없어졌을 때 생길 수 있습니다. 찾지 못한 대상은 FMLE가 계속 찾아보며, 다시 찾으면 그대로 지킵니다. 필요 없으면 '모두 풀기'로 빼세요.</p>
+<h2 id="확인-간격"><a class="hash" href="#확인-간격" aria-hidden="true">#</a>확인 간격</h2>
+<p><a href="settings.html">설정</a>의 <strong>'고정 확인 간격'</strong>에서 0.5초, 1초, 2초, 5초 중 고릅니다. 짧을수록 게임이 값을 바꿔도 빨리 되돌립니다.</p>
+<h2 id="창-위쪽의-고정-n-표시"><a class="hash" href="#창-위쪽의-고정-n-표시" aria-hidden="true">#</a>창 위쪽의 '고정 N' 표시</h2>
+<p>고정한 값이 있으면 창 위쪽에 자물쇠와 '고정 N'(멈췄으면 '고정 N · 멈춤')이 나옵니다. 마우스를 올리면 지금 상태가, 누르면 고정 화면이 나옵니다. 왼쪽 도구 목록의 '고정' 옆에도 개수가 나옵니다.</p>
+<h2 id="fmle를-다시-켰을-때"><a class="hash" href="#fmle를-다시-켰을-때" aria-hidden="true">#</a>FMLE를 다시 켰을 때</h2>
+<p><a href="settings.html">설정</a>의 'FMLE를 다시 켜면 지난번 상태 그대로'가 켜져 있으면(처음 값), FMLE를 끌 때 켜져 있던 고정이 다시 켜집니다. 게임에서 어떤 세이브를 열었는지 확인한 뒤 그 세이브의 고정만 켭니다. 이 설정을 끄면 멈춘 채로 시작합니다.</p>
+<aside class="note is-tip"><b>알아 두기</b><p><a href="cheat.html">치트</a>의 성장 가속·노화 늦추기는 고정한 능력치를 건드리지 않고 고정에 맡깁니다.</p></aside>
+    </article>
+    <nav class="pn"><a class="prev" href="preset.html"><small>이전</small>프리셋</a><a class="next" href="compare.html"><small>다음</small>비교</a></nav>
+  </main>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#고정이란">고정이란</a><a class="lv2" href="#값-하나-고정하기-자물쇠">값 하나 고정하기: 자물쇠</a><a class="lv2" href="#여러-값을-한-번에-고정-단추">여러 값을 한 번에: '고정' 단추</a><a class="lv3" href="#여러-명-고정하기">여러 명 고정하기</a><a class="lv2" href="#고정-화면">고정 화면</a><a class="lv3" href="#상태-줄과-단추">상태 줄과 단추</a><a class="lv3" href="#고정-버튼으로-고정할-값">고정 버튼으로 고정할 값</a><a class="lv3" href="#고정-중">고정 중</a><a class="lv2" href="#찾지-못한-대상">찾지 못한 대상</a><a class="lv2" href="#확인-간격">확인 간격</a><a class="lv2" href="#창-위쪽의-고정-n-표시">창 위쪽의 '고정 N' 표시</a><a class="lv2" href="#fmle를-다시-켰을-때">FMLE를 다시 켰을 때</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=cb3a699b31"></script>
+</body>
+</html>

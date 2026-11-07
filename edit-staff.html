@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>스태프·지원 스태프 · FMLE 사용법</title>
+<meta name="description" content="감독·코치·스카우트 같은 스태프의 능력치, 감독 성향, 선호 포메이션, 계약을 고치고, 지원 스태프(개인 비서·언론 담당자 등)의 정보를 보는 방법입니다.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="edit-staff">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1326 기준</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMLE 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html">목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html" class=is-on aria-current=page>스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">치트</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">편집 탭</p>
+      <h1>스태프·지원 스태프</h1>
+      <p class="lead">감독·코치·스카우트 같은 스태프의 능력치, 감독 성향, 선호 포메이션, 계약을 고치고, 지원 스태프(개인 비서·언론 담당자 등)의 정보를 보는 방법입니다.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/staff-attr-light.webp" data-dark="img/staff-attr-dark.webp"><img class="for-light" src="img/staff-attr-light.webp" alt="스태프 탭의 능력치 화면." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/staff-attr-dark.webp" alt="스태프 탭의 능력치 화면." width="1320" height="840" loading="lazy"></a><figcaption>스태프 탭의 능력치 화면.</figcaption></figure>
+<h2 id="탭-여는-법"><a class="hash" href="#탭-여는-법" aria-hidden="true">#</a>탭 여는 법</h2>
+<p>스태프 목록이나 지원 스태프 목록에서 이름을 누릅니다. 구단 탭의 '스태프' 페이지에서도 열 수 있습니다. 탭 머리, 값 고치기, 저장은 선수 탭과 같습니다. <a href="edit-player.html#값-고치기">선수 페이지의 공통 설명</a>을 먼저 읽어 주세요.</p>
+<aside class="note is-save"><b>저장을 눌러야 게임에 들어갑니다</b><p>스태프 탭에서 바꾼 값은 아래쪽 막대의 저장(또는 위쪽 저장 <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>S</kbd></span>)을 눌러야 게임에 들어갑니다.</p></aside>
+<h2 id="스태프-탭-머리"><a class="hash" href="#스태프-탭-머리" aria-hidden="true">#</a>스태프 탭 머리</h2>
+<ul><li>이름 아래에 고유번호, 소속 구단, 국적, 생년월일(나이)이 보입니다. 이적이 합의된 사람은 '이적 예정', 은퇴 날짜가 정해진 사람은 '은퇴 예정'이 보입니다.</li><li>숫자 카드는 <strong>현재 능력</strong>과 <strong>잠재 능력</strong>(각 1~200)입니다. 눌러서 바로 숫자를 칩니다.</li><li>오른쪽 단추는 ⚡ 게임 에디터 기능, 프리셋, 고정, 즐겨찾기, 비교, 게임에서 다시 읽기입니다. 스태프의 ⚡ 메뉴에는 이적, 대표팀, 국적·출생 도시·성별 바꾸기, 은퇴 날짜가 있습니다. 항목 설명은 <a href="ige.html">게임 에디터 (⚡)</a>에 있습니다.</li></ul>
+<p>스태프 탭의 하위 페이지는 능력치, 감독 성향, 성격·평판, 정보, 언어, 관계 6개입니다.</p>
+<h2 id="능력치"><a class="hash" href="#능력치" aria-hidden="true">#</a>능력치</h2>
+<p>모두 1~20이고, 묶음 안에서 가나다순입니다. 묶음 제목 옆 숫자는 평균입니다.</p>
+<div class="table"><table><thead><tr><th>묶음</th><th>칸</th></tr></thead><tbody><tr><td>코칭</td><td>공격 코칭, 수비 코칭, 피트니스 코칭, 골키퍼 코칭, 멘탈 코칭, 전술 코칭, 기술 코칭, 세트피스 코칭, 유망주 육성</td></tr><tr><td>정신</td><td>의지력, 규율 수준, 선수 관리, 동기 부여</td></tr><tr><td>지식</td><td>선수 능력 판단, 선수 잠재력 판단, 스태프 능력 판단, 협상, 전술 지식</td></tr><tr><td>의료·분석</td><td>물리치료, 스포츠 과학, 데이터 분석</td></tr><tr><td>구단주·회장</td><td>사업 수완, 간섭, 인내심, 재력</td></tr></tbody></table></div>
+<h2 id="감독-성향"><a class="hash" href="#감독-성향" aria-hidden="true">#</a>감독 성향</h2>
+<figure class="shot"><a class="shot-zoom" href="img/staff-style-light.webp" data-dark="img/staff-style-dark.webp"><img class="for-light" src="img/staff-style-light.webp" alt="감독 성향과 선호 포메이션." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/staff-style-dark.webp" alt="감독 성향과 선호 포메이션." width="1320" height="840" loading="lazy"></a><figcaption>감독 성향과 선호 포메이션.</figcaption></figure>
+<div class="table"><table><thead><tr><th>묶음</th><th>칸</th><th>범위</th></tr></thead><tbody><tr><td>감독 성향</td><td>공격 성향, 직선 플레이 성향, 압박 성향, 영입 성향, 심리전, 수비 라인 깊이 성향, 전술 유연성, 훈련 강도, 로테이션 성향, 템포 성향, 폭 성향</td><td>1~20</td></tr><tr><td>선호 포메이션</td><td>선호 포메이션, 두 번째 선호 포메이션, 수비적 포메이션, 공격적 포메이션</td><td>포메이션 목록</td></tr><tr><td>선호 포메이션</td><td>미소유 시 선호 포메이션, 미소유 시 두 번째 포메이션, 미소유 시 수비적 포메이션, 미소유 시 공격적 포메이션</td><td>포메이션 목록</td></tr></tbody></table></div>
+<p>포메이션 목록에는 4-4-2, 4-3-3 DM 넓게, 4-2-3-1 DM AM 와이드, 5-2-2-1 DM AM 같은 19가지와 '정하지 않음'이 있습니다. '미소유 시'는 공을 갖지 않았을 때의 포메이션입니다.</p>
+<h2 id="성격-평판"><a class="hash" href="#성격-평판" aria-hidden="true">#</a>성격·평판</h2>
+<div class="table"><table><thead><tr><th>묶음</th><th>칸</th><th>범위</th></tr></thead><tbody><tr><td>성격</td><td>논쟁성, 스포츠맨십, 압박감 대처, 의리, 적응력, 참을성, 포부, 프로 의식</td><td>1~20</td></tr><tr><td>평판</td><td>국내 평판, 현재 평판, 세계 평판</td><td>0~10000</td></tr><tr><td>능력</td><td>현재 능력, 잠재 능력</td><td>1~200</td></tr></tbody></table></div>
+<h2 id="정보"><a class="hash" href="#정보" aria-hidden="true">#</a>정보</h2>
+<figure class="shot"><a class="shot-zoom" href="img/staff-info-light.webp" data-dark="img/staff-info-dark.webp"><img class="for-light" src="img/staff-info-light.webp" alt="스태프 정보 페이지." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/staff-info-dark.webp" alt="스태프 정보 페이지." width="1320" height="840" loading="lazy"></a><figcaption>스태프 정보 페이지.</figcaption></figure>
+<h3 id="기본-정보"><a class="hash" href="#기본-정보" aria-hidden="true">#</a>기본 정보</h3>
+<div class="table"><table><thead><tr><th>칸</th><th>하는 일</th><th>고칠 수 있는 범위</th></tr></thead><tbody><tr><td>고유번호, 전체 이름</td><td></td><td>보기만</td></tr><tr><td>이름, 성, 통칭</td><td>눌러서 글자를 고칩니다. 이름과 성은 비울 수 없습니다</td><td>60자까지</td></tr><tr><td>국적, 출생 도시</td><td>연필 단추로 고릅니다. 저장을 누르면 게임 자체 기능으로 바꿉니다(처음 한 번 백업 여부를 묻습니다)</td><td>나라·도시 목록</td></tr><tr><td>소속 구단, 직전 구단</td><td>누르면 구단 탭이 열립니다</td><td>보기만</td></tr><tr><td>성별</td><td>바꾸려면 ⚡ 메뉴의 '여자로 바꾸기', '남자로 바꾸기'를 씁니다</td><td>보기만</td></tr><tr><td>생성 인물</td><td>게임이 만든 스태프인지</td><td>보기만</td></tr><tr><td>은퇴 예정</td><td>이번 시즌이 끝나면 은퇴합니다</td><td>예, 아니요</td></tr><tr><td>현재 구단에서 활동 후 은퇴</td><td>지금 구단을 떠날 때 은퇴합니다. 게임이 스태프를 이 표시대로 은퇴시키는지는 아직 시험하지 않았습니다</td><td>예, 아니요</td></tr><tr><td>생년월일</td><td>바꾸면 나이도 바뀝니다</td><td>날짜</td></tr><tr><td>키</td><td>cm, 0은 없음</td><td>151~212</td></tr></tbody></table></div>
+<p><strong>다른 국적</strong> 목록은 <strong>+ 더하기</strong>로 나라를 더하고 <strong>−</strong>로 뺍니다.</p>
+<h3 id="외모"><a class="hash" href="#외모" aria-hidden="true">#</a>외모</h3>
+<p>언어 번호(보기만), 인종, 머리색, 머리 길이, 피부색(0~20), 체형입니다. 선택지는 선수와 같습니다(<a href="edit-player.html#외모">선수 외모</a>).</p>
+<h3 id="계약"><a class="hash" href="#계약" aria-hidden="true">#</a>계약</h3>
+<div class="table"><table><thead><tr><th>칸</th><th>하는 일</th><th>고칠 수 있는 범위</th></tr></thead><tbody><tr><td>직무</td><td>감독, 코치, 수석 스카우트, 팀닥터 등</td><td>보기만</td></tr><tr><td>주급</td><td>설정에 따라 월급·연봉으로 보입니다</td><td>0~1억 파운드</td></tr><tr><td>계약일, 계약 만료일, 입단일</td><td>계약 날짜</td><td>날짜</td></tr></tbody></table></div>
+<h2 id="언어"><a class="hash" href="#언어" aria-hidden="true">#</a>언어</h2>
+<p>선수와 같습니다. 수준(0~10)을 눌러 바꾸고, <strong>구사 못 함</strong>·<strong>구사하게</strong>, <strong>+ 더하기</strong>, <strong>−</strong>를 씁니다. 모국어는 목록에 없습니다. <a href="edit-player.html#언어">선수 언어</a></p>
+<h2 id="관계"><a class="hash" href="#관계" aria-hidden="true">#</a>관계</h2>
+<p>선수와 같습니다. 좋아하는·싫어하는 인물과 구단은 종류·이유·수치(0~100)·영구를 고치고, 빼고, 빈자리가 있으면 더할 수 있습니다. <a href="edit-player.html#관계">선수 관계</a></p>
+<h2 id="지원-스태프"><a class="hash" href="#지원-스태프" aria-hidden="true">#</a>지원 스태프</h2>
+<figure class="shot"><a class="shot-zoom" href="img/support-info-light.webp" data-dark="img/support-info-dark.webp"><img class="for-light" src="img/support-info-light.webp" alt="지원 스태프 탭. 페이지가 &#x27;정보&#x27; 하나뿐입니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/support-info-dark.webp" alt="지원 스태프 탭. 페이지가 &#x27;정보&#x27; 하나뿐입니다." width="1320" height="840" loading="lazy"></a><figcaption>지원 스태프 탭. 페이지가 '정보' 하나뿐입니다.</figcaption></figure>
+<p>지원 스태프는 감독에게 붙는 언론 담당자, 선수 연락 담당자, 개인 비서입니다. 게임에는 이 사람들의 프로필 화면이 없어서, 게임 안에서는 고유번호를 볼 수 없습니다. 얼굴 그래픽을 붙일 때 이 탭의 고유번호를 쓰면 됩니다.</p>
+<ul><li>머리에는 숫자 카드가 없고, ⚡ 단추도 없습니다.</li><li>이름 아래에 직책, 소속 구단, 국적이 보입니다.</li></ul>
+<div class="table"><table><thead><tr><th>칸</th><th>하는 일</th><th>고칠 수 있는 범위</th></tr></thead><tbody><tr><td>고유번호</td><td>그래픽(얼굴 사진)을 붙일 때 쓰는 번호</td><td>보기만</td></tr><tr><td>직책</td><td>언론 담당자(기자회견 안내), 선수 연락 담당자(팀 미팅·행동 규칙 안내), 개인 비서, 내 개인 비서</td><td>보기만</td></tr><tr><td>이름, 성, 통칭</td><td>눌러서 글자를 고칩니다</td><td>60자까지</td></tr><tr><td>소속 구단</td><td>구단 감독의 지원 스태프는 그 구단입니다. 국가대표팀 감독의 지원 스태프와 내 개인 비서는 비어 있습니다</td><td>보기만</td></tr><tr><td>성별, 국적, 생년월일, 출생 도시</td><td></td><td>보기만</td></tr><tr><td>외모 (인종, 머리색, 머리 길이, 피부색)</td><td></td><td>보기만</td></tr></tbody></table></div>
+<p>'내 개인 비서'는 내 감독에게 따로 붙는 개인 비서입니다. 감독과 국적이 같고, 받은편지함에 개인 비서로 나오는 사람입니다. '개인 비서'(56번)는 구단·국가대표팀 감독 자리에 붙는 개인 비서로 맞췄지만, 게임에서 직접 확인하지는 않았습니다.</p>
+<aside class="note is-save"><b>저장을 눌러야 게임에 들어갑니다</b><p>지원 스태프의 이름도 저장을 눌러야 게임에 들어갑니다. 처음 한 번 세이브 백업 여부를 묻습니다.</p></aside>
+    </article>
+    <nav class="pn"><a class="prev" href="edit-player.html"><small>이전</small>선수</a><a class="next" href="edit-club.html"><small>다음</small>구단</a></nav>
+  </main>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#탭-여는-법">탭 여는 법</a><a class="lv2" href="#스태프-탭-머리">스태프 탭 머리</a><a class="lv2" href="#능력치">능력치</a><a class="lv2" href="#감독-성향">감독 성향</a><a class="lv2" href="#성격-평판">성격·평판</a><a class="lv2" href="#정보">정보</a><a class="lv3" href="#기본-정보">기본 정보</a><a class="lv3" href="#외모">외모</a><a class="lv3" href="#계약">계약</a><a class="lv2" href="#언어">언어</a><a class="lv2" href="#관계">관계</a><a class="lv2" href="#지원-스태프">지원 스태프</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=cb3a699b31"></script>
+</body>
+</html>

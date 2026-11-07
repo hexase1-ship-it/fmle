@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>설치·업데이트·지우기 · FMLE 사용법</title>
+<meta name="description" content="설치 파일 하나를 받아 관리자 권한 없이 설치하고, 새 판은 FMLE 안에서 물어본 뒤 설치합니다. 지울 때 주의할 점도 적었습니다.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="install">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1326 기준</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMLE 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html" class=is-on aria-current=page>설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html">목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">치트</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">시작하기</p>
+      <h1>설치·업데이트·지우기</h1>
+      <p class="lead">설치 파일 하나를 받아 관리자 권한 없이 설치하고, 새 판은 FMLE 안에서 물어본 뒤 설치합니다. 지울 때 주의할 점도 적었습니다.</p>
+      <h2 id="필요한-것"><a class="hash" href="#필요한-것" aria-hidden="true">#</a>필요한 것</h2>
+<ul><li>Windows 10 또는 11(64비트)</li><li>FM27 판 <strong>27.0.0+2493426</strong>. 판이 다르면 FMLE가 게임에 연결하지 않습니다.</li></ul>
+<p>FMLE는 게임 파일을 고치지 않습니다. FMLE가 켜져 있는 동안 실행 중인 게임의 값을 읽고 씁니다.</p>
+<h2 id="설치-파일-받기"><a class="hash" href="#설치-파일-받기" aria-hidden="true">#</a>설치 파일 받기</h2>
+<p>설치 파일은 <a href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE Releases 페이지</a>에서만 받습니다. 다른 곳에서 받은 파일은 FMLE가 업데이트할 때 쓰는 서명을 확인할 수 없습니다.</p>
+<p>페이지에 파일이 여러 개 보이지만 받을 것은 <strong><code>FMLE_판번호_x64-setup.exe</code> 하나</strong>입니다.</p>
+<div class="table"><table><thead><tr><th>파일</th><th>받아야 하나</th><th>무엇인가</th></tr></thead><tbody><tr><td><code>FMLE_…_x64-setup.exe</code></td><td>받습니다</td><td>설치 파일입니다.</td></tr><tr><td><code>FMLE_…_x64-setup.exe.sig</code></td><td>받지 않습니다</td><td>설치 파일의 서명입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td><code>latest.json</code></td><td>받지 않습니다</td><td>새 판 안내문입니다. FMLE가 업데이트할 때 스스로 읽습니다.</td></tr><tr><td>Source code (zip, tar.gz)</td><td>받지 않습니다</td><td>GitHub가 자동으로 붙이는 묶음입니다. FMLE 프로그램이 아닙니다.</td></tr></tbody></table></div>
+<h2 id="설치하기"><a class="hash" href="#설치하기" aria-hidden="true">#</a>설치하기</h2>
+<ol><li>받은 <code>FMLE_…_x64-setup.exe</code>를 실행합니다.</li><li>파란 <strong>"Windows의 PC 보호"</strong> 창이 뜨면 <strong>추가 정보</strong>를 누르고 <strong>실행</strong>을 누릅니다.</li><li><strong>다음 → 설치 → 마침</strong>을 누릅니다. 마침 화면에서 <strong>바탕화면 바로가기 만들기</strong>를 켜 두면 바탕화면에도 FMLE가 생깁니다.</li></ol>
+<p>"Windows의 PC 보호" 창은 FMLE에 유료 코드 서명 인증서가 없어서 뜹니다. 위 Releases 페이지에서 받은 파일이라면 실행해도 됩니다. 브라우저가 받는 단계에서 비슷한 경고를 띄울 수도 있습니다.</p>
+<p>설치하면 이렇게 됩니다.</p>
+<ul><li>내 Windows 계정에만 설치됩니다(<code>%LOCALAPPDATA%\FMLE</code>). <strong>관리자 권한은 필요 없습니다.</strong></li><li>시작 메뉴에 <strong>FMLE</strong>가 생깁니다.</li><li>Windows <strong>설정 → 앱 → 설치된 앱</strong>에 FMLE가 생깁니다. 지울 때 여기서 지웁니다.</li></ul>
+<p>설치가 끝나면 <a href="start.html#3-fmle-켜고-연결-확인하기">처음 시작하기</a>로 넘어갑니다.</p>
+<h2 id="새-판으로-업데이트하기"><a class="hash" href="#새-판으로-업데이트하기" aria-hidden="true">#</a>새 판으로 업데이트하기</h2>
+<p>설치한 FMLE는 켜고 몇 초 뒤 새 판이 있는지 한 번 확인합니다. 새 판이 있으면 <strong>"새 판 …이 나왔습니다 · 지금 쓰는 판은 …입니다"</strong> 알림이 <strong>설치</strong> 단추와 함께 30초 동안 뜹니다.</p>
+<ol><li>알림의 <strong>설치</strong>를 누릅니다.</li><li><strong>"새 판 …으로 바꾸시겠습니까?"</strong> 창이 뜹니다. <strong>설치</strong>를 누르면 진행하고, <strong>나중에</strong>를 누르면 그만둡니다.</li><li>'새 판을 받고 있습니다'와 받은 양(%)이 보입니다.</li><li>'설치를 준비하고 있습니다 · FMLE가 곧 꺼졌다가 다시 켜집니다'가 뜨고 FMLE가 닫힙니다.</li><li>설치가 끝나면 새 판 FMLE가 저절로 켜집니다.</li></ol>
+<p>업데이트 중에 FMLE가 하는 일은 이렇습니다.</p>
+<ul><li><strong>받은 파일이 정말 FMLE 것인지 서명으로 확인한 뒤에만</strong> 설치합니다. 서명이 맞지 않으면 설치하지 않습니다.</li><li>설치하기 전에 FMLE가 게임에 걸어 둔 치트와 규칙을 잠깐 풉니다. 새 FMLE가 켜지면 설정의 <strong>FMLE를 다시 켜면 지난번 상태 그대로</strong>에 따라 다시 켜집니다. 이 설정이 꺼져 있으면 모두 멈춘 채로 시작하니, 각 화면에서 다시 켭니다.</li><li>남자팀 자격 유지를 쓰는 중이었다면, 다시 켠 뒤 세이브를 다시 불러오라는 안내가 뜰 수 있습니다.</li><li>설정, 프리셋, 영입 명단, 치트·고정 목록 같은 FMLE의 기억은 그대로 남습니다.</li></ul>
+<p>알림을 놓쳤거나 <strong>나중에</strong>를 눌렀다면, 다음에 FMLE를 켤 때 다시 알려 줍니다.</p>
+<h3 id="손으로-업데이트하기"><a class="hash" href="#손으로-업데이트하기" aria-hidden="true">#</a>손으로 업데이트하기</h3>
+<p>Releases 페이지에서 새 설치 파일을 받아 실행해도 똑같이 업데이트됩니다. 설정과 목록은 그대로입니다.</p>
+<aside class="note is-warn"><b>주의</b><p>설치 중에 제거 화면이 뜨면 <strong>"애플리케이션 데이터 삭제하기"</strong> 는 체크하지 않습니다. 체크하면 FMLE가 기억해 둔 설정과 목록이 모두 지워집니다.</p></aside>
+<h3 id="지금-쓰는-판-확인하기"><a class="hash" href="#지금-쓰는-판-확인하기" aria-hidden="true">#</a>지금 쓰는 판 확인하기</h3>
+<p>왼쪽 <strong>도구</strong>의 <strong>업데이트 노트</strong>에 '지금 쓰는 판은 …입니다'가 보이고, 목록에서 그 판에 '지금 쓰는 판' 표시가 붙습니다. 판마다 무엇이 바뀌었는지도 여기서 봅니다(<a href="settings.html">설정과 업데이트 노트</a>).</p>
+<h3 id="업데이트가-안-될-때"><a class="hash" href="#업데이트가-안-될-때" aria-hidden="true">#</a>업데이트가 안 될 때</h3>
+<p>설치하지 못하면 '새 판을 설치하지 못했습니다'와 함께 까닭이 뜹니다.</p>
+<div class="table"><table><thead><tr><th>까닭</th><th>할 일</th></tr></thead><tbody><tr><td>인터넷 연결을 확인해 주세요</td><td>새 판을 받지 못했습니다. 인터넷 연결을 확인하고 다시 누릅니다.</td></tr><tr><td>서명이 맞지 않아 설치하지 않았습니다</td><td>받은 파일이 FMLE 것으로 확인되지 않아 설치하지 않았습니다. 지금 쓰는 FMLE는 그대로입니다.</td></tr><tr><td>게임 코드를 되돌리지 못했습니다. FMLE를 다시 켜 주세요</td><td>치트를 풀지 못해 설치를 멈췄습니다. FMLE를 껐다 켠 뒤 다시 합니다.</td></tr><tr><td>설치 프로그램을 열지 못했습니다. FMLE를 다시 켜 주세요</td><td>FMLE를 껐다 켠 뒤 다시 합니다. 계속되면 Releases 페이지에서 설치 파일을 받아 직접 실행합니다.</td></tr><tr><td>이미 설치하고 있습니다</td><td>설치가 진행 중입니다. 기다립니다.</td></tr><tr><td>이미 최신 판입니다</td><td>받을 새 판이 없습니다.</td></tr></tbody></table></div>
+<h2 id="지우기"><a class="hash" href="#지우기" aria-hidden="true">#</a>지우기</h2>
+<ol><li>Windows <strong>설정 → 앱 → 설치된 앱</strong>을 엽니다.</li><li><strong>FMLE</strong> 옆 메뉴에서 <strong>제거</strong>를 누릅니다.</li></ol>
+<p>FMLE가 켜져 있으면, 제거 프로그램이 먼저 FMLE를 닫습니다. 이때 FMLE는 창의 닫기 단추를 누를 때와 똑같이 게임에 걸어 둔 치트와 규칙을 원래대로 돌린 뒤 닫힙니다.</p>
+<p>제거 화면의 <strong>"애플리케이션 데이터 삭제하기"</strong> 는 이렇게 다릅니다.</p>
+<div class="table"><table><thead><tr><th>체크하면</th><th>체크하지 않으면</th></tr></thead><tbody><tr><td>FMLE가 이 PC에 기억해 둔 것(설정, 프리셋, 저장한 필터, 영입 명단, 즐겨찾기, 세이브마다 기억한 치트·고정 등)이 함께 지워집니다.</td><td>남아 있다가, 다시 설치하면 그대로 돌아옵니다.</td></tr></tbody></table></div>
+<aside class="note is-warn"><b>주의</b><p>"애플리케이션 데이터 삭제하기"로 지운 FMLE의 기억은 되살릴 수 없습니다. 다시 설치할 생각이 있다면 체크하지 않습니다.</p></aside>
+<p>FMLE를 지워도, 이미 게임에 쓴 값과 FM에서 저장한 세이브는 그대로입니다.</p>
+<h2 id="설치나-제거가-멈출-때"><a class="hash" href="#설치나-제거가-멈출-때" aria-hidden="true">#</a>설치나 제거가 멈출 때</h2>
+<p>설치·업데이트·제거 프로그램은 파일을 바꾸기 전에 켜져 있는 FMLE를 닫습니다. 60초 안에 닫히지 않으면 <strong>"FMLE가 아직 닫히지 않았어요. FMLE 창에 뜬 안내를 확인하고 FMLE를 닫은 뒤 다시 해 주세요."</strong> 창을 띄우고 멈춥니다. 설치된 FMLE는 바뀌지 않습니다.</p>
+<p>FMLE는 게임에 걸어 둔 것을 원래대로 돌리지 못하면 일부러 닫히지 않습니다. 이때 FMLE 창에 '게임 규칙을 원래대로 돌리지 못해서 FMLE를 열어 두었습니다'가 뜹니다. 안내대로 한 뒤 FMLE를 닫고 다시 설치합니다.</p>
+<p>에리를 켜 두고 에리 설정의 <strong>FMLE 창을 닫아도 남기</strong>를 켰다면, FMLE는 창을 닫아도 알림 영역에 남아 있습니다. 에리를 오른쪽 클릭해 FMLE를 끝낸 뒤 다시 합니다.</p>
+<p>그 밖의 문제는 <a href="trouble.html">문제가 생겼을 때</a>를 봅니다.</p>
+    </article>
+    <nav class="pn"><a class="prev" href="start.html"><small>이전</small>처음 시작하기</a><a class="next" href="screen.html"><small>다음</small>화면 둘러보기</a></nav>
+  </main>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#필요한-것">필요한 것</a><a class="lv2" href="#설치-파일-받기">설치 파일 받기</a><a class="lv2" href="#설치하기">설치하기</a><a class="lv2" href="#새-판으로-업데이트하기">새 판으로 업데이트하기</a><a class="lv3" href="#손으로-업데이트하기">손으로 업데이트하기</a><a class="lv3" href="#지금-쓰는-판-확인하기">지금 쓰는 판 확인하기</a><a class="lv3" href="#업데이트가-안-될-때">업데이트가 안 될 때</a><a class="lv2" href="#지우기">지우기</a><a class="lv2" href="#설치나-제거가-멈출-때">설치나 제거가 멈출 때</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=cb3a699b31"></script>
+</body>
+</html>

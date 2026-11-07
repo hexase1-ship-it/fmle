@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에이전트·심판 · FMLE 사용법</title>
+<meta name="description" content="에이전트의 성격과 협상 성향, 고객 선수를 보고 고치는 방법과, 심판의 능력치·평판·심판 자격·외모를 고치는 방법입니다.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="edit-people">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1326 기준</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMLE 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html">목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html" class=is-on aria-current=page>에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">치트</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">편집 탭</p>
+      <h1>에이전트·심판</h1>
+      <p class="lead">에이전트의 성격과 협상 성향, 고객 선수를 보고 고치는 방법과, 심판의 능력치·평판·심판 자격·외모를 고치는 방법입니다.</p>
+      <p>에이전트 탭과 심판 탭은 목록에서 이름을 눌러 엽니다. 값 고치기와 저장은 선수 탭과 같습니다. <a href="edit-player.html#값-고치기">선수 페이지의 공통 설명</a></p>
+<aside class="note is-save"><b>저장을 눌러야 게임에 들어갑니다</b><p>에이전트·심판 탭에서 바꾼 값(이름 포함)은 아래쪽 막대의 저장(또는 위쪽 저장 <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>S</kbd></span>)을 눌러야 게임에 들어갑니다.</p></aside>
+<p>두 탭 모두 머리 오른쪽 단추는 프리셋, 고정, 즐겨찾기, 비교, 게임에서 다시 읽기입니다. ⚡ 단추는 없습니다. <a href="edit-player.html#탭-머리">선수 탭 머리</a></p>
+<h2 id="에이전트"><a class="hash" href="#에이전트" aria-hidden="true">#</a>에이전트</h2>
+<figure class="shot"><a class="shot-zoom" href="img/agent-main-light.webp" data-dark="img/agent-main-dark.webp"><img class="for-light" src="img/agent-main-light.webp" alt="에이전트 탭의 첫 페이지." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/agent-main-dark.webp" alt="에이전트 탭의 첫 페이지." width="1320" height="840" loading="lazy"></a><figcaption>에이전트 탭의 첫 페이지.</figcaption></figure>
+<h3 id="탭-머리"><a class="hash" href="#탭-머리" aria-hidden="true">#</a>탭 머리</h3>
+<p>이름 아래에 고유번호, 국적, 활동 국가, 생년월일(나이)이 보입니다. 숫자 카드는 없습니다. 에이전트 목록에서는 '고객 수' 열로 정렬할 수 있습니다.</p>
+<p>하위 페이지는 <strong>에이전트</strong>와 <strong>고객</strong> 2개입니다.</p>
+<h3 id="에이전트-페이지"><a class="hash" href="#에이전트-페이지" aria-hidden="true">#</a>에이전트 페이지</h3>
+<div class="table"><table><thead><tr><th>묶음</th><th>칸</th><th>하는 일</th><th>고칠 수 있는 범위</th></tr></thead><tbody><tr><td>기본 정보</td><td>고유번호</td><td></td><td>보기만</td></tr><tr><td>기본 정보</td><td>이름, 성</td><td>눌러서 글자를 고칩니다. 비울 수 없습니다</td><td>60자까지</td></tr><tr><td>기본 정보</td><td>국적, 출생 도시, 활동 국가</td><td>누르면 그 탭이 열립니다</td><td>보기만</td></tr><tr><td>기본 정보</td><td>생년월일</td><td></td><td>날짜</td></tr><tr><td>에이전트</td><td>활동 범위 번호</td><td></td><td>보기만</td></tr><tr><td>에이전트</td><td>인내심, 욕심</td><td></td><td>1~20</td></tr><tr><td>에이전트</td><td>선수 홍보 적극성</td><td>고객 선수를 구단들에 적극적으로 소개하는 정도로 보입니다</td><td>1~20</td></tr><tr><td>성격</td><td>논쟁성, 스포츠맨십, 압박감 대처, 의리, 적응력, 참을성, 포부, 프로 의식</td><td></td><td>1~20</td></tr></tbody></table></div>
+<p>이름을 처음 고쳐 저장할 때 세이브를 백업했는지 한 번 묻습니다.</p>
+<h3 id="고객-페이지"><a class="hash" href="#고객-페이지" aria-hidden="true">#</a>고객 페이지</h3>
+<figure class="shot"><a class="shot-zoom" href="img/agent-clients-light.webp" data-dark="img/agent-clients-dark.webp"><img class="for-light" src="img/agent-clients-light.webp" alt="고객 페이지. 고객 선수 목록과 외모가 있습니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/agent-clients-dark.webp" alt="고객 페이지. 고객 선수 목록과 외모가 있습니다." width="1320" height="840" loading="lazy"></a><figcaption>고객 페이지. 고객 선수 목록과 외모가 있습니다.</figcaption></figure>
+<ul><li><strong>고객 선수</strong>: 이 에이전트의 고객 선수 이름 목록입니다. 누르면 선수 탭이 열립니다. 고객을 더하거나 빼는 기능은 없습니다.</li><li><strong>외모</strong>: 언어 번호(보기만), 인종, 머리색, 머리 길이, 피부색(0~20)입니다. 선택지는 <a href="edit-player.html#외모">선수 외모</a>와 같습니다.</li></ul>
+<h2 id="심판"><a class="hash" href="#심판" aria-hidden="true">#</a>심판</h2>
+<figure class="shot"><a class="shot-zoom" href="img/official-attr-light.webp" data-dark="img/official-attr-dark.webp"><img class="for-light" src="img/official-attr-light.webp" alt="심판 탭의 능력치 페이지." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/official-attr-dark.webp" alt="심판 탭의 능력치 페이지." width="1320" height="840" loading="lazy"></a><figcaption>심판 탭의 능력치 페이지.</figcaption></figure>
+<h3 id="탭-머리-2"><a class="hash" href="#탭-머리-2" aria-hidden="true">#</a>탭 머리</h3>
+<ul><li>이름 아래에 고유번호, 국적, 거주 도시, 생년월일(나이)이 보입니다.</li><li>숫자 카드는 <strong>현재 능력</strong>과 <strong>잠재 능력</strong>(각 1~200)입니다. 눌러서 바로 숫자를 칩니다.</li></ul>
+<p>하위 페이지는 <strong>능력치</strong>와 <strong>정보</strong> 2개입니다.</p>
+<h3 id="능력치-페이지"><a class="hash" href="#능력치-페이지" aria-hidden="true">#</a>능력치 페이지</h3>
+<div class="table"><table><thead><tr><th>묶음</th><th>칸</th><th>하는 일</th><th>고칠 수 있는 범위</th></tr></thead><tbody><tr><td>심판 능력치</td><td>경기 흐름 유지, 규율, 부심 판정, 시간 판정, 압박감 대처, 주심 판정, 중요 경기</td><td></td><td>1~20</td></tr><tr><td>능력·평판</td><td>현재 능력, 잠재 능력</td><td></td><td>1~200</td></tr><tr><td>능력·평판</td><td>평판</td><td></td><td>0~10000</td></tr><tr><td>능력·평판</td><td>엘리트 심판진, 대륙 내 공식 경기 심판 자격</td><td>두 값은 대부분 함께 켜져 있습니다. 한국 심판 5명은 대륙 쪽만 켜져 있습니다</td><td>예, 아니요</td></tr><tr><td>능력·평판</td><td>유럽 카테고리</td><td>유럽 엘리트 그룹, 유럽 엘리트 육성 그룹, 유럽 1차·2차·3차 그룹, 없음, 정하지 않음. 번호가 커질수록 평균 능력이 낮습니다. 아시아·남미 심판에게도 같은 번호가 쓰입니다</td><td>선택지</td></tr><tr><td>성격</td><td>논쟁성, 스포츠맨십, 압박감 대처, 의리, 적응력, 참을성, 포부, 프로 의식</td><td></td><td>1~20</td></tr></tbody></table></div>
+<h3 id="정보-페이지"><a class="hash" href="#정보-페이지" aria-hidden="true">#</a>정보 페이지</h3>
+<figure class="shot"><a class="shot-zoom" href="img/official-info-light.webp" data-dark="img/official-info-dark.webp"><img class="for-light" src="img/official-info-light.webp" alt="심판 정보 페이지." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/official-info-dark.webp" alt="심판 정보 페이지." width="1320" height="840" loading="lazy"></a><figcaption>심판 정보 페이지.</figcaption></figure>
+<div class="table"><table><thead><tr><th>묶음</th><th>칸</th><th>하는 일</th><th>고칠 수 있는 범위</th></tr></thead><tbody><tr><td>기본 정보</td><td>고유번호, 성별</td><td></td><td>보기만</td></tr><tr><td>기본 정보</td><td>이름, 성, 통칭</td><td>눌러서 글자를 고칩니다. 이름과 성은 비울 수 없습니다</td><td>60자까지</td></tr><tr><td>기본 정보</td><td>국적, 출생 도시, 거주 도시</td><td>누르면 그 탭이 열립니다</td><td>보기만</td></tr><tr><td>기본 정보</td><td>생년월일</td><td></td><td>날짜</td></tr><tr><td>외모</td><td>언어 번호</td><td></td><td>보기만</td></tr><tr><td>외모</td><td>인종, 머리색, 머리 길이, 피부색</td><td>선택지는 선수와 같습니다</td><td>선택지, 피부색 0~20</td></tr></tbody></table></div>
+<p><strong>맡는 대회</strong> 목록에는 이 심판이 맡는 대회 이름이 보입니다. 대회 목록을 아직 읽지 않았으면 먼저 읽어 옵니다. 누르면 대회 탭이 열립니다. 대회를 더하거나 빼는 기능은 없습니다.</p>
+    </article>
+    <nav class="pn"><a class="prev" href="edit-place.html"><small>이전</small>도시·경기장</a><a class="next" href="edit-agreement.html"><small>다음</small>협정·언어</a></nav>
+  </main>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#에이전트">에이전트</a><a class="lv3" href="#탭-머리">탭 머리</a><a class="lv3" href="#에이전트-페이지">에이전트 페이지</a><a class="lv3" href="#고객-페이지">고객 페이지</a><a class="lv2" href="#심판">심판</a><a class="lv3" href="#탭-머리-2">탭 머리</a><a class="lv3" href="#능력치-페이지">능력치 페이지</a><a class="lv3" href="#정보-페이지">정보 페이지</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=cb3a699b31"></script>
+</body>
+</html>

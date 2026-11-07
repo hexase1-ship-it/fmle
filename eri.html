@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에리 · FMLE 사용법</title>
+<meta name="description" content="에리는 FMLE 안의 AI 수석 분석관입니다. 게임 값을 읽고 결론부터 숫자로 답하며, 하라고 하면 실행 카드를 띄웁니다. 내 Claude·ChatGPT·Gemini 구독이나 API 키로 연결합니다.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="eri">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1326 기준</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMLE 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html">목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html" class=is-on aria-current=page>에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">치트</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">도구</p>
+      <h1>에리</h1>
+      <p class="lead">에리는 FMLE 안의 AI 수석 분석관입니다. 게임 값을 읽고 결론부터 숫자로 답하며, 하라고 하면 실행 카드를 띄웁니다. 내 Claude·ChatGPT·Gemini 구독이나 API 키로 연결합니다.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/eri-page-light.webp" data-dark="img/eri-page-dark.webp"><img class="for-light" src="img/eri-page-light.webp" alt="왼쪽 도구의 &#x27;에리&#x27; 화면. 가운데가 대화, 오른쪽이 연결과 설정입니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/eri-page-dark.webp" alt="왼쪽 도구의 &#x27;에리&#x27; 화면. 가운데가 대화, 오른쪽이 연결과 설정입니다." width="1320" height="840" loading="lazy"></a><figcaption>왼쪽 도구의 '에리' 화면. 가운데가 대화, 오른쪽이 연결과 설정입니다.</figcaption></figure>
+<h2 id="에리는-어디에-있나요"><a class="hash" href="#에리는-어디에-있나요" aria-hidden="true">#</a>에리는 어디에 있나요</h2>
+<p>에리는 두 곳에서 같은 대화를 보여 줍니다.</p>
+<ul><li><strong>오른쪽 패널:</strong> 창 오른쪽 위의 에리 얼굴 단추를 누르거나 <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>J</kbd></span>를 누르면 어느 화면에서든 오른쪽에 패널이 열립니다. 다시 누르면 닫힙니다.</li><li><strong>에리 화면:</strong> 왼쪽 도구의 '에리'를 누르면 큰 대화 화면과 함께 연결·말투·펫·방침 메모 같은 설정이 오른쪽에 보입니다. 패널 머리의 '전체 화면과 설정' 단추로도 옵니다.</li></ul>
+<p>대화는 세이브마다 따로 남습니다. 게임에서 다른 세이브를 열면 그 세이브의 대화로 바뀝니다. 연결할 AI를 바꿔도 대화는 이어집니다.</p>
+<figure class="shot"><a class="shot-zoom" href="img/eri-panel-light.webp" data-dark="img/eri-panel-dark.webp"><img class="for-light" src="img/eri-panel-light.webp" alt="목록 화면에서 Ctrl+J로 연 에리 패널." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/eri-panel-dark.webp" alt="목록 화면에서 Ctrl+J로 연 에리 패널." width="1320" height="840" loading="lazy"></a><figcaption>목록 화면에서 <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>J</kbd></span>로 연 에리 패널.</figcaption></figure>
+<h2 id="처음-연결하기"><a class="hash" href="#처음-연결하기" aria-hidden="true">#</a>처음 연결하기</h2>
+<p>연결하기 전에는 에리가 꺼져 있습니다. FMLE에는 자체 서버가 없고, 질문은 내가 고른 AI 회사로 바로 갑니다.</p>
+<ol><li>왼쪽 도구에서 '에리'를 엽니다.</li><li>오른쪽 '연결' 카드의 안내를 읽고 <strong>알겠습니다</strong>를 누릅니다. 질문과 관련된 게임 데이터가 고른 AI 회사로 보내진다는 안내입니다.</li><li>아래 여섯 가지 중 하나를 고릅니다.</li><li>구독 연결이면 그 프로그램을 PC에 설치하고 그 프로그램에서 직접 로그인합니다. API 키 연결이면 'API 키' 칸에 키를 붙여 넣고 <strong>저장</strong>을 누릅니다.</li><li>필요하면 <strong>모델</strong>과 <strong>추론</strong>을 고릅니다.</li></ol>
+<div class="table"><table><thead><tr><th>연결</th><th>화면 아래 글</th><th>요금</th></tr></thead><tbody><tr><td>Claude 구독</td><td>Claude Code</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>ChatGPT 구독</td><td>Codex CLI</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Gemini 구독</td><td>Antigravity CLI · 도구 없음</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Anthropic API 키</td><td>Claude 모델</td><td>쓴 만큼 그 회사에 요금</td></tr><tr><td>OpenAI API 키</td><td>GPT 모델</td><td>쓴 만큼 그 회사에 요금</td></tr><tr><td>Google API 키</td><td>Gemini 모델</td><td>쓴 만큼 그 회사에 요금</td></tr></tbody></table></div>
+<h3 id="구독으로-연결"><a class="hash" href="#구독으로-연결" aria-hidden="true">#</a>구독으로 연결</h3>
+<p>구독 연결은 내 PC에 깔린 Claude Code, Codex CLI, Antigravity CLI를 FMLE가 질문마다 한 번씩 실행해서 답을 받습니다. 로그인은 그 프로그램에서 직접 하고, FMLE는 로그인 정보를 만지지 않습니다. 사용량은 그 구독의 한도에서 빠지고, 한도에 닿으면 그 회사의 메시지를 그대로 보여 줍니다.</p>
+<p>연결마다 오른쪽에 상태가 보입니다: '확인 중', '설치 안 됨', '로그인 안 됨', '로그인됨', '설치됨'. 프로그램에서 로그인한 뒤에는 <strong>로그인 상태 다시 확인</strong>을 누르세요.</p>
+<aside class="note is-warn"><b>주의</b><p><strong>Gemini 구독</strong>을 처음 고르면 확인 창이 뜹니다. Google 약관은 다른 프로그램이 Gemini 구독 로그인을 쓰는 것을 막고 있어서 계정이 정지된 사례가 있습니다. 위험을 알고 쓸 때만 <strong>알고 연결하기</strong>를 누르세요. Google API 키 연결에는 이 문제가 없습니다.</p></aside>
+<p>Gemini 구독 연결은 FMLE 도구에 붙지 못합니다. 그래서 지금 화면과 @로 부른 선수·구단의 자료를 FMLE가 미리 읽어 질문에 함께 넣어 보냅니다. 조건 검색, 순위표, 경기 일정, 실행 카드 같은 FMLE 도구는 쓰지 못하고, 사진도 보낼 수 없습니다.</p>
+<h3 id="api-키로-연결"><a class="hash" href="#api-키로-연결" aria-hidden="true">#</a>API 키로 연결</h3>
+<ul><li><strong>API 키:</strong> 키는 Windows 자격 증명 관리자에만 보관합니다. 화면에는 끝 4자리만 보입니다. <strong>지우기</strong>를 누르면 확인한 뒤 그 연결의 키를 지웁니다.</li><li><strong>월 한도 (달러):</strong> 처음 값은 10달러입니다. 이번 달 쓴 금액이 한도에 닿으면 질문을 보내지 않고, 답하는 도중에 닿으면 거기서 멈춥니다. 0이면 한도가 없습니다. 칸 아래에 이번 달 금액과 답의 수가 보입니다.</li><li><strong>모델:</strong> 모델 이름 옆에 입력·출력 100만 토큰당 달러 가격이 보입니다. 맨 위가 추천 모델입니다.</li></ul>
+<p>요금은 그 회사 계정에 바로 청구됩니다. 키가 틀리거나 크레딧이 없으면 그 회사가 알려 준 이유를 대화에 보여 줍니다.</p>
+<h3 id="모델과-추론"><a class="hash" href="#모델과-추론" aria-hidden="true">#</a>모델과 추론</h3>
+<ul><li><strong>모델:</strong> 구독 연결은 맨 위가 'Claude Code 설정 그대로'처럼 그 프로그램의 기본값입니다.</li><li><strong>추론:</strong> '모델 기본값', 낮음, 보통, 높음(모델에 따라 아주 높음, 최대까지)에서 고릅니다. 높을수록 깊게 생각하지만 답이 늦고, 구독 한도를 더 쓰거나 요금이 더 나옵니다. 추론 단계가 없는 모델은 이 칸이 보이지 않습니다.</li></ul>
+<p>패널 머리와 입력 칸 아래에 지금 연결·모델·추론과 이번 달 금액(구독이면 '추가 요금 없음')이 보입니다.</p>
+<h2 id="질문하기"><a class="hash" href="#질문하기" aria-hidden="true">#</a>질문하기</h2>
+<ol><li>아래 입력 칸에 질문을 씁니다.</li><li><span class="keys"><kbd>Enter</kbd></span>나 보내기 단추를 누릅니다. 줄을 바꾸려면 <span class="keys"><kbd>Shift</kbd><i>+</i><kbd>Enter</kbd></span>를 누릅니다.</li><li>에리가 답하는 동안 '선수 정보 읽는 중', '조건으로 거르는 중'처럼 하는 일이 보입니다. 멈추려면 네모 단추(멈추기)를 누릅니다.</li></ol>
+<p><strong>지금 보는 화면은 따로 말하지 않아도 됩니다.</strong> 입력 칸 아래 왼쪽에 보이는 화면 이름(예: '리오넬 메시 · 통계')이 질문과 함께 갑니다. 목록이면 검색어, 필터 수, 고른 줄 수도 함께 갑니다.</p>
+<p><strong>다른 선수나 구단은 @이름으로 부릅니다.</strong> @ 뒤에 두 글자 이상 쓰면 선수 6명, 구단 3곳까지 후보가 뜹니다. 화살표로 고르고 <span class="keys"><kbd>Enter</kbd></span>나 <span class="keys"><kbd>Tab</kbd></span>으로 넣습니다. <span class="keys"><kbd>Esc</kbd></span>는 후보를 닫습니다.</p>
+<h3 id="답-읽기"><a class="hash" href="#답-읽기" aria-hidden="true">#</a>답 읽기</h3>
+<ul><li>결론을 먼저, 근거는 숫자로 답합니다. '자세히'라고 하면 길게 답합니다.</li><li>답에 나온 선수·구단 이름은 링크입니다. 누르면 그 탭이 열립니다.</li><li><strong>숨은 값</strong> 표시는 게임이 감독에게 숨기는 값(현재 능력(CA), 잠재 능력(PA), 숨은 능력치, 성격)에 기댄 말이라는 뜻입니다.</li><li>세이브 값으로 확인할 수 없는 게임 규칙은 "FM 일반 지식으로는…"이라고 밝히고 답합니다.</li><li>답 아래 작은 줄에 에리가 읽은 것(예: '읽은 것: 선수 정보, 시즌 기록')과 쓴 토큰·금액이 보입니다. 구독이면 '추가 요금 없음'입니다.</li></ul>
+<p>구독 연결은 6분이 넘으면 '시간이 너무 오래 걸려 멈췄습니다'로 끝납니다. API 키 연결은 확인할 것이 너무 많으면 "질문을 좁혀 주세요"라는 말과 함께 거기까지 답합니다.</p>
+<h3 id="무엇을-물을-수-있나요"><a class="hash" href="#무엇을-물을-수-있나요" aria-hidden="true">#</a>무엇을 물을 수 있나요</h3>
+<p>에리는 FMLE와 게임에서 읽을 수 있는 것은 묻지 않고 읽습니다. 예를 들면 이런 것입니다.</p>
+<div class="table"><table><thead><tr><th>묻는 것</th><th>예</th></tr></thead><tbody><tr><td>선수·구단 정보</td><td>능력치, 계약, 시즌 기록, 경력, 선수단</td></tr><tr><td>조건으로 찾기·세기</td><td>"21세 이하에 PA 170 이상 선수", "이적 명단에 오른 ST 중 CA가 가장 높은 선수"</td></tr><tr><td>순위표와 예정 이적</td><td>리그 순위표, 게임이 합의한 예정 이적</td></tr><tr><td>경기 일정·결과</td><td>모든 대회의 지난 경기와 다가올 경기, 점수(연장·승부차기 포함), 경기장, 관중</td></tr><tr><td>기록</td><td>기록실의 리그 기록 순위, 구단 기록</td></tr><tr><td>전술</td><td>내 전술, 다른 구단이 쓴 포메이션·자주 쓰는 포메이션</td></tr><tr><td>선수의 관심</td><td>데려올 수 있는 선수만 보기</td></tr><tr><td>영입 추천</td><td>내 구단에 필요한 자리와 후보(<a href="#추천-카드-영입-후보">영입 추천 카드</a>)</td></tr><tr><td>FMLE 쓰는 법</td><td>칸 이름, 기능 위치</td></tr><tr><td>화면 열기</td><td>"보여 줘", "열어 줘": 탭, 조건을 건 목록, 영입 명단, 비교 화면을 바로 엽니다</td></tr></tbody></table></div>
+<p>아직 대진이 정해지지 않은 컵 경기, 게임이 보관 파일로 옮긴 오래된 시즌의 경기, 득점자·평점 같은 경기 안 기록은 읽지 못합니다.</p>
+<h2 id="사진-첨부"><a class="hash" href="#사진-첨부" aria-hidden="true">#</a>사진 첨부</h2>
+<p>게임 화면을 찍은 사진 등을 함께 보낼 수 있습니다.</p>
+<ul><li>입력 칸 아래 클립 단추(사진 첨부)를 누르거나, 입력 칸에 붙여 넣거나(<span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>V</kbd></span>), 입력 칸에 끌어다 놓습니다.</li><li>한 번에 4장까지 보냅니다. PNG, JPEG, WEBP, GIF를 받습니다. 큰 사진은 한 변 2,000픽셀 안으로 줄여 보냅니다.</li><li>보내기 전에는 사진의 ✕로 뺄 수 있습니다. 글 없이 사진만 보내면 "이 사진을 봐 주세요."로 묻습니다.</li><li>대화에는 작은 미리보기만 남고 사진 자체는 남기지 않습니다.</li><li>Gemini 구독 연결은 사진을 보낼 수 없습니다.</li></ul>
+<h2 id="알림"><a class="hash" href="#알림" aria-hidden="true">#</a>알림</h2>
+<p>대화 위에 내 구단에 대한 알림이 최대 6개 뜹니다. 알림은 AI가 아니라 FMLE가 직접 게임을 읽어 만드는 것이라 요금이 들지 않습니다.</p>
+<div class="table"><table><thead><tr><th>알림</th><th>뜨는 때</th></tr></thead><tbody><tr><td>주전 계약 n개월 남음 / 계약 n개월 남음</td><td>계약이 6개월 안에 끝나는 선수(주전 11명은 '주전'이 붙음)</td></tr><tr><td>이적 요청</td><td>이적을 요청한 선수</td></tr><tr><td>장기 부상</td><td>최대 28일 이상 빠지는 부상</td></tr><tr><td>불만</td><td>선수단 앞쪽 18명 가운데 불만이 있는 선수</td></tr></tbody></table></div>
+<p>알림을 누르면 그 내용으로 에리에게 질문합니다(예: "재계약할지, 보낼지, 대체자를 찾을지 판단해 주세요"). 이때부터는 보통 질문과 같이 연결을 씁니다.</p>
+<h2 id="실행-카드"><a class="hash" href="#실행-카드" aria-hidden="true">#</a>실행 카드</h2>
+<p>에리는 혼자 게임이나 FMLE를 바꾸지 않습니다. "바꿔 줘", "넣어 줘"처럼 하라고 할 때만 답 아래에 <strong>실행 카드</strong>를 띄웁니다. 카드의 <strong>실행</strong>을 누르기 전에는 아무것도 바뀌지 않습니다.</p>
+<div class="table"><table><thead><tr><th>카드 종류</th><th>하는 일</th><th>되돌리기</th></tr></thead><tbody><tr><td>값 편집</td><td>선수 등의 값을 FMLE 편집 화면의 저장과 같은 방식으로 씁니다</td><td>됨</td></tr><tr><td>게임 에디터</td><td>⚡ 메뉴의 이적·임대·계약 해지 같은 행동</td><td><strong>없음</strong></td></tr><tr><td>치트</td><td>치트 화면에 규칙을 넣거나 스위치를 켭니다</td><td>됨</td></tr><tr><td>영입 명단</td><td>FMLE 영입 명단에 넣고, 원하면 게임 폴더에 .fmf로 내보냅니다</td><td>됨(내보낸 파일은 남음)</td></tr><tr><td>프리셋</td><td>저장한 프리셋을 여러 명에게 적용합니다</td><td>됨(게임 에디터 행동이 든 프리셋은 그 부분만 없음)</td></tr><tr><td>고정</td><td>값을 지금 게임 값으로 고정하거나 풉니다</td><td>됨</td></tr><tr><td>즐겨찾기</td><td>즐겨찾기에 넣거나 뺍니다</td><td>됨</td></tr><tr><td>저장한 필터</td><td>조건을 저장한 필터로 남깁니다</td><td>됨</td></tr><tr><td>FMLE 설정</td><td>금액 통화, CA·PA 숨기기, 급여 표시를 바꿉니다</td><td>됨</td></tr><tr><td>CSV</td><td>조건을 건 목록을 다운로드 폴더에 CSV로 저장합니다</td><td><strong>없음</strong></td></tr><tr><td>묶음</td><td>위의 일 여러 개를 한 장에 담습니다</td><td>단계마다</td></tr></tbody></table></div>
+<p>에리의 연결, API 키, 월 한도는 카드로 바꿀 수 없습니다. 사용자만 바꿉니다.</p>
+<h3 id="실행과-확인"><a class="hash" href="#실행과-확인" aria-hidden="true">#</a>실행과 확인</h3>
+<ol><li>카드에서 무엇이 바뀌는지(대상 이름, 바뀌기 전 → 후)를 확인합니다.</li><li><strong>실행</strong>을 누릅니다. 필요 없으면 <strong>버리기</strong>를 누릅니다.</li></ol>
+<aside class="note is-now"><b>게임에 바로 씁니다</b><p>값 편집과 게임 에디터 카드는 실행을 누르면 바로 게임에 씁니다. 저장을 따로 누르지 않습니다.</p></aside>
+<p>카드 머리에 <strong>백업 확인</strong> 표시가 있으면 단추가 <strong>확인하고 실행</strong>이 되고, 누르면 '세이브를 백업해 두셨습니까?'를 먼저 묻습니다. 이적·임대·계약 해지, 10명(개)이 넘는 값 편집이나 프리셋, 게임 에디터 행동이 든 프리셋, 치트가 그렇습니다.</p>
+<aside class="note is-warn"><b>주의</b><p><strong>되돌릴 수 없음</strong> 표시가 붙은 카드(이적·임대·계약 해지)는 실행하면 되돌릴 수 없습니다. 게임이 날짜를 넘기는 중이 아닐 때 실행하세요.</p></aside>
+<p>실행한 뒤 카드에는 '실행했습니다', '일부만 실행했습니다', '실행하지 못했습니다'와 된 수(예: 3/4)가 보입니다. 못 쓴 대상 옆에는 이유가 붙습니다.</p>
+<div class="table"><table><thead><tr><th>이유</th><th>뜻</th></tr></thead><tbody><tr><td>그사이 값이 바뀌어서 쓰지 않았습니다</td><td>카드를 만든 뒤 게임 값이 달라졌습니다</td></tr><tr><td>게임에서 찾지 못했습니다</td><td>그 대상이 지금 게임에 없습니다</td></tr><tr><td>쓸 수 없는 값입니다</td><td>범위를 벗어난 값입니다</td></tr><tr><td>쓴 뒤 확인하지 못했습니다</td><td>쓴 뒤 다시 읽은 값이 다릅니다</td></tr><tr><td>게임이 꺼져 있습니다 / 게임에 쓸 권한이 없습니다</td><td>FM27 연결이나 권한을 확인하세요</td></tr></tbody></table></div>
+<p><strong>되돌리기</strong>를 누르면 실행한 것을 되돌립니다. 값 편집은 그사이 다시 바뀐 대상은 그대로 둡니다. 영입 명단 카드를 되돌려도 게임 폴더에 내보낸 .fmf 파일은 남습니다.</p>
+<h3 id="여러-단계를-한-장으로-묶음-카드"><a class="hash" href="#여러-단계를-한-장으로-묶음-카드" aria-hidden="true">#</a>여러 단계를 한 장으로(묶음 카드)</h3>
+<p>여러 일을 한꺼번에 시키면 단계에 번호가 붙은 묶음 카드 한 장이 됩니다.</p>
+<ul><li>되돌릴 수 없는 단계는 저절로 맨 뒤로 가고 '되돌리기 없음'이 붙습니다.</li><li><strong>실행</strong>을 누르면 단계를 차례로 하다가 실패한 단계에서 멈춥니다. 앞에서 된 단계는 그대로 둡니다. 단계마다 '됨', '멈춤', '되돌림'과 멈춘 이유가 보입니다.</li><li>멈춘 뒤에는 <strong>남은 단계 실행</strong>으로 멈춘 단계부터 다시 합니다.</li><li><strong>되돌리기</strong>는 된 단계를 뒤에서부터 되돌립니다. 되돌릴 수 없는 단계는 그대로 남습니다.</li></ul>
+<h3 id="에리-작업-기록"><a class="hash" href="#에리-작업-기록" aria-hidden="true">#</a>에리 작업 기록</h3>
+<p>에리 화면 오른쪽 '에리 작업 기록' 카드에 실행 카드로 한 일이 최근 30개까지 보입니다. 되돌릴 수 있는 일은 여기서도 <strong>되돌리기</strong>를 누를 수 있습니다.</p>
+<p>펫 에리의 대화창에서 누른 카드는 FMLE 창으로 넘어가서 그곳에서 확인을 묻고 실행합니다.</p>
+<h2 id="추천-카드-영입-후보"><a class="hash" href="#추천-카드-영입-후보" aria-hidden="true">#</a>추천 카드 (영입 후보)</h2>
+<p>"영입할 선수 추천해 줘"처럼 물으면 답 아래에 영입 후보 카드가 붙습니다. 내 구단이면 지금 전술의 자리를 기준으로 봅니다.</p>
+<ul><li>머리에 구단, 이적 예산, 주급 한도가 보입니다.</li><li>자리마다 지금 주전·후보 수, 조건을 통과한 선수 수, 가격을 몰라서 뺀 선수 수가 보입니다.</li></ul>
+<div class="table"><table><thead><tr><th>열</th><th>뜻</th></tr></thead><tbody><tr><td>선수</td><td>이름(누르면 탭), 구단, 나이, 이적 명단 여부</td></tr><tr><td>능력</td><td>그 자리에서의 FMLE 능력 점수와 티어. 마우스를 올리면 PA에 닿았을 때 점수도 보입니다</td></tr><tr><td>점수</td><td>0~100 영입 점수</td></tr><tr><td>이적료·주급</td><td>이적료는 선수의 이적 요구 금액, 주급은 지금 주급의 1.2배로 봅니다</td></tr><tr><td>올 가능성</td><td>FMLE가 추정한 5~95 지수입니다. 확률이 아니고 게임의 계산도 아닙니다</td></tr></tbody></table></div>
+<p>등록 규정은 따지지 않습니다. <strong>후보 n명 영입 명단에 넣기</strong>를 누르면 그 자리의 후보를 <a href="shortlist.html">영입 명단</a>에 넣습니다. 이름을 오른쪽 클릭하면 영입 명단, 즐겨찾기, ⚡ 이적 같은 메뉴가 바로 나옵니다.</p>
+<h2 id="구단-방침-메모"><a class="hash" href="#구단-방침-메모" aria-hidden="true">#</a>구단 방침 메모</h2>
+<p>에리가 추천하고 판단할 때 따르는 메모입니다(예: '22세 이하 위주로 영입'). 이 세이브에만 해당합니다.</p>
+<ul><li>에리 화면 오른쪽 '구단 방침 메모'에 쓰고 <strong>넣기</strong>를 누릅니다. <strong>고치기</strong>, <strong>지우기</strong>로 바꿉니다.</li><li>대화 중에 에리가 메모를 제안하면 대화 아래에 '에리가 제안한 방침 메모'가 뜹니다. <strong>메모에 넣기</strong> 또는 <strong>버리기</strong>를 누릅니다.</li><li>에리는 메모와 어긋나는 일을 시키면 카드를 만들기 전에 그 점을 말하도록 되어 있습니다.</li></ul>
+<h2 id="말투와-모습"><a class="hash" href="#말투와-모습" aria-hidden="true">#</a>말투와 모습</h2>
+<ul><li><strong>반말:</strong> 켜면 반말, 끄면 친근한 존댓말을 씁니다.</li><li><strong>아바타:</strong> <strong>이미지 고르기</strong>로 내 이미지로 바꿉니다. <strong>기본으로</strong>는 축구공 에리로 돌립니다.</li></ul>
+<h2 id="펫-에리"><a class="hash" href="#펫-에리" aria-hidden="true">#</a>펫 에리</h2>
+<p>에리를 FMLE 창 밖, 작업 표시줄 위에 띄웁니다. 에리 화면의 '펫 에리' 카드에서 <strong>바탕화면에 에리 두기</strong>를 켭니다.</p>
+<figure class="shot"><a class="shot-zoom" href="img/eri-settings-light.webp" data-dark="img/eri-settings-dark.webp"><img class="for-light" src="img/eri-settings-light.webp" alt="에리 화면 오른쪽을 내리면 나오는 말투와 모습, 펫 에리 카드. 그 아래에 구단 방침 메모가 이어집니다." width="340" height="623" loading="lazy"><img class="for-dark" src="img/eri-settings-dark.webp" alt="에리 화면 오른쪽을 내리면 나오는 말투와 모습, 펫 에리 카드. 그 아래에 구단 방침 메모가 이어집니다." width="340" height="623" loading="lazy"></a><figcaption>에리 화면 오른쪽을 내리면 나오는 말투와 모습, 펫 에리 카드. 그 아래에 구단 방침 메모가 이어집니다.</figcaption></figure>
+<div class="table"><table><thead><tr><th>설정</th><th>하는 일</th></tr></thead><tbody><tr><td>크기</td><td>작게(48px), 보통(72px), 크게(96px)</td></tr><tr><td>게임 위에도 띄우기</td><td>끄면 FM이 앞에 있는 동안 에리가 숨습니다</td></tr><tr><td>보는 화면에 반응</td><td>FMLE에서 연 선수·구단을 에리가 말풍선 한 줄로 알려 줍니다</td></tr><tr><td>고친 값에 반응</td><td>게임에 쓴 값이 전체 선수 중 어디쯤인지 말풍선으로 알려 줍니다</td></tr><tr><td>혼자 놀기</td><td>구르기, 공놀이, 졸기, 커서 쳐다보기</td></tr><tr><td>FMLE 창을 닫아도 남기</td><td>FMLE 창을 닫으면 알림 영역으로 내려가고 에리는 남습니다</td></tr></tbody></table></div>
+<ul><li><strong>누르면</strong> 작은 대화창이 열립니다. 패널과 같은 대화입니다. 대화창 머리의 핀 단추로 항상 위에 둘 수 있습니다.</li><li><strong>오른쪽 클릭</strong> 메뉴: 대화창 열기, FMLE 열기, 크기, 혼자 놀기, 잠깐 숨기기, FMLE 끝내기.</li><li><strong>끌어서</strong> 아무 곳에나 옮길 수 있고, 놓으면 작업 표시줄 위로 내려옵니다.</li><li>펫을 켠 동안 FMLE 목록의 선수·구단 줄이나 이름 링크를 에리에게 끌어다 놓으면 그 대상으로 질문을 시작합니다.</li><li>알림 말풍선의 <strong>물어보기</strong>, 보는 화면 말풍선의 <strong>에리에게 묻기</strong>로 바로 질문할 수 있습니다.</li><li>알림 영역 아이콘 메뉴: FMLE 열기, 에리와 대화, 에리 보이기, FMLE 끝내기.</li></ul>
+<p>말풍선은 FMLE가 직접 쓰는 말이라 요금이 들지 않습니다.</p>
+<h2 id="대화-지우기"><a class="hash" href="#대화-지우기" aria-hidden="true">#</a>대화 지우기</h2>
+<p>에리 화면 오른쪽 '대화' 카드에 이 세이브의 대화 수가 보입니다. <strong>대화 지우기</strong>를 누르면 확인한 뒤 이 세이브의 대화를 모두 지웁니다. 구단 방침 메모는 남습니다. 세이브마다 최근 메시지 400개까지 남깁니다.</p>
+<h2 id="개인정보-무엇이-어디로-가나요"><a class="hash" href="#개인정보-무엇이-어디로-가나요" aria-hidden="true">#</a>개인정보: 무엇이 어디로 가나요</h2>
+<p>FMLE에는 자체 서버가 없습니다. 질문할 때만, 고른 연결의 회사로 보냅니다.</p>
+<p><strong>질문마다 함께 가는 것</strong></p>
+<ul><li>질문 글과 첨부한 사진</li><li>게임 날짜, 세이브 이름, 내 구단 이름</li><li>지금 화면(탭 이름, 대상 이름, 페이지, 목록의 검색어·필터 수·고른 줄 수)</li><li>@로 부른 선수·구단, 화면 통화</li><li>구단 방침 메모</li><li>최근 대화 6개(하나에 280자까지, 실행 카드의 실행 여부 포함)</li><li>에리의 역할과 말투 안내</li></ul>
+<p><strong>답하는 동안 가는 것:</strong> 에리가 답하려고 읽은 게임 데이터(선수 값, 순위표, 경기 일정 등)가 그 회사의 모델로 넘어갑니다. Gemini 구독 연결은 화면의 대상과 @로 부른 대상의 자료를 FMLE가 미리 읽어 질문에 붙여 보냅니다.</p>
+<p><strong>받는 곳</strong></p>
+<div class="table"><table><thead><tr><th>연결</th><th>받는 곳</th></tr></thead><tbody><tr><td>Anthropic API 키</td><td>Anthropic(api.anthropic.com)</td></tr><tr><td>OpenAI API 키</td><td>OpenAI(api.openai.com)</td></tr><tr><td>Google API 키</td><td>Google(generativelanguage.googleapis.com)</td></tr><tr><td>Claude·ChatGPT·Gemini 구독</td><td>내 PC의 Claude Code·Codex CLI·Antigravity CLI가 내 로그인으로 그 회사에 보냅니다</td></tr></tbody></table></div>
+<p>구독 연결은 빈 작업 폴더에서 FMLE 도구만 쓸 수 있게 실행합니다. 그 프로그램의 다른 도구(명령 실행, 파일 읽기 등)는 끕니다. FMLE 도구는 이 PC 안에서만 열리고, FMLE가 실행마다 넘긴 열쇠가 있는 요청에만 답합니다.</p>
+<p><strong>보내지 않는 것:</strong> 위의 알림과 펫 에리의 말풍선은 FMLE가 직접 만들어서 아무 데도 보내지 않습니다.</p>
+<p><strong>이 PC에 남는 것</strong></p>
+<div class="table"><table><thead><tr><th>무엇</th><th>어디</th></tr></thead><tbody><tr><td>대화, 방침 메모, 에리 작업 기록</td><td>FMLE 데이터 폴더의 <code>eri</code> 폴더, 세이브마다 따로</td></tr><tr><td>이번 달 사용량(토큰, 금액)</td><td>FMLE 데이터 폴더의 <code>eri</code> 폴더</td></tr><tr><td>API 키</td><td>Windows 자격 증명 관리자</td></tr><tr><td>연결, 모델, 추론, 월 한도, 반말, 아바타</td><td>이 PC의 FMLE 저장소(모든 세이브에 같음)</td></tr></tbody></table></div>
+<p>첨부한 사진은 작은 미리보기만 대화에 남습니다.</p>
+    </article>
+    <nav class="pn"><a class="prev" href="ige.html"><small>이전</small>게임 에디터 (⚡)</a><a class="next" href="shortlist.html"><small>다음</small>영입 명단</a></nav>
+  </main>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#에리는-어디에-있나요">에리는 어디에 있나요</a><a class="lv2" href="#처음-연결하기">처음 연결하기</a><a class="lv3" href="#구독으로-연결">구독으로 연결</a><a class="lv3" href="#api-키로-연결">API 키로 연결</a><a class="lv3" href="#모델과-추론">모델과 추론</a><a class="lv2" href="#질문하기">질문하기</a><a class="lv3" href="#답-읽기">답 읽기</a><a class="lv3" href="#무엇을-물을-수-있나요">무엇을 물을 수 있나요</a><a class="lv2" href="#사진-첨부">사진 첨부</a><a class="lv2" href="#알림">알림</a><a class="lv2" href="#실행-카드">실행 카드</a><a class="lv3" href="#실행과-확인">실행과 확인</a><a class="lv3" href="#여러-단계를-한-장으로-묶음-카드">여러 단계를 한 장으로(묶음 카드)</a><a class="lv3" href="#에리-작업-기록">에리 작업 기록</a><a class="lv2" href="#추천-카드-영입-후보">추천 카드 (영입 후보)</a><a class="lv2" href="#구단-방침-메모">구단 방침 메모</a><a class="lv2" href="#말투와-모습">말투와 모습</a><a class="lv2" href="#펫-에리">펫 에리</a><a class="lv2" href="#대화-지우기">대화 지우기</a><a class="lv2" href="#개인정보-무엇이-어디로-가나요">개인정보: 무엇이 어디로 가나요</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=cb3a699b31"></script>
+</body>
+</html>
