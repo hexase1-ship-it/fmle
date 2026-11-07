@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>에리 · FMLE 사용법</title>
-<meta name="description" content="에리는 FMLE 안의 AI 수석 분석관입니다. 게임 값을 읽고 결론부터 숫자로 답하며, 하라고 하면 실행 카드를 띄웁니다. 내 Claude·ChatGPT·Gemini 구독이나 API 키로 연결합니다.">
+<meta name="description" content="에리는 FMLE 안의 AI 수석 분석관입니다. 게임 값을 읽고 결론부터 숫자로 답하며, 하라고 하면 실행 카드를 띄웁니다. 내 Claude·ChatGPT·Gemini·Grok 구독이나 API 키로 연결합니다.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
@@ -14,7 +14,7 @@
 <header class="top">
   <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
   <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
-  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1326 기준</span>
+  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1107.1551 기준</span>
   <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
   <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
   <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
@@ -25,7 +25,7 @@
     <article>
       <p class="crumb">도구</p>
       <h1>에리</h1>
-      <p class="lead">에리는 FMLE 안의 AI 수석 분석관입니다. 게임 값을 읽고 결론부터 숫자로 답하며, 하라고 하면 실행 카드를 띄웁니다. 내 Claude·ChatGPT·Gemini 구독이나 API 키로 연결합니다.</p>
+      <p class="lead">에리는 FMLE 안의 AI 수석 분석관입니다. 게임 값을 읽고 결론부터 숫자로 답하며, 하라고 하면 실행 카드를 띄웁니다. 내 Claude·ChatGPT·Gemini·Grok 구독이나 API 키로 연결합니다.</p>
       <figure class="shot"><a class="shot-zoom" href="img/eri-page-light.webp" data-dark="img/eri-page-dark.webp"><img class="for-light" src="img/eri-page-light.webp" alt="왼쪽 도구의 &#x27;에리&#x27; 화면. 가운데가 대화, 오른쪽이 연결과 설정입니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/eri-page-dark.webp" alt="왼쪽 도구의 &#x27;에리&#x27; 화면. 가운데가 대화, 오른쪽이 연결과 설정입니다." width="1320" height="840" loading="lazy"></a><figcaption>왼쪽 도구의 '에리' 화면. 가운데가 대화, 오른쪽이 연결과 설정입니다.</figcaption></figure>
 <h2 id="에리는-어디에-있나요"><a class="hash" href="#에리는-어디에-있나요" aria-hidden="true">#</a>에리는 어디에 있나요</h2>
 <p>에리는 두 곳에서 같은 대화를 보여 줍니다.</p>
@@ -34,13 +34,18 @@
 <figure class="shot"><a class="shot-zoom" href="img/eri-panel-light.webp" data-dark="img/eri-panel-dark.webp"><img class="for-light" src="img/eri-panel-light.webp" alt="목록 화면에서 Ctrl+J로 연 에리 패널." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/eri-panel-dark.webp" alt="목록 화면에서 Ctrl+J로 연 에리 패널." width="1320" height="840" loading="lazy"></a><figcaption>목록 화면에서 <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>J</kbd></span>로 연 에리 패널.</figcaption></figure>
 <h2 id="처음-연결하기"><a class="hash" href="#처음-연결하기" aria-hidden="true">#</a>처음 연결하기</h2>
 <p>연결하기 전에는 에리가 꺼져 있습니다. FMLE에는 자체 서버가 없고, 질문은 내가 고른 AI 회사로 바로 갑니다.</p>
-<ol><li>왼쪽 도구에서 '에리'를 엽니다.</li><li>오른쪽 '연결' 카드의 안내를 읽고 <strong>알겠습니다</strong>를 누릅니다. 질문과 관련된 게임 데이터가 고른 AI 회사로 보내진다는 안내입니다.</li><li>아래 여섯 가지 중 하나를 고릅니다.</li><li>구독 연결이면 그 프로그램을 PC에 설치하고 그 프로그램에서 직접 로그인합니다. API 키 연결이면 'API 키' 칸에 키를 붙여 넣고 <strong>저장</strong>을 누릅니다.</li><li>필요하면 <strong>모델</strong>과 <strong>추론</strong>을 고릅니다.</li></ol>
-<div class="table"><table><thead><tr><th>연결</th><th>화면 아래 글</th><th>요금</th></tr></thead><tbody><tr><td>Claude 구독</td><td>Claude Code</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>ChatGPT 구독</td><td>Codex CLI</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Gemini 구독</td><td>Antigravity CLI · 도구 없음</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Anthropic API 키</td><td>Claude 모델</td><td>쓴 만큼 그 회사에 요금</td></tr><tr><td>OpenAI API 키</td><td>GPT 모델</td><td>쓴 만큼 그 회사에 요금</td></tr><tr><td>Google API 키</td><td>Gemini 모델</td><td>쓴 만큼 그 회사에 요금</td></tr></tbody></table></div>
+<ol><li>왼쪽 도구에서 '에리'를 엽니다.</li><li>오른쪽 '연결' 카드의 안내를 읽고 <strong>알겠습니다</strong>를 누릅니다. 질문과 관련된 게임 데이터가 고른 AI 회사로 보내진다는 안내입니다.</li><li>아래 일곱 가지 중 하나를 고릅니다.</li><li>구독 연결이면 <strong>설치하고 연결</strong>(이미 깔려 있으면 <strong>로그인하기</strong>)을 누르고, 열린 창과 브라우저에서 구독 계정으로 로그인합니다(<a href="#구독으로-연결">구독으로 연결</a>). API 키 연결이면 'API 키' 칸에 키를 붙여 넣고 <strong>저장</strong>을 누릅니다.</li><li>필요하면 <strong>모델</strong>과 <strong>추론</strong>을 고릅니다.</li></ol>
+<div class="table"><table><thead><tr><th>연결</th><th>화면 아래 글</th><th>요금</th></tr></thead><tbody><tr><td>Claude 구독</td><td>Claude Code</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>ChatGPT 구독</td><td>Codex CLI</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Gemini 구독</td><td>Antigravity CLI · 도구 없음</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Grok 구독</td><td>Grok Build</td><td>추가 요금 없음(구독 한도에서 빠짐)</td></tr><tr><td>Anthropic API 키</td><td>Claude 모델</td><td>쓴 만큼 그 회사에 요금</td></tr><tr><td>OpenAI API 키</td><td>GPT 모델</td><td>쓴 만큼 그 회사에 요금</td></tr><tr><td>Google API 키</td><td>Gemini 모델</td><td>쓴 만큼 그 회사에 요금</td></tr></tbody></table></div>
 <h3 id="구독으로-연결"><a class="hash" href="#구독으로-연결" aria-hidden="true">#</a>구독으로 연결</h3>
-<p>구독 연결은 내 PC에 깔린 Claude Code, Codex CLI, Antigravity CLI를 FMLE가 질문마다 한 번씩 실행해서 답을 받습니다. 로그인은 그 프로그램에서 직접 하고, FMLE는 로그인 정보를 만지지 않습니다. 사용량은 그 구독의 한도에서 빠지고, 한도에 닿으면 그 회사의 메시지를 그대로 보여 줍니다.</p>
-<p>연결마다 오른쪽에 상태가 보입니다: '확인 중', '설치 안 됨', '로그인 안 됨', '로그인됨', '설치됨'. 프로그램에서 로그인한 뒤에는 <strong>로그인 상태 다시 확인</strong>을 누르세요.</p>
+<p>구독 연결은 내 PC에 깔린 Claude Code, Codex CLI, Antigravity CLI, Grok Build를 FMLE가 질문마다 한 번씩 실행해서 답을 받습니다. 로그인은 그 프로그램에서 직접 하고, FMLE는 로그인 정보를 만지지 않습니다. 사용량은 그 구독의 한도에서 빠지고, 한도에 닿으면 그 회사의 메시지를 그대로 보여 줍니다.</p>
+<aside class="note is-tip"><b>알아 두기</b><p>'Claude 구독'은 Claude 앱이 아니라 Claude Code라는 다른 프로그램을 씁니다. Claude 앱을 켜 두는 것만으로는 연결되지 않고, Pro 이상 구독이 필요합니다.</p></aside>
+<p>연결마다 오른쪽에 상태가 보입니다: '확인 중', '설치 안 됨', '로그인 안 됨', '로그인됨', '설치됨'.</p>
+<p><strong>버튼 하나로 설치와 로그인:</strong> 고른 구독이 '설치 안 됨'이면 <strong>설치하고 연결</strong>, '로그인 안 됨'이면 <strong>로그인하기</strong>가 보입니다.</p>
+<ol><li>단추를 누르면 검은 창(PowerShell)이 열립니다. 프로그램이 없으면 그 회사의 공식 설치 명령으로 먼저 설치합니다.</li><li>이어서 로그인이 시작되고 브라우저가 열립니다. 쓰시는 구독 계정으로 로그인하거나 확인을 누릅니다. Gemini(Antigravity)는 로그인 뒤 입력 칸이 보이면 <code>/quit</code>를 입력하거나 창을 닫습니다.</li><li>그동안 단추는 '로그인을 기다리는 중'으로 바뀝니다. FMLE가 몇 초마다 확인하다가 로그인되면 알아서 그 연결로 바꾸고 "연결했습니다"를 띄웁니다(15분까지 기다립니다).</li></ol>
+<p>창이 안 보이면 작업 표시줄을 확인하세요. 직접 설치하거나 로그인했다면 <strong>로그인 상태 다시 확인</strong>을 누르면 됩니다.</p>
 <aside class="note is-warn"><b>주의</b><p><strong>Gemini 구독</strong>을 처음 고르면 확인 창이 뜹니다. Google 약관은 다른 프로그램이 Gemini 구독 로그인을 쓰는 것을 막고 있어서 계정이 정지된 사례가 있습니다. 위험을 알고 쓸 때만 <strong>알고 연결하기</strong>를 누르세요. Google API 키 연결에는 이 문제가 없습니다.</p></aside>
 <p>Gemini 구독 연결은 FMLE 도구에 붙지 못합니다. 그래서 지금 화면과 @로 부른 선수·구단의 자료를 FMLE가 미리 읽어 질문에 함께 넣어 보냅니다. 조건 검색, 순위표, 경기 일정, 실행 카드 같은 FMLE 도구는 쓰지 못하고, 사진도 보낼 수 없습니다.</p>
+<p>Grok 구독 연결은 FMLE 도구를 씁니다. 사진은 보낼 수 없습니다. 이 연결로 도는 Grok Build는 FMLE 도구 말고는 PC의 파일이나 명령을 쓰지 못하게 막아서 실행합니다.</p>
 <h3 id="api-키로-연결"><a class="hash" href="#api-키로-연결" aria-hidden="true">#</a>API 키로 연결</h3>
 <ul><li><strong>API 키:</strong> 키는 Windows 자격 증명 관리자에만 보관합니다. 화면에는 끝 4자리만 보입니다. <strong>지우기</strong>를 누르면 확인한 뒤 그 연결의 키를 지웁니다.</li><li><strong>월 한도 (달러):</strong> 처음 값은 10달러입니다. 이번 달 쓴 금액이 한도에 닿으면 질문을 보내지 않고, 답하는 도중에 닿으면 거기서 멈춥니다. 0이면 한도가 없습니다. 칸 아래에 이번 달 금액과 답의 수가 보입니다.</li><li><strong>모델:</strong> 모델 이름 옆에 입력·출력 100만 토큰당 달러 가격이 보입니다. 맨 위가 추천 모델입니다.</li></ul>
 <p>요금은 그 회사 계정에 바로 청구됩니다. 키가 틀리거나 크레딧이 없으면 그 회사가 알려 준 이유를 대화에 보여 줍니다.</p>
@@ -60,7 +65,7 @@
 <p>아직 대진이 정해지지 않은 컵 경기, 게임이 보관 파일로 옮긴 오래된 시즌의 경기, 득점자·평점 같은 경기 안 기록은 읽지 못합니다.</p>
 <h2 id="사진-첨부"><a class="hash" href="#사진-첨부" aria-hidden="true">#</a>사진 첨부</h2>
 <p>게임 화면을 찍은 사진 등을 함께 보낼 수 있습니다.</p>
-<ul><li>입력 칸 아래 클립 단추(사진 첨부)를 누르거나, 입력 칸에 붙여 넣거나(<span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>V</kbd></span>), 입력 칸에 끌어다 놓습니다.</li><li>한 번에 4장까지 보냅니다. PNG, JPEG, WEBP, GIF를 받습니다. 큰 사진은 한 변 2,000픽셀 안으로 줄여 보냅니다.</li><li>보내기 전에는 사진의 ✕로 뺄 수 있습니다. 글 없이 사진만 보내면 "이 사진을 봐 주세요."로 묻습니다.</li><li>대화에는 작은 미리보기만 남고 사진 자체는 남기지 않습니다.</li><li>Gemini 구독 연결은 사진을 보낼 수 없습니다.</li></ul>
+<ul><li>입력 칸 아래 클립 단추(사진 첨부)를 누르거나, 입력 칸에 붙여 넣거나(<span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>V</kbd></span>), 입력 칸에 끌어다 놓습니다.</li><li>한 번에 4장까지 보냅니다. PNG, JPEG, WEBP, GIF를 받습니다. 큰 사진은 한 변 2,000픽셀 안으로 줄여 보냅니다.</li><li>보내기 전에는 사진의 ✕로 뺄 수 있습니다. 글 없이 사진만 보내면 "이 사진을 봐 주세요."로 묻습니다.</li><li>대화에는 작은 미리보기만 남고 사진 자체는 남기지 않습니다.</li><li>Gemini 구독과 Grok 구독 연결은 사진을 보낼 수 없습니다.</li></ul>
 <h2 id="알림"><a class="hash" href="#알림" aria-hidden="true">#</a>알림</h2>
 <p>대화 위에 내 구단에 대한 알림이 최대 6개 뜹니다. 알림은 AI가 아니라 FMLE가 직접 게임을 읽어 만드는 것이라 요금이 들지 않습니다.</p>
 <div class="table"><table><thead><tr><th>알림</th><th>뜨는 때</th></tr></thead><tbody><tr><td>주전 계약 n개월 남음 / 계약 n개월 남음</td><td>계약이 6개월 안에 끝나는 선수(주전 11명은 '주전'이 붙음)</td></tr><tr><td>이적 요청</td><td>이적을 요청한 선수</td></tr><tr><td>장기 부상</td><td>최대 28일 이상 빠지는 부상</td></tr><tr><td>불만</td><td>선수단 앞쪽 18명 가운데 불만이 있는 선수</td></tr></tbody></table></div>
@@ -107,7 +112,7 @@
 <ul><li>질문 글과 첨부한 사진</li><li>게임 날짜, 세이브 이름, 내 구단 이름</li><li>지금 화면(탭 이름, 대상 이름, 페이지, 목록의 검색어·필터 수·고른 줄 수)</li><li>@로 부른 선수·구단, 화면 통화</li><li>구단 방침 메모</li><li>최근 대화 6개(하나에 280자까지, 실행 카드의 실행 여부 포함)</li><li>에리의 역할과 말투 안내</li></ul>
 <p><strong>답하는 동안 가는 것:</strong> 에리가 답하려고 읽은 게임 데이터(선수 값, 순위표, 경기 일정 등)가 그 회사의 모델로 넘어갑니다. Gemini 구독 연결은 화면의 대상과 @로 부른 대상의 자료를 FMLE가 미리 읽어 질문에 붙여 보냅니다.</p>
 <p><strong>받는 곳</strong></p>
-<div class="table"><table><thead><tr><th>연결</th><th>받는 곳</th></tr></thead><tbody><tr><td>Anthropic API 키</td><td>Anthropic(api.anthropic.com)</td></tr><tr><td>OpenAI API 키</td><td>OpenAI(api.openai.com)</td></tr><tr><td>Google API 키</td><td>Google(generativelanguage.googleapis.com)</td></tr><tr><td>Claude·ChatGPT·Gemini 구독</td><td>내 PC의 Claude Code·Codex CLI·Antigravity CLI가 내 로그인으로 그 회사에 보냅니다</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th>연결</th><th>받는 곳</th></tr></thead><tbody><tr><td>Anthropic API 키</td><td>Anthropic(api.anthropic.com)</td></tr><tr><td>OpenAI API 키</td><td>OpenAI(api.openai.com)</td></tr><tr><td>Google API 키</td><td>Google(generativelanguage.googleapis.com)</td></tr><tr><td>Claude·ChatGPT·Gemini·Grok 구독</td><td>내 PC의 Claude Code·Codex CLI·Antigravity CLI·Grok Build가 내 로그인으로 그 회사에 보냅니다</td></tr></tbody></table></div>
 <p>구독 연결은 빈 작업 폴더에서 FMLE 도구만 쓸 수 있게 실행합니다. 그 프로그램의 다른 도구(명령 실행, 파일 읽기 등)는 끕니다. FMLE 도구는 이 PC 안에서만 열리고, FMLE가 실행마다 넘긴 열쇠가 있는 요청에만 답합니다.</p>
 <p><strong>보내지 않는 것:</strong> 위의 알림과 펫 에리의 말풍선은 FMLE가 직접 만들어서 아무 데도 보내지 않습니다.</p>
 <p><strong>이 PC에 남는 것</strong></p>
