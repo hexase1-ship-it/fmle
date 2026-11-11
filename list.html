@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>목록 쓰기 · FMLE 사용법</title>
+<title>목록 쓰기 · FMAX 사용법</title>
 <meta name="description" content="선수·구단 같은 목록에서 찾고, 거르고, 정렬하고, 열을 고르고, CSV로 저장하고, 여러 개를 골라 한 번에 다루는 방법입니다.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/wiki.css?v=cb3a699b31">
+<link rel="stylesheet" href="assets/wiki.css?v=91b4ce655b">
 <script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
 </head>
 <body data-page="list">
 <header class="top">
   <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
-  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMLE</b><span>사용법</span></a>
-  <span class="ver" title="이 위키가 설명하는 FMLE 판">26.1108.2247 기준</span>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMAX 판">26.1111.1738 기준</span>
   <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
   <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
-  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMLE 받기</a>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMAX 받기</a>
 </header>
 <div class="shell">
-  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMLE 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html" class=is-on aria-current=page>목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">치트</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMAX 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html" class=is-on aria-current=page>목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="cheat.html">편의 기능</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
   <main class="doc">
     <article>
       <p class="crumb">기본 사용법</p>
@@ -29,7 +29,7 @@
       <figure class="shot"><a class="shot-zoom" href="img/list-player-light.webp" data-dark="img/list-player-dark.webp"><img class="for-light" src="img/list-player-light.webp" alt="선수 목록. 위에 검색창과 단추들, 그 아래 열 이름, 맨 아래에 개수가 있습니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/list-player-dark.webp" alt="선수 목록. 위에 검색창과 단추들, 그 아래 열 이름, 맨 아래에 개수가 있습니다." width="1320" height="840" loading="lazy"></a><figcaption>선수 목록. 위에 검색창과 단추들, 그 아래 열 이름, 맨 아래에 개수가 있습니다.</figcaption></figure>
 <h2 id="목록-열기"><a class="hash" href="#목록-열기" aria-hidden="true">#</a>목록 열기</h2>
 <p>왼쪽 사이드바의 '게임 데이터'에서 종류를 누르면 그 목록이 나옵니다. 종류 이름 옆 숫자는 게임에서 읽은 개수입니다.</p>
-<p>FMLE는 게임에 연결되면 모든 목록을 처음 한 번 읽어 둡니다. 그동안 목록 위에 '선수 목록을 처음 한 번 읽는 중'이 뜹니다. 다 읽은 뒤에는 목록을 바꿔도 기다리지 않습니다. 나머지 값(목록에 아직 없는 열)은 뒤에서 이어서 읽어 두므로, 나중에 열을 더하거나 필터를 걸어도 금방 됩니다.</p>
+<p>FMAX는 게임에 연결되면 모든 목록을 처음 한 번 읽어 둡니다. 그동안 목록 위에 '선수 목록을 처음 한 번 읽는 중'이 뜹니다. 다 읽은 뒤에는 목록을 바꿔도 기다리지 않습니다. 나머지 값(목록에 아직 없는 열)은 뒤에서 이어서 읽어 두므로, 나중에 열을 더하거나 필터를 걸어도 금방 됩니다.</p>
 <p><a href="settings.html">설정</a>의 '게임에 연결되면 목록 바로 읽기'를 끄면, 목록을 열거나 다시 읽기를 누를 때 읽습니다.</p>
 <p>도구의 '영입 명단' 화면도 이 페이지와 같은 목록입니다. 명단에 든 사람만 보이고, 열·정렬·필터를 선수·스태프 목록과 따로 기억합니다. 명단을 고르고 만드는 막대는 <a href="shortlist.html">영입 명단</a>에 있습니다.</p>
 <aside class="note is-tip"><b>알아 두기</b><p>목록은 읽기만 합니다. 목록에서 값을 바꾸려면 줄을 눌러 편집 탭을 열거나, 여러 개를 골라 프리셋을 씁니다(<a href="#여러-개-고르기">여러 개 고르기</a>).</p></aside>
@@ -40,7 +40,7 @@
 <p>이름 말고도 종류마다 아래 값으로 찾습니다.</p>
 <div class="table"><table><thead><tr><th>목록</th><th>이름 말고 찾는 값</th></tr></thead><tbody><tr><td>선수</td><td>소속, 국적</td></tr><tr><td>스태프</td><td>소속 구단, 국적, 전체 이름</td></tr><tr><td>지원 스태프</td><td>소속 구단, 국적, 고유번호</td></tr><tr><td>구단</td><td>짧은 이름, 국가, 연고 도시</td></tr><tr><td>팀</td><td>구단, 리그</td></tr><tr><td>국가</td><td>짧은 이름, 3글자 코드</td></tr><tr><td>도시</td><td>국가, 지역</td></tr><tr><td>대회</td><td>짧은 이름, 약칭, 국가</td></tr><tr><td>경기장</td><td>대륙 대회용 이름, 도시, 소유 구단</td></tr><tr><td>에이전트</td><td>국적, 활동 국가</td></tr><tr><td>심판</td><td>국적, 거주 도시</td></tr><tr><td>협정</td><td>짧은 이름</td></tr></tbody></table></div>
 <p>고유번호를 적어도 찾습니다. 생성선수의 <code>r-12345</code>처럼 앞에 <code>r-</code>가 붙어 있어도 됩니다.</p>
-<p>검색은 필터와 함께 걸립니다. 검색어는 FMLE를 켜 둔 동안만 기억합니다.</p>
+<p>검색은 필터와 함께 걸립니다. 검색어는 FMAX를 켜 둔 동안만 기억합니다.</p>
 <h2 id="정렬"><a class="hash" href="#정렬" aria-hidden="true">#</a>정렬</h2>
 <p>열 이름을 누르면 그 열로 정렬합니다. 누를 때마다 바뀝니다.</p>
 <ol><li>첫 번째: 숫자 열은 큰 것부터, 글자 열은 가나다순.</li><li>두 번째: 반대 순서.</li><li>세 번째: 정렬을 풉니다.</li></ol>
@@ -49,8 +49,8 @@
 <figure class="shot"><a class="shot-zoom" href="img/list-columns-light.webp" data-dark="img/list-columns-dark.webp"><img class="for-light" src="img/list-columns-light.webp" alt="&#x27;열&#x27;을 누른 모습. 위아래 화살표로 순서를 바꾸고 ×로 뺍니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/list-columns-dark.webp" alt="&#x27;열&#x27;을 누른 모습. 위아래 화살표로 순서를 바꾸고 ×로 뺍니다." width="1320" height="840" loading="lazy"></a><figcaption>'열'을 누른 모습. 위아래 화살표로 순서를 바꾸고 ×로 뺍니다.</figcaption></figure>
 <p>'열'을 누르면 '보일 열' 창이 열립니다.</p>
 <ul><li><strong>위·아래 화살표</strong>: 그 열을 한 칸 앞이나 뒤로 옮깁니다.</li><li><strong>×</strong>: 그 열을 뺍니다. 이름 열은 뺄 수 없습니다(옮길 수는 있습니다).</li><li><strong>열 추가</strong>: 칸 목록이 열립니다. 위의 '칸 이름 검색'에 적어서 찾거나, 묶음(자주 쓰는 값, 능력치 묶음, 기본 정보 등)에서 골라 누르면 맨 뒤에 더해집니다. <span class="keys"><kbd>↑</kbd></span> <span class="keys"><kbd>↓</kbd></span>로 옮기고 <span class="keys"><kbd>Enter</kbd></span>로 고를 수도 있습니다.</li><li><strong>기본으로</strong>: 그 목록의 처음 열로 돌아갑니다.</li></ul>
-<p>'자주 쓰는 값' 묶음에는 FMLE가 계산하는 이름, 나이, 주 포지션, 추천 현재 능력(RCA), 능력치 효율 같은 값이 있습니다. 목록처럼 여러 줄로 된 값(부상 목록 등)은 열로 고를 수 없습니다.</p>
-<p>고른 열과 순서, 정렬, 필터는 목록마다 따로 이 PC에 기억되어 FMLE를 다시 켜도 그대로입니다. 어느 세이브를 열어도 같습니다. <a href="settings.html">설정</a>의 '설정 초기화'를 누르면 모든 목록의 열·정렬·필터가 처음으로 돌아갑니다.</p>
+<p>'자주 쓰는 값' 묶음에는 FMAX가 계산하는 이름, 나이, 주 포지션, 추천 현재 능력(RCA), 능력치 효율 같은 값이 있습니다. 목록처럼 여러 줄로 된 값(부상 목록 등)은 열로 고를 수 없습니다.</p>
+<p>고른 열과 순서, 정렬, 필터는 목록마다 따로 이 PC에 기억되어 FMAX를 다시 켜도 그대로입니다. 어느 세이브를 열어도 같습니다. <a href="settings.html">설정</a>의 '설정 초기화'를 누르면 모든 목록의 열·정렬·필터가 처음으로 돌아갑니다.</p>
 <h2 id="필터"><a class="hash" href="#필터" aria-hidden="true">#</a>필터</h2>
 <p>필터는 '현재 능력 150 이상', '소속 없음' 같은 조건으로 목록을 거릅니다. <strong>필터</strong> 단추(또는 <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>Shift</kbd><i>+</i><kbd>F</kbd></span>)를 누르면 필터 창이 따로 열립니다.</p>
 <figure class="shot"><a class="shot-zoom" href="img/filter-window-light.webp" data-dark="img/filter-window-dark.webp"><img class="for-light" src="img/filter-window-light.webp" alt="필터 창. 왼쪽은 저장한 필터, 가운데는 조건, 오른쪽 위는 맞는 수입니다." width="820" height="760" loading="lazy"><img class="for-dark" src="img/filter-window-dark.webp" alt="필터 창. 왼쪽은 저장한 필터, 가운데는 조건, 오른쪽 위는 맞는 수입니다." width="820" height="760" loading="lazy"></a><figcaption>필터 창. 왼쪽은 저장한 필터, 가운데는 조건, 오른쪽 위는 맞는 수입니다.</figcaption></figure>
@@ -73,14 +73,14 @@
 <h3 id="선수의-관심"><a class="hash" href="#선수의-관심" aria-hidden="true">#</a>선수의 관심</h3>
 <p>선수 목록의 필터 창에만 있습니다. 게임의 스카우트 검색처럼, 선수가 <strong>내 구단</strong>으로 오는 데 얼마나 관심이 있는지로 거릅니다.</p>
 <ul><li>왼쪽 칸: <strong>이적 혹은 임대</strong>, <strong>이적만</strong>, <strong>임대만</strong>, <strong>고려 대상 아님</strong>(조건 없음).</li><li>오른쪽 칸: <strong>관심 있음</strong>, <strong>설득 가능</strong>(이상), <strong>불확실</strong>(이상).</li></ul>
-<p>이 조건은 FMLE가 게임에 직접 묻습니다. 목록에 적용하면 다른 조건에 맞는 줄 가운데 목록 순서로 앞쪽 600명에게만 묻습니다. 묻는 동안 목록 위 조건 칩에 '게임에 묻는 중 120/600'이 나오고, 600명보다 많으면 '앞 600명만 물었습니다'가 붙습니다. 답은 그 게임 날짜 동안 기억합니다. 필터 창의 맞는 수에는 이 조건이 들어가지 않습니다.</p>
+<p>이 조건은 FMAX가 게임에 직접 묻습니다. 목록에 적용하면 다른 조건에 맞는 줄 가운데 목록 순서로 앞쪽 600명에게만 묻습니다. 묻는 동안 목록 위 조건 칩에 '게임에 묻는 중 120/600'이 나오고, 600명보다 많으면 '앞 600명만 물었습니다'가 붙습니다. 답은 그 게임 날짜 동안 기억합니다. 필터 창의 맞는 수에는 이 조건이 들어가지 않습니다.</p>
 <p>내 구단을 찾지 못하거나 게임이 다른 일을 하는 중이면 칩에 '게임에 묻지 못했습니다'와 이유가 나옵니다. 이유가 '게임이 다른 호출을 처리하는 중'이면 필터를 다시 적용해 주세요.</p>
 <h3 id="아래-단추"><a class="hash" href="#아래-단추" aria-hidden="true">#</a>아래 단추</h3>
 <div class="table"><table><thead><tr><th>단추</th><th>하는 일</th></tr></thead><tbody><tr><td>모두 지우기</td><td>필터 창의 조건을 모두 지웁니다. 목록에 적용해야 목록도 바뀝니다.</td></tr><tr><td>되돌리기</td><td>지금 목록에 적용된 조건으로 돌아갑니다.</td></tr><tr><td>목록에 적용</td><td>조건을 메인 창 목록에 겁니다. <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>Enter</kbd></span></td></tr></tbody></table></div>
 <p>적용하지 않은 조건이 있을 때 필터 창을 닫거나 다른 목록으로 바꾸면 조건이 사라진다고 한 번 묻습니다.</p>
 <p>메인 창에서 다른 목록으로 가면 필터 창도 그 목록의 필터로 바뀝니다. 필터 창에서 목록을 바꾸면 메인 창도 그 목록으로 바뀝니다.</p>
 <h3 id="필터-창의-저장한-필터"><a class="hash" href="#필터-창의-저장한-필터" aria-hidden="true">#</a>필터 창의 저장한 필터</h3>
-<ul><li><strong>현재 조건 저장</strong>: 조건에 이름을 붙여 저장합니다. 저장한 필터는 어느 세이브에서든 쓸 수 있습니다.</li><li>저장한 필터를 누르면 그 조건을 불러옵니다. 아직 목록에는 걸리지 않으니 '목록에 적용'을 누르세요.</li><li>연필 단추는 이름 바꾸기, 휴지통 단추는 삭제입니다. 삭제해도 목록에 적용된 조건은 남습니다.</li><li><strong>내보내기</strong>: 저장한 필터를 모두 JSON 파일로 다운로드 폴더에 저장합니다. 다른 사람에게 줄 수 있습니다.</li><li><strong>가져오기</strong>: FMLE에서 내보낸 필터 파일을 골라 더합니다. 이 게임 버전에서 쓸 수 없는 조건은 빼고 가져옵니다.</li></ul>
+<ul><li><strong>현재 조건 저장</strong>: 조건에 이름을 붙여 저장합니다. 저장한 필터는 어느 세이브에서든 쓸 수 있습니다.</li><li>저장한 필터를 누르면 그 조건을 불러옵니다. 아직 목록에는 걸리지 않으니 '목록에 적용'을 누르세요.</li><li>연필 단추는 이름 바꾸기, 휴지통 단추는 삭제입니다. 삭제해도 목록에 적용된 조건은 남습니다.</li><li><strong>내보내기</strong>: 저장한 필터를 모두 JSON 파일로 다운로드 폴더에 저장합니다. 다른 사람에게 줄 수 있습니다.</li><li><strong>가져오기</strong>: FMAX에서 내보낸 필터 파일을 골라 더합니다. 이 게임 버전에서 쓸 수 없는 조건은 빼고 가져옵니다.</li></ul>
 <h3 id="목록-위의-조건-칩"><a class="hash" href="#목록-위의-조건-칩" aria-hidden="true">#</a>목록 위의 조건 칩</h3>
 <figure class="shot"><a class="shot-zoom" href="img/list-chips-light.webp" data-dark="img/list-chips-dark.webp"><img class="for-light" src="img/list-chips-light.webp" alt="필터를 적용한 목록. 검색창 아래에 조건이 칩으로 나옵니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/list-chips-dark.webp" alt="필터를 적용한 목록. 검색창 아래에 조건이 칩으로 나옵니다." width="1320" height="840" loading="lazy"></a><figcaption>필터를 적용한 목록. 검색창 아래에 조건이 칩으로 나옵니다.</figcaption></figure>
 <p>필터를 적용하면 목록 위에 '모두 맞으면'(또는 '하나라도 맞으면')과 조건마다 칩이 나옵니다. 묶음은 '묶음 · 조건 2개 (하나라도)'처럼 보입니다.</p>
@@ -89,35 +89,35 @@
 <p>목록 위 <strong>저장한 필터</strong>를 누르면 이 목록 종류의 저장한 필터가 나옵니다. 하나를 누르면 바로 목록에 적용됩니다. 아래의 <strong>필터 창 열기</strong> 단추는 필터 창을 엽니다. 아직 저장한 필터가 없으면 그 안내가 나옵니다. 필터를 저장하고 지우는 일은 <a href="#필터-창의-저장한-필터">필터 창</a>에서 합니다.</p>
 <h2 id="csv로-저장"><a class="hash" href="#csv로-저장" aria-hidden="true">#</a>CSV로 저장</h2>
 <p><strong>CSV</strong>를 누르면 지금 보이는 목록을 CSV 파일로 다운로드 폴더에 저장합니다. 엑셀에서 열 수 있습니다.</p>
-<ul><li>검색, 필터, 정렬, 고른 열이 화면 그대로 들어갑니다.</li><li>줄을 골라 두었으면 고른 줄만 저장합니다.</li><li>첫 열에는 고유번호가 들어갑니다.</li><li>숫자는 엑셀에서 정렬할 수 있게 쉼표 없이 들어갑니다. 금액은 고른 통화의 정수로, 열 이름에 '(원)'처럼 통화가 붙습니다.</li><li>파일 이름은 <code>fmle-player-20261107-1438.csv</code>처럼 목록 이름과 저장한 날짜·시각입니다.</li></ul>
+<ul><li>검색, 필터, 정렬, 고른 열이 화면 그대로 들어갑니다.</li><li>줄을 골라 두었으면 고른 줄만 저장합니다.</li><li>첫 열에는 고유번호가 들어갑니다.</li><li>숫자는 엑셀에서 정렬할 수 있게 쉼표 없이 들어갑니다. 금액은 고른 통화의 정수로, 열 이름에 '(원)'처럼 통화가 붙습니다.</li><li>파일 이름은 <code>fmax-player-20261107-1438.csv</code>처럼 목록 이름과 저장한 날짜·시각입니다.</li></ul>
 <p>저장하면 알림에 <strong>폴더에서 보기</strong> 단추가 붙습니다. 목록을 아직 게임에서 읽지 않았으면 '아직 CSV로 저장할 수 없습니다'라고 알립니다.</p>
 <h2 id="여러-개-고르기"><a class="hash" href="#여러-개-고르기" aria-hidden="true">#</a>여러 개 고르기</h2>
 <figure class="shot"><a class="shot-zoom" href="img/list-multi-light.webp" data-dark="img/list-multi-dark.webp"><img class="for-light" src="img/list-multi-light.webp" alt="세 명을 고른 모습. 아래쪽에 고른 사람에게 쓸 단추가 생겼습니다." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/list-multi-dark.webp" alt="세 명을 고른 모습. 아래쪽에 고른 사람에게 쓸 단추가 생겼습니다." width="1320" height="840" loading="lazy"></a><figcaption>세 명을 고른 모습. 아래쪽에 고른 사람에게 쓸 단추가 생겼습니다.</figcaption></figure>
 <p>줄 맨 왼쪽의 체크 칸으로 여러 줄을 고릅니다.</p>
 <div class="table"><table><thead><tr><th>하는 방법</th><th>결과</th></tr></thead><tbody><tr><td>체크 칸 누르기</td><td>그 줄을 고르거나 풉니다.</td></tr><tr><td><span class="keys"><kbd>Ctrl</kbd></span>을 누른 채 줄 누르기</td><td>탭을 열지 않고 그 줄을 고르거나 풉니다.</td></tr><tr><td><span class="keys"><kbd>Shift</kbd></span>를 누른 채 줄이나 체크 칸 누르기</td><td>마지막으로 누른 줄부터 여기까지 모두 고릅니다.</td></tr><tr><td>열 이름 줄 맨 왼쪽 칸</td><td>지금 검색·필터로 보이는 줄을 모두 고릅니다. 모두 골라져 있으면 모두 풉니다.</td></tr><tr><td><span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>A</kbd></span></td><td>위와 같습니다(검색창에 글을 적는 중이 아닐 때).</td></tr><tr><td><span class="keys"><kbd>Space</kbd></span></td><td>키보드로 옮겨 다니는 중인 줄을 고르거나 풉니다.</td></tr><tr><td><span class="keys"><kbd>Esc</kbd></span></td><td>고른 것을 모두 풉니다.</td></tr></tbody></table></div>
 <p>골라 두면 아래쪽 막대에 '· 3명 선택'이 붙고 오른쪽에 단추가 생깁니다.</p>
-<div class="table"><table><thead><tr><th>단추</th><th>하는 일</th><th>게임에 쓰는 때</th></tr></thead><tbody><tr><td>명단에서 빼기</td><td>영입 명단 화면에서만 보입니다. 지금 명단에서 고른 사람을 뺍니다.</td><td>게임에 쓰지 않습니다.</td></tr><tr><td>영입 명단에 넣기</td><td>선수·스태프 목록에서만 보입니다. 넣을 명단을 고르거나 '새 명단을 만들어 넣기'를 누릅니다. <a href="shortlist.html">영입 명단</a></td><td>게임에 쓰지 않습니다.</td></tr><tr><td>선택한 3명에 프리셋</td><td>프리셋을 골라 고른 줄 모두에 적용합니다. <a href="preset.html">프리셋</a></td><td>확인하면 바로 씁니다.</td></tr><tr><td>선택 고정</td><td>고정 화면에서 고른 값을 지금 게임 값으로 모두 고정합니다. 고정 화면에서 값을 골라 두었을 때만 보입니다. <a href="lock.html">고정</a></td><td>고정은 FMLE가 켜져 있는 동안 지킵니다.</td></tr><tr><td>탭으로 열기</td><td>고른 줄을 모두 탭으로 엽니다. 20개 이하일 때만 보입니다.</td><td>—</td></tr><tr><td>선택 해제</td><td>고른 것을 모두 풉니다.</td><td>—</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th>단추</th><th>하는 일</th><th>게임에 쓰는 때</th></tr></thead><tbody><tr><td>명단에서 빼기</td><td>영입 명단 화면에서만 보입니다. 지금 명단에서 고른 사람을 뺍니다.</td><td>게임에 쓰지 않습니다.</td></tr><tr><td>영입 명단에 넣기</td><td>선수·스태프 목록에서만 보입니다. 넣을 명단을 고르거나 '새 명단을 만들어 넣기'를 누릅니다. <a href="shortlist.html">영입 명단</a></td><td>게임에 쓰지 않습니다.</td></tr><tr><td>선택한 3명에 프리셋</td><td>프리셋을 골라 고른 줄 모두에 적용합니다. <a href="preset.html">프리셋</a></td><td>확인하면 바로 씁니다.</td></tr><tr><td>선택 고정</td><td>고정 화면에서 고른 값을 지금 게임 값으로 모두 고정합니다. 고정 화면에서 값을 골라 두었을 때만 보입니다. <a href="lock.html">고정</a></td><td>고정은 FMAX가 켜져 있는 동안 지킵니다.</td></tr><tr><td>탭으로 열기</td><td>고른 줄을 모두 탭으로 엽니다. 20개 이하일 때만 보입니다.</td><td>—</td></tr><tr><td>선택 해제</td><td>고른 것을 모두 풉니다.</td><td>—</td></tr></tbody></table></div>
 <p>아무것도 고르지 않았어도 검색이나 필터로 줄을 줄였으면 <strong>결과 120명에 프리셋</strong> 단추가 나옵니다. 걸러진 줄 모두에 프리셋을 적용합니다.</p>
 <aside class="note is-now"><b>게임에 바로 씁니다</b><p>목록에서 쓰는 프리셋은 확인 창에서 '적용'을 누르면 게임에 바로 들어갑니다. 값을 바꾼 것은 알림의 '되돌리기'로 한 번 되돌릴 수 있습니다(<a href="saving.html#바로-쓰는-것">값이 게임에 들어가는 때</a>).</p></aside>
 <p>고른 줄에서 오른쪽 클릭하면 고른 것 모두에 쓸 수 있는 메뉴가 나옵니다(<a href="tabs.html#오른쪽-클릭-메뉴">탭과 빠른 열기·오른쪽 클릭 메뉴</a>).</p>
-<p>고른 것은 목록마다 따로, FMLE를 켜 둔 동안만 기억합니다.</p>
+<p>고른 것은 목록마다 따로, FMAX를 켜 둔 동안만 기억합니다.</p>
 <h2 id="줄-누르기와-키보드"><a class="hash" href="#줄-누르기와-키보드" aria-hidden="true">#</a>줄 누르기와 키보드</h2>
 <ul><li><strong>줄을 누르면</strong> 그 대상의 편집 탭이 열립니다. 이미 열려 있으면 그 탭으로 갑니다.</li><li><strong>소속·국적처럼 다른 대상의 이름</strong>은 누르면 그 대상(구단, 국가 등)의 탭이 열립니다. <span class="keys"><kbd>Shift</kbd></span>나 <span class="keys"><kbd>Ctrl</kbd></span>을 누른 채 누르면 탭을 열지 않고 줄을 고릅니다.</li><li>목록을 한 번 누른 뒤에는 키보드로 다룰 수 있습니다.</li></ul>
 <div class="table"><table><thead><tr><th>키</th><th>하는 일</th></tr></thead><tbody><tr><td><span class="keys"><kbd>↑</kbd></span> <span class="keys"><kbd>↓</kbd></span></td><td>한 줄씩 옮깁니다.</td></tr><tr><td><span class="keys"><kbd>PageUp</kbd></span> <span class="keys"><kbd>PageDown</kbd></span></td><td>한 화면씩 옮깁니다.</td></tr><tr><td><span class="keys"><kbd>Home</kbd></span> <span class="keys"><kbd>End</kbd></span></td><td>맨 위, 맨 아래로 갑니다.</td></tr><tr><td><span class="keys"><kbd>Enter</kbd></span></td><td>그 줄의 탭을 엽니다.</td></tr><tr><td><span class="keys"><kbd>Space</kbd></span></td><td>그 줄을 고르거나 풉니다.</td></tr><tr><td><span class="keys"><kbd>Esc</kbd></span></td><td>고른 것을 모두 풉니다.</td></tr><tr><td>메뉴 키 또는 <span class="keys"><kbd>Shift</kbd><i>+</i><kbd>F10</kbd></span></td><td>그 줄의 오른쪽 클릭 메뉴를 엽니다.</td></tr></tbody></table></div>
 <h2 id="이름-옆-표시"><a class="hash" href="#이름-옆-표시" aria-hidden="true">#</a>이름 옆 표시</h2>
 <div class="table"><table><thead><tr><th>표시</th><th>뜻</th></tr></thead><tbody><tr><td>얼굴·로고</td><td>그래픽 팩에 그 사람의 얼굴이나 구단·국가·대회 로고가 있으면 보입니다. 없으면 이름 머리글자입니다. <a href="graphics.html">그래픽 팩</a></td></tr><tr><td>보라색 점</td><td>그 대상의 탭이 열려 있습니다.</td></tr><tr><td>별</td><td>즐겨찾기에 넣은 대상입니다.</td></tr><tr><td>자물쇠</td><td>고정한 값이 있습니다. <a href="lock.html">고정</a></td></tr><tr><td>책갈피</td><td>영입 명단에 들어 있습니다. 마우스를 올리면 어느 명단인지 나옵니다(영입 명단 화면 안에서는 나오지 않습니다).</td></tr><tr><td>다른 색 이름</td><td>여자 구단과 그 팀입니다.</td></tr></tbody></table></div>
 <h2 id="다시-읽기"><a class="hash" href="#다시-읽기" aria-hidden="true">#</a>다시 읽기</h2>
-<p>목록 위 둥근 화살표(게임에서 다시 읽기)를 누르면 모든 종류의 목록을 게임에서 처음부터 다시 읽고, 열린 탭도 모두 다시 읽습니다. 게임에서 날짜를 진행했거나 게임 안에서 값을 바꾼 뒤 FMLE 목록을 맞출 때 씁니다. 연결 상태 창의 '게임에서 다시 읽기'와 같습니다.</p>
-<p>게임에서 세이브를 다시 불러오거나 다른 세이브를 열면 FMLE가 알아서 다시 읽습니다.</p>
+<p>목록 위 둥근 화살표(게임에서 다시 읽기)를 누르면 모든 종류의 목록을 게임에서 처음부터 다시 읽고, 열린 탭도 모두 다시 읽습니다. 게임에서 날짜를 진행했거나 게임 안에서 값을 바꾼 뒤 FMAX 목록을 맞출 때 씁니다. 연결 상태 창의 '게임에서 다시 읽기'와 같습니다.</p>
+<p>게임에서 세이브를 다시 불러오거나 다른 세이브를 열면 FMAX가 알아서 다시 읽습니다.</p>
 <p>아래쪽 막대의 '14:38에 읽음'은 그 목록을 마지막으로 읽은 시각입니다. 게임은 계속 바뀌므로, 오래된 목록의 값은 지금 게임과 다를 수 있습니다. 편집 탭은 새로 열 때마다 그 대상을 게임에서 새로 읽습니다.</p>
 <h2 id="목록이-비어-있을-때"><a class="hash" href="#목록이-비어-있을-때" aria-hidden="true">#</a>목록이 비어 있을 때</h2>
-<div class="table"><table><thead><tr><th>안내</th><th>할 일</th></tr></thead><tbody><tr><td>조건에 맞는 항목이 없습니다</td><td>검색어나 필터를 바꿔 보세요.</td></tr><tr><td>세이브를 아직 불러오지 않았습니다</td><td>게임에서 세이브를 불러오면 자동으로 읽습니다.</td></tr><tr><td>FM27이 꺼져 있습니다 등</td><td>연결 문제입니다. <strong>다시 확인</strong> 단추가 나옵니다. <a href="screen.html#연결-표시">화면 둘러보기</a></td></tr><tr><td>목록을 읽지 못했습니다</td><td><strong>다시 읽기</strong> 단추를 누르세요.</td></tr><tr><td>게임에 연결하지 않은 화면입니다</td><td>FMLE 앱이 아니라 브라우저로 연 화면입니다.</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th>안내</th><th>할 일</th></tr></thead><tbody><tr><td>조건에 맞는 항목이 없습니다</td><td>검색어나 필터를 바꿔 보세요.</td></tr><tr><td>세이브를 아직 불러오지 않았습니다</td><td>게임에서 세이브를 불러오면 자동으로 읽습니다.</td></tr><tr><td>FM27이 꺼져 있습니다 등</td><td>연결 문제입니다. <strong>다시 확인</strong> 단추가 나옵니다. <a href="screen.html#연결-표시">화면 둘러보기</a></td></tr><tr><td>목록을 읽지 못했습니다</td><td><strong>다시 읽기</strong> 단추를 누르세요.</td></tr><tr><td>게임에 연결하지 않은 화면입니다</td><td>FMAX 앱이 아니라 브라우저로 연 화면입니다.</td></tr></tbody></table></div>
     </article>
     <nav class="pn"><a class="prev" href="screen.html"><small>이전</small>화면 둘러보기</a><a class="next" href="tabs.html"><small>다음</small>탭과 빠른 열기·오른쪽 클릭 메뉴</a></nav>
   </main>
   <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#목록-열기">목록 열기</a><a class="lv2" href="#목록-위-단추">목록 위 단추</a><a class="lv2" href="#검색">검색</a><a class="lv2" href="#정렬">정렬</a><a class="lv2" href="#열-고르기">열 고르기</a><a class="lv2" href="#필터">필터</a><a class="lv3" href="#필터-창의-구성">필터 창의 구성</a><a class="lv3" href="#조건-만들기">조건 만들기</a><a class="lv3" href="#모두-맞으면-하나라도-맞으면-묶음">모두 맞으면 · 하나라도 맞으면 · 묶음</a><a class="lv3" href="#빠른-조건">빠른 조건</a><a class="lv3" href="#선수의-관심">선수의 관심</a><a class="lv3" href="#아래-단추">아래 단추</a><a class="lv3" href="#필터-창의-저장한-필터">필터 창의 저장한 필터</a><a class="lv3" href="#목록-위의-조건-칩">목록 위의 조건 칩</a><a class="lv2" href="#저장한-필터">저장한 필터</a><a class="lv2" href="#csv로-저장">CSV로 저장</a><a class="lv2" href="#여러-개-고르기">여러 개 고르기</a><a class="lv2" href="#줄-누르기와-키보드">줄 누르기와 키보드</a><a class="lv2" href="#이름-옆-표시">이름 옆 표시</a><a class="lv2" href="#다시-읽기">다시 읽기</a><a class="lv2" href="#목록이-비어-있을-때">목록이 비어 있을 때</a></aside>
 </div>
 <div class="zoom" id="zoom" hidden><img alt=""></div>
-<script src="assets/wiki.js?v=cb3a699b31"></script>
+<script src="assets/wiki.js?v=91b4ce655b"></script>
 </body>
 </html>

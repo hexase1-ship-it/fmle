@@ -1,4 +1,4 @@
-// FMLE user wiki (wiki/build.py): theme, search over search.json, the narrow-screen menu, this page's headings and
+// FMAX user wiki (wiki/build.py): theme, search over search.json, the narrow-screen menu, this page's headings and
 // screenshot zoom. No libraries.
 (() => {
   const $ = (s) => document.querySelector(s);
