@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using FMAX</title>
+<meta name="description" content="FMAX lets you edit player, club, and competition values live while FM27 is running. This wiki covers everything from initial setup to every screen in the app.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=51d5403995">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="index">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1112.2239</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="lang" href="../index.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">Get FMAX</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="Contents"><div class="nav-sec"><b>Getting started</b><a href="index.html" class=is-on aria-current=page>Using FMAX</a><a href="start.html">Getting started</a><a href="install.html">Installing, updating and uninstalling</a></div><div class="nav-sec"><b>Basics</b><a href="screen.html">Screen overview</a><a href="list.html">Using lists</a><a href="tabs.html">Tabs, quick open, and right-click menu</a><a href="saving.html">When changes take effect in the game</a><a href="saves.html">What FMAX remembers per save</a><a href="keys.html">Keyboard shortcuts</a></div><div class="nav-sec"><b>Edit tabs</b><a href="edit-player.html">Player</a><a href="edit-staff.html">Staff &amp; support staff</a><a href="edit-club.html">Club</a><a href="edit-team.html">Team</a><a href="edit-nation.html">Nation</a><a href="edit-comp.html">Competition</a><a href="edit-place.html">City &amp; stadium</a><a href="edit-people.html">Agent &amp; official</a><a href="edit-agreement.html">Agreement &amp; language</a></div><div class="nav-sec"><b>Game editor</b><a href="ige.html">Game editor (⚡)</a></div><div class="nav-sec"><b>Tools</b><a href="eri.html">Eri</a><a href="shortlist.html">Shortlist</a><a href="preset.html">Presets</a><a href="lock.html">Locks</a><a href="compare.html">Compare</a><a href="stats.html">Stats, Player Cards &amp; Record room</a><a href="tactics.html">Tactics</a><a href="arena.html">Tactic Arena</a><a href="lab.html">Official test and Tactic Lab</a><a href="cheat.html">Live tweaks</a><a href="localize.html">Korean names</a><a href="gender.html">Changing gender</a><a href="appearance.html">Match appearance</a><a href="graphics.html">Graphics packs</a><a href="settings.html">Settings and update notes</a></div><div class="nav-sec"><b>Help</b><a href="faq.html">Frequently asked questions</a><a href="trouble.html">Troubleshooting</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">Getting started</p>
+      <h1>Using FMAX</h1>
+      <p class="lead">FMAX lets you edit player, club, and competition values live while FM27 is running. This wiki covers everything from initial setup to every screen in the app.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/list-player-light.webp" data-dark="img/list-player-dark.webp"><img class="for-light" src="img/list-player-light.webp" alt="The FMAX home screen. Pick a category on the left, then click a name in the list to open an edit tab." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/list-player-dark.webp" alt="The FMAX home screen. Pick a category on the left, then click a name in the list to open an edit tab." width="1320" height="840" loading="lazy"></a><figcaption>The FMAX home screen. Pick a category on the left, then click a name in the list to open an edit tab.</figcaption></figure>
+<aside class="note is-tip"><b>Good to know</b><p>FMAX was previously called FMLE. If you were already using FMLE, just update—it switches over to FMAX automatically and keeps all your settings and history.</p></aside>
+<h2 id="new-to-fmax"><a class="hash" href="#new-to-fmax" aria-hidden="true">#</a>New to FMAX?</h2>
+<p>If this is your first time using FMAX, follow the two pages below in order. You'll go from installing the app to saving your first edit in about 10 minutes.</p>
+<div class="cards"><a href="start.html"><b>Getting started</b><small>Install FMAX, connect to FM27, and save your first edit.</small></a><a href="saving.html"><b>When edits take effect</b><small>What applies right away, what needs saving, and what stays in your save file.</small></a></div>
+<h2 id="what-you-can-do"><a class="hash" href="#what-you-can-do" aria-hidden="true">#</a>What you can do</h2>
+<div class="cards"><a href="edit-player.html"><b>Editing players</b><small>Edit almost every detail of a player—attributes, positions, contracts, relationships, and languages.</small></a><a href="ige.html"><b>Game editor (⚡)</b><small>Complete transfers and loans, clear injuries, remove unhappiness, terminate contracts, and set homegrown status immediately without advancing a day.</small></a><a href="cheat.html"><b>Live tweaks</b><small>Rules that keep working while switched on—growth and aging rules, Prevent retirement, preventing manager sackings, and more.</small></a><a href="eri.html"><b>Eri</b><small>Ask your AI analyst questions and get transfer targets and to-dos as cards.</small></a><a href="shortlist.html"><b>Shortlist</b><small>Gather players and staff into lists, and import or export them as game shortlist files.</small></a><a href="arena.html"><b>Tactic Arena</b><small>Run hundreds of simulated matches inside the game with your tactic files and rank them by points to see which is strongest.</small></a><a href="lab.html"><b>Official tests & Tactic Lab</b><small>Measure your tactic under identical conditions in an Official test and upload the results to the Tactic Lab.</small></a><a href="faq.html"><b>FAQ</b><small>Administrator permissions, using FMAX alongside other mods, how long edits stick, and more.</small></a></div>
+    </article>
+    <nav class="pn"><span></span><a class="next" href="start.html"><small>Next</small>Getting started</a></nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><b>On this page</b><a class="lv2" href="#new-to-fmax">New to FMAX?</a><a class="lv2" href="#what-you-can-do">What you can do</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=51d5403995"></script>
+</body>
+</html>

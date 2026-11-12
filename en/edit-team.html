@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team · FMAX Guide</title>
+<meta name="description" content="View and edit an individual squad within a club—such as the First Team, Reserves, B Team, U21s, or U18s. Change team reputation, and use the ⚡ menu to handle injuries, bans, unhappiness, and morale across the whole squad.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=51d5403995">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="edit-team">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1112.2239</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="lang" href="../edit-team.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">Get FMAX</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="Contents"><div class="nav-sec"><b>Getting started</b><a href="index.html">Using FMAX</a><a href="start.html">Getting started</a><a href="install.html">Installing, updating and uninstalling</a></div><div class="nav-sec"><b>Basics</b><a href="screen.html">Screen overview</a><a href="list.html">Using lists</a><a href="tabs.html">Tabs, quick open, and right-click menu</a><a href="saving.html">When changes take effect in the game</a><a href="saves.html">What FMAX remembers per save</a><a href="keys.html">Keyboard shortcuts</a></div><div class="nav-sec"><b>Edit tabs</b><a href="edit-player.html">Player</a><a href="edit-staff.html">Staff &amp; support staff</a><a href="edit-club.html">Club</a><a href="edit-team.html" class=is-on aria-current=page>Team</a><a href="edit-nation.html">Nation</a><a href="edit-comp.html">Competition</a><a href="edit-place.html">City &amp; stadium</a><a href="edit-people.html">Agent &amp; official</a><a href="edit-agreement.html">Agreement &amp; language</a></div><div class="nav-sec"><b>Game editor</b><a href="ige.html">Game editor (⚡)</a></div><div class="nav-sec"><b>Tools</b><a href="eri.html">Eri</a><a href="shortlist.html">Shortlist</a><a href="preset.html">Presets</a><a href="lock.html">Locks</a><a href="compare.html">Compare</a><a href="stats.html">Stats, Player Cards &amp; Record room</a><a href="tactics.html">Tactics</a><a href="arena.html">Tactic Arena</a><a href="lab.html">Official test and Tactic Lab</a><a href="cheat.html">Live tweaks</a><a href="localize.html">Korean names</a><a href="gender.html">Changing gender</a><a href="appearance.html">Match appearance</a><a href="graphics.html">Graphics packs</a><a href="settings.html">Settings and update notes</a></div><div class="nav-sec"><b>Help</b><a href="faq.html">Frequently asked questions</a><a href="trouble.html">Troubleshooting</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">Edit tabs</p>
+      <h1>Team</h1>
+      <p class="lead">View and edit an individual squad within a club—such as the First Team, Reserves, B Team, U21s, or U18s. Change team reputation, and use the ⚡ menu to handle injuries, bans, unhappiness, and morale across the whole squad.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/team-main-light.webp" data-dark="img/team-main-dark.webp"><img class="for-light" src="img/team-main-light.webp" alt="The Team tab, which has only a single &#x27;Team&#x27; page." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/team-main-dark.webp" alt="The Team tab, which has only a single &#x27;Team&#x27; page." width="1320" height="840" loading="lazy"></a><figcaption>The Team tab, which has only a single 'Team' page.</figcaption></figure>
+<h2 id="how-to-open"><a class="hash" href="#how-to-open" aria-hidden="true">#</a>How to open</h2>
+<ul><li>Click a name in the Teams list.</li><li>Click a squad table heading (such as First Team) on a Club tab's Squad page.</li><li>Click a team in the <strong>Teams</strong> list on a Club tab's Info page.</li><li>Click a team anywhere teams appear, such as a player's Competition Registration list.</li></ul>
+<p>If the team has its own dedicated name, that name is shown; otherwise it uses the club's name. Teams belonging to women's clubs appear in the women's team color.</p>
+<h2 id="tab-header"><a class="hash" href="#tab-header" aria-hidden="true">#</a>Tab header</h2>
+<ul><li>Below the name, you'll see the Unique ID, Club, Team type, and League. Click any underlined name to open its tab.</li><li>There is a single number card: <strong>Reputation</strong> (0–10000). Click it to type a number directly.</li><li>The buttons on the right are ⚡ In-game editor actions, Presets, Locks, Bookmarks, Compare, and Reload from game. They work the same way as on the <a href="edit-player.html#tab-header">Player tab header</a>.</li></ul>
+<h2 id="team-page"><a class="hash" href="#team-page" aria-hidden="true">#</a>Team page</h2>
+<div class="table"><table><thead><tr><th>Field</th><th>What it does</th><th>Editable range</th></tr></thead><tbody><tr><td>Unique ID</td><td></td><td>Read-only</td></tr><tr><td>Club</td><td>Click to open the Club tab</td><td>Read-only</td></tr><tr><td>Team name</td><td>The team's own name (Empty if none)</td><td>Read-only</td></tr><tr><td>Team type</td><td>First Team, Reserves, B Team, U23, U21, U20, U19, U18</td><td>Read-only</td></tr><tr><td>Division, League, Continental</td><td>Click to open the Competition tab</td><td>Read-only</td></tr><tr><td>Home stadium</td><td>Click to open the Stadium tab</td><td>Read-only</td></tr><tr><td>Reputation</td><td>Team reputation</td><td>0–10000</td></tr></tbody></table></div>
+<aside class="note is-save"><b>Goes into the game when you press Save</b><p>Changes to Reputation only take effect in the game once you click Save on the bottom bar (or Save <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>S</kbd></span> at the top).</p></aside>
+<p>The 'Manager' and 'Captain' columns from the Teams list appear only in the list view, not on this tab.</p>
+<h2 id="menu"><a class="hash" href="#menu" aria-hidden="true">#</a>⚡ menu</h2>
+<p>The Team tab's ⚡ menu has two groups:</p>
+<ul><li><strong>All players</strong>: Remove all player injuries, Remove all player bans, Remove all player unhappiness, Change team morale</li><li><strong>Team</strong>: Improve team cohesion, Max tactical familiarity</li></ul>
+<aside class="note is-now"><b>Written to the game at once</b><p>Actions in the ⚡ menu apply to the game immediately when you click 'Apply now' in the confirmation dialog, and cannot be undone.</p></aside>
+<p>See <a href="ige.html">Game editor (⚡)</a> for what each item does.</p>
+    </article>
+    <nav class="pn"><a class="prev" href="edit-club.html"><small>Previous</small>Club</a><a class="next" href="edit-nation.html"><small>Next</small>Nation</a></nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><b>On this page</b><a class="lv2" href="#how-to-open">How to open</a><a class="lv2" href="#tab-header">Tab header</a><a class="lv2" href="#team-page">Team page</a><a class="lv2" href="#menu">⚡ menu</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=51d5403995"></script>
+</body>
+</html>

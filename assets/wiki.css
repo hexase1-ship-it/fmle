@@ -70,6 +70,9 @@ html[data-theme="light"] .theme-btn .sun, html[data-theme="dark"] .theme-btn .mo
 .menu-btn { display: none; }
 .get { flex: none; padding: 7px 14px; border-radius: 10px; background: var(--fm-500); color: #fff; font-size: 14px; font-weight: 600; }
 .get:hover { background: var(--fm-600); text-decoration: none; }
+/* the same page in the other language (build.py other_lang) */
+.lang { flex: none; padding: 7px 10px; border-radius: 10px; color: var(--ink2); font-size: 14px; font-weight: 600; }
+.lang:hover { background: var(--hover); color: var(--ink); text-decoration: none; }
 
 /* ---- layout ---- */
 .shell { display: grid; grid-template-columns: var(--side-w) minmax(0, 1fr) var(--toc-w); max-width: 1440px; margin: 0 auto; }

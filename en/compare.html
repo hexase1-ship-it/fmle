@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare · FMAX Guide</title>
+<meta name="description" content="Place two open tabs of the same type (two players, two clubs, and so on) side by side to see how their values differ. Compare is strictly read-only and writes nothing to the game.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=51d5403995">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="compare">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1112.2239</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="lang" href="../compare.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">Get FMAX</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="Contents"><div class="nav-sec"><b>Getting started</b><a href="index.html">Using FMAX</a><a href="start.html">Getting started</a><a href="install.html">Installing, updating and uninstalling</a></div><div class="nav-sec"><b>Basics</b><a href="screen.html">Screen overview</a><a href="list.html">Using lists</a><a href="tabs.html">Tabs, quick open, and right-click menu</a><a href="saving.html">When changes take effect in the game</a><a href="saves.html">What FMAX remembers per save</a><a href="keys.html">Keyboard shortcuts</a></div><div class="nav-sec"><b>Edit tabs</b><a href="edit-player.html">Player</a><a href="edit-staff.html">Staff &amp; support staff</a><a href="edit-club.html">Club</a><a href="edit-team.html">Team</a><a href="edit-nation.html">Nation</a><a href="edit-comp.html">Competition</a><a href="edit-place.html">City &amp; stadium</a><a href="edit-people.html">Agent &amp; official</a><a href="edit-agreement.html">Agreement &amp; language</a></div><div class="nav-sec"><b>Game editor</b><a href="ige.html">Game editor (⚡)</a></div><div class="nav-sec"><b>Tools</b><a href="eri.html">Eri</a><a href="shortlist.html">Shortlist</a><a href="preset.html">Presets</a><a href="lock.html">Locks</a><a href="compare.html" class=is-on aria-current=page>Compare</a><a href="stats.html">Stats, Player Cards &amp; Record room</a><a href="tactics.html">Tactics</a><a href="arena.html">Tactic Arena</a><a href="lab.html">Official test and Tactic Lab</a><a href="cheat.html">Live tweaks</a><a href="localize.html">Korean names</a><a href="gender.html">Changing gender</a><a href="appearance.html">Match appearance</a><a href="graphics.html">Graphics packs</a><a href="settings.html">Settings and update notes</a></div><div class="nav-sec"><b>Help</b><a href="faq.html">Frequently asked questions</a><a href="trouble.html">Troubleshooting</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">Tools</p>
+      <h1>Compare</h1>
+      <p class="lead">Place two open tabs of the same type (two players, two clubs, and so on) side by side to see how their values differ. Compare is strictly read-only and writes nothing to the game.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/tool-compare-light.webp" data-dark="img/tool-compare-dark.webp"><img class="for-light" src="img/tool-compare-light.webp" alt="Comparing two players—pickers for both players at the top, player cards underneath, and grouped values with their differences below." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/tool-compare-dark.webp" alt="Comparing two players—pickers for both players at the top, player cards underneath, and grouped values with their differences below." width="1320" height="840" loading="lazy"></a><figcaption>Comparing two players—pickers for both players at the top, player cards underneath, and grouped values with their differences below.</figcaption></figure>
+<h2 id="how-to-open-compare"><a class="hash" href="#how-to-open-compare" aria-hidden="true">#</a>How to open Compare</h2>
+<p>Compare works across <strong>already open tabs</strong>, so you need at least two tabs of the same type open first.</p>
+<ol><li>From a list, open the two players (or two clubs, etc.) you want to compare in tabs.</li><li>Click the <strong>Compare</strong> button (shaped like two squares) near the top right of either tab.</li><li>The Compare screen opens with the tab you clicked on the left and the other tab of the same type on the right.</li></ol>
+<p>You can also open <strong>Compare</strong> from Tools in the left sidebar. If you don't have two tabs of the same type open yet, you'll see 'Open two tabs of the same type'. Clicking the Compare button on a tab when no second tab of that type is open prompts you to open one more tab of that type to compare.</p>
+<aside class="note is-tip"><b>Good to know</b><p>Compare is strictly for viewing. You can't edit values here, and nothing is ever written to the game.</p></aside>
+<h2 id="screen-layout"><a class="hash" href="#screen-layout" aria-hidden="true">#</a>Screen layout</h2>
+<h3 id="top-bar"><a class="hash" href="#top-bar" aria-hidden="true">#</a>Top bar</h3>
+<ul><li><strong>Type picker</strong> (top right): When you have pairs of tabs open for more than one type (for example, two players and two clubs), pick which type to compare.</li><li><strong>Differences only</strong>: Hides rows where both sides match so only differing values remain on screen.</li><li><strong>Left &amp; right pickers</strong>: Click either name field to switch to another open tab of the same type. Whichever tab is chosen on one side is hidden from the other side's dropdown.</li><li><strong>View tab</strong>: Jumps straight to that person's or item's tab.</li><li>Center <strong>⇄ button</strong>: Swaps the Left and right sides.</li><li>Far right: Shows the count of differing values or 'All values match'.</li></ul>
+<h3 id="player-cards"><a class="hash" href="#player-cards" aria-hidden="true">#</a>Player cards</h3>
+<p>When comparing players, both player cards appear near the top. Because player cards are drawn from live in-game values, edits you've made on a tab without saving won't show up on the cards. For what each part of the card means, see <a href="stats.html">Stats, player cards, and Record room</a>.</p>
+<h3 id="value-tables"><a class="hash" href="#value-tables" aria-hidden="true">#</a>Value tables</h3>
+<p>Fields are organized into the same groups used on edit tabs (Technical, Mental, Goalkeeping, Personality, and so on). At the very top, the <strong>Summary</strong> group shows calculated readouts such as age, Primary position, Recommended Current Ability, and Attribute effectiveness.</p>
+<div class="table"><table><thead><tr><th>Column</th><th>Meaning</th></tr></thead><tbody><tr><td>Field</td><td>Field name as shown on the edit tab</td></tr><tr><td>Left</td><td>Value from the Left tab</td></tr><tr><td>Right</td><td>Value from the right tab</td></tr><tr><td>Diff</td><td><strong>Right value minus Left value</strong>. Shown only when numeric values differ—rates in percentage points (%p), and money in your chosen currency</td></tr></tbody></table></div>
+<p>Rows where the two sides differ are highlighted. Dropdown choices, dates, and text fields display both values side by side without calculating a diff. List-based sections (such as relationships and languages) are not shown in Compare.</p>
+<h2 id="unsaved-edits"><a class="hash" href="#unsaved-edits" aria-hidden="true">#</a>Unsaved edits</h2>
+<p>The value tables in Compare read <strong>what is currently shown on each tab</strong>—including edits you've typed into a tab without clicking 'Save' yet. That lets you tweak attributes on a tab and immediately check how the player stacks up against someone else. When you're ready to write those edits into FM, head back to that tab and click 'Save' (<a href="saving.html">When edits are written to the game</a>).</p>
+    </article>
+    <nav class="pn"><a class="prev" href="lock.html"><small>Previous</small>Locks</a><a class="next" href="stats.html"><small>Next</small>Stats, Player Cards &amp; Record room</a></nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><b>On this page</b><a class="lv2" href="#how-to-open-compare">How to open Compare</a><a class="lv2" href="#screen-layout">Screen layout</a><a class="lv3" href="#top-bar">Top bar</a><a class="lv3" href="#player-cards">Player cards</a><a class="lv3" href="#value-tables">Value tables</a><a class="lv2" href="#unsaved-edits">Unsaved edits</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=51d5403995"></script>
+</body>
+</html>

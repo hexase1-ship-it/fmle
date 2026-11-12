@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nation · FMAX Guide</title>
+<meta name="description" content="How to edit a nation&#x27;s nationality rules, population and economy, reputation, youth rating, and national team tactical style.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=51d5403995">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="edit-nation">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1112.2239</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="lang" href="../edit-nation.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">Get FMAX</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="Contents"><div class="nav-sec"><b>Getting started</b><a href="index.html">Using FMAX</a><a href="start.html">Getting started</a><a href="install.html">Installing, updating and uninstalling</a></div><div class="nav-sec"><b>Basics</b><a href="screen.html">Screen overview</a><a href="list.html">Using lists</a><a href="tabs.html">Tabs, quick open, and right-click menu</a><a href="saving.html">When changes take effect in the game</a><a href="saves.html">What FMAX remembers per save</a><a href="keys.html">Keyboard shortcuts</a></div><div class="nav-sec"><b>Edit tabs</b><a href="edit-player.html">Player</a><a href="edit-staff.html">Staff &amp; support staff</a><a href="edit-club.html">Club</a><a href="edit-team.html">Team</a><a href="edit-nation.html" class=is-on aria-current=page>Nation</a><a href="edit-comp.html">Competition</a><a href="edit-place.html">City &amp; stadium</a><a href="edit-people.html">Agent &amp; official</a><a href="edit-agreement.html">Agreement &amp; language</a></div><div class="nav-sec"><b>Game editor</b><a href="ige.html">Game editor (⚡)</a></div><div class="nav-sec"><b>Tools</b><a href="eri.html">Eri</a><a href="shortlist.html">Shortlist</a><a href="preset.html">Presets</a><a href="lock.html">Locks</a><a href="compare.html">Compare</a><a href="stats.html">Stats, Player Cards &amp; Record room</a><a href="tactics.html">Tactics</a><a href="arena.html">Tactic Arena</a><a href="lab.html">Official test and Tactic Lab</a><a href="cheat.html">Live tweaks</a><a href="localize.html">Korean names</a><a href="gender.html">Changing gender</a><a href="appearance.html">Match appearance</a><a href="graphics.html">Graphics packs</a><a href="settings.html">Settings and update notes</a></div><div class="nav-sec"><b>Help</b><a href="faq.html">Frequently asked questions</a><a href="trouble.html">Troubleshooting</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">Edit tabs</p>
+      <h1>Nation</h1>
+      <p class="lead">How to edit a nation's nationality rules, population and economy, reputation, youth rating, and national team tactical style.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/nation-main-light.webp" data-dark="img/nation-main-dark.webp"><img class="for-light" src="img/nation-main-light.webp" alt="The first page of the Nation tab (South Korea)." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/nation-main-dark.webp" alt="The first page of the Nation tab (South Korea)." width="1320" height="840" loading="lazy"></a><figcaption>The first page of the Nation tab (South Korea).</figcaption></figure>
+<h2 id="opening-a-nation-tab"><a class="hash" href="#opening-a-nation-tab" aria-hidden="true">#</a>Opening a Nation tab</h2>
+<p>Click a nation's name in the Nations list, or click any underlined country name—such as a player's nationality or a club's nation. Editing and saving values work just like on the Player tab. <a href="edit-player.html#editing-values">Editing values on the Player page</a></p>
+<aside class="note is-save"><b>Goes into the game when you press Save</b><p>Changes made on a Nation tab are written to the game only when you click Save on the bottom bar (or Save at the top, <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>S</kbd></span>).</p></aside>
+<h2 id="tab-header"><a class="hash" href="#tab-header" aria-hidden="true">#</a>Tab header</h2>
+<ul><li>Below the nation's name, you'll see its Unique ID, Continent, Capital city, and 3-letter code.</li><li>The number cards show <strong>Reputation</strong> (1–10000) and <strong>Youth rating</strong> (0–200)—click either card to type a new number directly.</li><li>On the right are buttons for Presets, Locks, Bookmarks, Compare, and Reload from game. Nation tabs do not have a ⚡ button.</li></ul>
+<p>There are two subpages: <strong>Nation</strong> and <strong>Football</strong>.</p>
+<h2 id="nation"><a class="hash" href="#nation" aria-hidden="true">#</a>Nation</h2>
+<h3 id="overview"><a class="hash" href="#overview" aria-hidden="true">#</a>Overview</h3>
+<p>All fields in this section are read-only.</p>
+<div class="table"><table><thead><tr><th>Field</th><th>What it does</th></tr></thead><tbody><tr><td>Unique ID, Name, Short name, 3-letter code, Alternative name, Alternative code</td><td>The nation's names and codes</td></tr><tr><td>Capital city</td><td>Click to open the City tab</td></tr><tr><td>Continent, Confederation</td><td></td></tr><tr><td>Currency</td><td>The currency used in this nation</td></tr><tr><td>Exchange rate (per £1)</td><td>How much £1 is worth in this nation's currency (e.g., England 1, South Korea 1,837.8). FMAX uses this rate to convert monetary amounts into the currency chosen in Settings</td></tr><tr><td>National stadium</td><td>Click to open the Stadium tab</td></tr><tr><td>Playable nation</td><td>Turned on for 59 nations, matching the nations whose leagues can be selected in FM27</td></tr></tbody></table></div>
+<h3 id="nationality-rules"><a class="hash" href="#nationality-rules" aria-hidden="true">#</a>Nationality rules</h3>
+<div class="table"><table><thead><tr><th>Field</th><th>What it does</th><th>Editable range</th></tr></thead><tbody><tr><td>Does not allow dual nationality</td><td>Enabled for nations including China, Japan, India, Indonesia, and Ukraine</td><td>Yes, No</td></tr><tr><td>Years to gain nationality</td><td>How many years a player must live in the country to gain citizenship (e.g., England 5, Spain 10, Argentina 2). 255 (None) means nationality cannot be gained</td><td>0–255 years</td></tr><tr><td>Gain nationality type</td><td>Continuous residency (must live there uninterrupted for the full period) or Cumulative residency (separate stays are added together)—known in FM as 'Gain Nationality Type'</td><td>Dropdown</td></tr><tr><td>Nations treated as EU</td><td>Each row represents a single nation or agreement (nation, agreement, Excluded nations, start, end)</td><td>Read-only</td></tr><tr><td>Nations treated as non-foreign</td><td>For example, South Korea treats North Korean players as non-foreign, and China treats Taiwanese players as non-foreign. Region-based entries (such as on England) cannot read the region name yet</td><td>Read-only</td></tr></tbody></table></div>
+<h3 id="population-geography"><a class="hash" href="#population-geography" aria-hidden="true">#</a>Population &amp; geography</h3>
+<div class="table"><table><thead><tr><th>Field</th><th>What it does</th><th>Editable range</th></tr></thead><tbody><tr><td>Population</td><td></td><td>0–2 billion</td></tr><tr><td>Northernmost latitude, Southernmost latitude, Westernmost longitude, Easternmost longitude</td><td>Geographic bounds of the country</td><td>Read-only</td></tr><tr><td>Economic factor</td><td></td><td>0–20</td></tr><tr><td>Development level</td><td>Developed state, Developing state, Least developed state</td><td>Dropdown</td></tr></tbody></table></div>
+<h3 id="agreements"><a class="hash" href="#agreements" aria-hidden="true">#</a>Agreements</h3>
+<p>Lists <strong>Joined agreements</strong> (agreement, date joined, date left). This list is read-only; click an entry to open its <a href="edit-agreement.html">Agreement</a> tab.</p>
+<h2 id="football"><a class="hash" href="#football" aria-hidden="true">#</a>Football</h2>
+<figure class="shot"><a class="shot-zoom" href="img/nation-football-light.webp" data-dark="img/nation-football-dark.webp"><img class="for-light" src="img/nation-football-light.webp" alt="The Football page, with association details and national team tactical style." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/nation-football-dark.webp" alt="The Football page, with association details and national team tactical style." width="1320" height="840" loading="lazy"></a><figcaption>The Football page, with association details and national team tactical style.</figcaption></figure>
+<div class="table"><table><thead><tr><th>Group</th><th>Field</th><th>Editable range</th></tr></thead><tbody><tr><td>Football</td><td>Reputation</td><td>1–10000</td></tr><tr><td>Football</td><td>Youth rating</td><td>0–200</td></tr><tr><td>Football</td><td>Year joined FIFA, Year joined confederation, Year association founded</td><td>1850–2100</td></tr><tr><td>National team tactical style</td><td>National team attacking, Defensive Line depth, Directness, Tactical flexibility, Marking, Offsides trap, Pressing, Tempo, Width</td><td>1–20</td></tr></tbody></table></div>
+<p>National team staff appointments are handled from the ⚡ menu on Staff tabs ('Add to national team' and 'Terminate national team contract') rather than on this tab. <a href="ige.html">Game editor (⚡)</a></p>
+    </article>
+    <nav class="pn"><a class="prev" href="edit-team.html"><small>Previous</small>Team</a><a class="next" href="edit-comp.html"><small>Next</small>Competition</a></nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><b>On this page</b><a class="lv2" href="#opening-a-nation-tab">Opening a Nation tab</a><a class="lv2" href="#tab-header">Tab header</a><a class="lv2" href="#nation">Nation</a><a class="lv3" href="#overview">Overview</a><a class="lv3" href="#nationality-rules">Nationality rules</a><a class="lv3" href="#population-geography">Population &amp; geography</a><a class="lv3" href="#agreements">Agreements</a><a class="lv2" href="#football">Football</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=51d5403995"></script>
+</body>
+</html>

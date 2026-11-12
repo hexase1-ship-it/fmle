@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Competition · FMAX Guide</title>
+<meta name="description" content="How to edit a league or cup competition&#x27;s reputation, substitution rules, VAR, competition colours, and winter ball, as well as league tables, position prize money, and cup round prize money.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=51d5403995">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="edit-comp">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1112.2239</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="lang" href="../edit-comp.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">Get FMAX</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="Contents"><div class="nav-sec"><b>Getting started</b><a href="index.html">Using FMAX</a><a href="start.html">Getting started</a><a href="install.html">Installing, updating and uninstalling</a></div><div class="nav-sec"><b>Basics</b><a href="screen.html">Screen overview</a><a href="list.html">Using lists</a><a href="tabs.html">Tabs, quick open, and right-click menu</a><a href="saving.html">When changes take effect in the game</a><a href="saves.html">What FMAX remembers per save</a><a href="keys.html">Keyboard shortcuts</a></div><div class="nav-sec"><b>Edit tabs</b><a href="edit-player.html">Player</a><a href="edit-staff.html">Staff &amp; support staff</a><a href="edit-club.html">Club</a><a href="edit-team.html">Team</a><a href="edit-nation.html">Nation</a><a href="edit-comp.html" class=is-on aria-current=page>Competition</a><a href="edit-place.html">City &amp; stadium</a><a href="edit-people.html">Agent &amp; official</a><a href="edit-agreement.html">Agreement &amp; language</a></div><div class="nav-sec"><b>Game editor</b><a href="ige.html">Game editor (⚡)</a></div><div class="nav-sec"><b>Tools</b><a href="eri.html">Eri</a><a href="shortlist.html">Shortlist</a><a href="preset.html">Presets</a><a href="lock.html">Locks</a><a href="compare.html">Compare</a><a href="stats.html">Stats, Player Cards &amp; Record room</a><a href="tactics.html">Tactics</a><a href="arena.html">Tactic Arena</a><a href="lab.html">Official test and Tactic Lab</a><a href="cheat.html">Live tweaks</a><a href="localize.html">Korean names</a><a href="gender.html">Changing gender</a><a href="appearance.html">Match appearance</a><a href="graphics.html">Graphics packs</a><a href="settings.html">Settings and update notes</a></div><div class="nav-sec"><b>Help</b><a href="faq.html">Frequently asked questions</a><a href="trouble.html">Troubleshooting</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">Edit tabs</p>
+      <h1>Competition</h1>
+      <p class="lead">How to edit a league or cup competition's reputation, substitution rules, VAR, competition colours, and winter ball, as well as league tables, position prize money, and cup round prize money.</p>
+      <figure class="shot"><a class="shot-zoom" href="img/comp-main-light.webp" data-dark="img/comp-main-dark.webp"><img class="for-light" src="img/comp-main-light.webp" alt="The first page of the Competition tab (Serie A)." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/comp-main-dark.webp" alt="The first page of the Competition tab (Serie A)." width="1320" height="840" loading="lazy"></a><figcaption>The first page of the Competition tab (Serie A).</figcaption></figure>
+<h2 id="how-to-open-the-tab"><a class="hash" href="#how-to-open-the-tab" aria-hidden="true">#</a>How to open the tab</h2>
+<p>Click a competition's name in the Competitions list, or click any underlined competition name elsewhere—such as a team's league, division, or Continental competition on the Team tab. Editing values and saving work the same way as on the Player tab. <a href="edit-player.html#editing-values">Editing values on the Player page</a></p>
+<aside class="note is-save"><b>Goes into the game when you press Save</b><p>Changes made on the Competition tab are written to the game only when you click Save in the bottom bar (or Save at the top / <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>S</kbd></span>).</p></aside>
+<h2 id="tab-header"><a class="hash" href="#tab-header" aria-hidden="true">#</a>Tab header</h2>
+<ul><li>Below the name you'll see its Unique ID, Nation, Continent, and Abbreviation.</li><li>There is a single number card: <strong>Reputation</strong> (0–200). Click it to type a number directly.</li><li>The buttons on the right are Presets, Locks, Favourites, Compare, and Reload from game. There is no ⚡ button on the Competition tab.</li></ul>
+<p>There are 2 sub-pages: <strong>Competition</strong> and <strong>Table &amp; prize money</strong>.</p>
+<h2 id="competition"><a class="hash" href="#competition" aria-hidden="true">#</a>Competition</h2>
+<h3 id="overview"><a class="hash" href="#overview" aria-hidden="true">#</a>Overview</h3>
+<p>All fields here are read-only: Unique ID, Name, Short name, Abbreviation, Continent, Nation, Parent competition, and Player gender (the gender of players competing in it). Click Nation or Parent competition to open that tab.</p>
+<h3 id="reputation"><a class="hash" href="#reputation" aria-hidden="true">#</a>Reputation</h3>
+<div class="table"><table><thead><tr><th>Field</th><th>Description</th><th>Editable range</th></tr></thead><tbody><tr><td>Reputation</td><td>Competition reputation</td><td>0–200</td></tr><tr><td>Previous reputation</td><td>The competition's previous reputation. Competitions without a value show 255 ('None')</td><td>0–254</td></tr><tr><td>League level</td><td>0 appears to mean top flight, and 100 not applicable</td><td>Read-only</td></tr></tbody></table></div>
+<h3 id="substitution-rules"><a class="hash" href="#substitution-rules" aria-hidden="true">#</a>Substitution rules</h3>
+<div class="table"><table><thead><tr><th>Field</th><th>Description</th><th>Editable range</th></tr></thead><tbody><tr><td>Substitution rules</td><td>Around 70 choices—such as '5 from 7 subs' and '5 from 9 subs, max 3 stoppages'—plus 'Use competition rules'</td><td>Options</td></tr></tbody></table></div>
+<aside class="note is-warn"><b>Careful</b><p>In every save checked so far, all competitions were set to 'Use competition rules'. Other values appear to override the competition's default rules; whether they also apply to fixtures already scheduled has not been confirmed in the game. The option labels are adapted from the English rule names rather than copied from the game's rules screen.</p></aside>
+<h3 id="var"><a class="hash" href="#var" aria-hidden="true">#</a>VAR</h3>
+<div class="table"><table><thead><tr><th>Field</th><th>Description</th><th>Editable range</th></tr></thead><tbody><tr><td>VAR type</td><td>Referee review, Remote review, Referee and/or remote review, Unknown type, No VAR</td><td>Options</td></tr><tr><td>TV matches only</td><td>Whether VAR is used only in televised matches</td><td>Yes, No</td></tr><tr><td>VAR start date</td><td>Blank on some competitions; what a blank date means has not been confirmed</td><td>Date</td></tr></tbody></table></div>
+<p>Values appear only on competitions that already have VAR configured; FMAX does not create VAR settings for competitions without them. When a changed VAR type begins taking effect in matches has not been confirmed in the game.</p>
+<h3 id="colours-winter-ball"><a class="hash" href="#colours-winter-ball" aria-hidden="true">#</a>Colours &amp; winter ball</h3>
+<div class="table"><table><thead><tr><th>Field</th><th>Description</th><th>Editable range</th></tr></thead><tbody><tr><td>Text colour, Background colour, Trim colour</td><td>Colours used when displaying the competition</td><td>Colour</td></tr><tr><td>Winter ball start date, end date</td><td>Populated only for competitions that use a winter ball</td><td>Date</td></tr><tr><td>Winter ball colour</td><td></td><td>Colour</td></tr></tbody></table></div>
+<h2 id="table-prize-money"><a class="hash" href="#table-prize-money" aria-hidden="true">#</a>Table &amp; prize money</h2>
+<figure class="shot"><a class="shot-zoom" href="img/comp-stage-light.webp" data-dark="img/comp-stage-dark.webp"><img class="for-light" src="img/comp-stage-light.webp" alt="The league table on the Table &amp; prize money page." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/comp-stage-dark.webp" alt="The league table on the Table &amp; prize money page." width="1320" height="840" loading="lazy"></a><figcaption>The league table on the Table &amp; prize money page.</figcaption></figure>
+<p>Depending on whether the competition's first stage is a league or a cup, different lists appear here. Multi-stage competitions show only their first stage.</p>
+<h3 id="league-rankings"><a class="hash" href="#league-rankings" aria-hidden="true">#</a>League rankings</h3>
+<p>These are the figures in the league standings. Rows appear in the game's current table order with each team's Rank in front. Click any number to edit it.</p>
+<div class="table"><table><thead><tr><th>Field</th><th>Editable range</th></tr></thead><tbody><tr><td>Team</td><td>Read-only</td></tr><tr><td>Matches, Won, Drawn, Lost</td><td>0–255</td></tr><tr><td>Scoring, Goals conceded</td><td>0–999</td></tr><tr><td>Pts</td><td>−99 to 999</td></tr></tbody></table></div>
+<aside class="note is-tip"><b>Good to know</b><p>Standings don't reorder right away—the game recalculates positions after the next match.</p></aside>
+<h3 id="position-prize-money"><a class="hash" href="#position-prize-money" aria-hidden="true">#</a>Position prize money</h3>
+<p>Prize money awarded by final league finish, listed from 1st place, 2nd place, and so on down to the last position set by the game. Click any amount to edit it (£0 to £2 billion). Per-match prize money for wins, draws, and losses has not been located yet and is not included here.</p>
+<h3 id="cup-rounds"><a class="hash" href="#cup-rounds" aria-hidden="true">#</a>Cup rounds</h3>
+<p>When a competition's first stage is a cup, each round shows its round name, draw date, start date, number of teams, Winner prize money, Losing prize money, and Appearance money.</p>
+<ul><li>Winner prize money and Losing prize money go to the winning and losing teams in that round, while Appearance money is paid just for playing in it.</li><li>You can click and edit any of the three prize fields that already have a value set (£0 to £2 billion). 'None' means the game hasn't set a value for that slot.</li><li>Round names, dates, and team counts are read-only.</li></ul>
+    </article>
+    <nav class="pn"><a class="prev" href="edit-nation.html"><small>Previous</small>Nation</a><a class="next" href="edit-place.html"><small>Next</small>City &amp; stadium</a></nav>
+  </main>
+  <aside class="toc" aria-label="On this page"><b>On this page</b><a class="lv2" href="#how-to-open-the-tab">How to open the tab</a><a class="lv2" href="#tab-header">Tab header</a><a class="lv2" href="#competition">Competition</a><a class="lv3" href="#overview">Overview</a><a class="lv3" href="#reputation">Reputation</a><a class="lv3" href="#substitution-rules">Substitution rules</a><a class="lv3" href="#var">VAR</a><a class="lv3" href="#colours-winter-ball">Colours &amp; winter ball</a><a class="lv2" href="#table-prize-money">Table &amp; prize money</a><a class="lv3" href="#league-rankings">League rankings</a><a class="lv3" href="#position-prize-money">Position prize money</a><a class="lv3" href="#cup-rounds">Cup rounds</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=51d5403995"></script>
+</body>
+</html>

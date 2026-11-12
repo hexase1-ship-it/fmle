@@ -36,7 +36,7 @@
     return (a ? '…' : '') + escH(text.slice(a, i)) + '<mark>' + escH(text.slice(i, i + word.length)) + '</mark>' + escH(text.slice(i + word.length, b)) + (b < text.length ? '…' : '');
   };
   const paint = () => {
-    box.innerHTML = hits.length ? hits.map((h, i) => `<a href="${h.href}" role="option"${i === cur ? ' class="is-on" aria-selected="true"' : ''}><b>${escH(h.title)}</b><small>${h.ctx}</small></a>`).join('') : '<div class="empty">찾는 내용이 없습니다. 다른 낱말로 찾아보세요.</div>';
+    box.innerHTML = hits.length ? hits.map((h, i) => `<a href="${h.href}" role="option"${i === cur ? ' class="is-on" aria-selected="true"' : ''}><b>${escH(h.title)}</b><small>${h.ctx}</small></a>`).join('') : (document.documentElement.lang === 'en' ? '<div class="empty">Nothing found. Try other words.</div>' : '<div class="empty">찾는 내용이 없습니다. 다른 낱말로 찾아보세요.</div>');
     box.hidden = false;
   };
   q.addEventListener('input', async () => {
