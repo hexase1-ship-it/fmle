@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전술 아레나 · FMAX 사용법</title>
+<meta name="description" content="전술 파일을 게임 안에서 수백 경기씩 대신 돌려 보고, 어떤 전술이 더 센지 승점으로 줄 세웁니다. 시험지를 만들고, 전술을 돌리고, 순위표를 읽는 세 단계입니다.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/wiki.css?v=91b4ce655b">
+<script>document.documentElement.dataset.theme = localStorage.getItem('fmle-wiki-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script>
+</head>
+<body data-page="arena">
+<header class="top">
+  <button class="menu-btn" id="menu-btn" aria-label="목차 열기" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>사용법</span></a>
+  <span class="ver" title="이 위키가 설명하는 FMAX 판">26.1112.1754 기준</span>
+  <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="사용법 검색" autocomplete="off" aria-label="사용법 검색"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
+  <button class="theme-btn" id="theme-btn" aria-label="밝은 화면과 어두운 화면 바꾸기"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
+  <a class="get" href="https://github.com/hexase1-ship-it/fmle/releases/latest" target="_blank" rel="noopener">FMAX 받기</a>
+</header>
+<div class="shell">
+  <nav class="side" id="side" aria-label="목차"><div class="nav-sec"><b>시작하기</b><a href="index.html">FMAX 사용법</a><a href="start.html">처음 시작하기</a><a href="install.html">설치·업데이트·지우기</a></div><div class="nav-sec"><b>기본 사용법</b><a href="screen.html">화면 둘러보기</a><a href="list.html">목록 쓰기</a><a href="tabs.html">탭과 빠른 열기·오른쪽 클릭 메뉴</a><a href="saving.html">값이 게임에 들어가는 때</a><a href="saves.html">세이브마다 따로 기억하는 것</a><a href="keys.html">단축키 모음</a></div><div class="nav-sec"><b>편집 탭</b><a href="edit-player.html">선수</a><a href="edit-staff.html">스태프·지원 스태프</a><a href="edit-club.html">구단</a><a href="edit-team.html">팀</a><a href="edit-nation.html">국가</a><a href="edit-comp.html">대회</a><a href="edit-place.html">도시·경기장</a><a href="edit-people.html">에이전트·심판</a><a href="edit-agreement.html">협정·언어</a></div><div class="nav-sec"><b>게임 에디터</b><a href="ige.html">게임 에디터 (⚡)</a></div><div class="nav-sec"><b>도구</b><a href="eri.html">에리</a><a href="shortlist.html">영입 명단</a><a href="preset.html">프리셋</a><a href="lock.html">고정</a><a href="compare.html">비교</a><a href="stats.html">통계·선수 카드·기록실</a><a href="tactics.html">전술</a><a href="arena.html" class=is-on aria-current=page>전술 아레나</a><a href="lab.html">공식 시험과 전술 랩</a><a href="cheat.html">편의 기능</a><a href="localize.html">현지화</a><a href="gender.html">성별 바꾸기</a><a href="appearance.html">외형</a><a href="graphics.html">그래픽 팩</a><a href="settings.html">설정과 업데이트 노트</a></div><div class="nav-sec"><b>도움말</b><a href="faq.html">자주 묻는 질문</a><a href="trouble.html">문제가 생겼을 때</a></div></nav>
+  <main class="doc">
+    <article>
+      <p class="crumb">도구</p>
+      <h1>전술 아레나</h1>
+      <p class="lead">전술 파일을 게임 안에서 수백 경기씩 대신 돌려 보고, 어떤 전술이 더 센지 승점으로 줄 세웁니다. 시험지를 만들고, 전술을 돌리고, 순위표를 읽는 세 단계입니다.</p>
+      <h2 id="전술-아레나란"><a class="hash" href="#전술-아레나란" aria-hidden="true">#</a>전술 아레나란</h2>
+<p>왼쪽 도구의 <strong>전술 아레나</strong>를 누르면 열립니다. 내 전술 파일을 게임이 대신 수백 경기 치르게 하고, 그 결과로 전술끼리 순위를 매깁니다.</p>
+<p>화면 위의 탭은 다섯 개입니다.</p>
+<div class="table"><table><thead><tr><th>탭</th><th>하는 일</th></tr></thead><tbody><tr><td>순위표</td><td>시험지마다 지금까지 돌린 전술의 순위를 봅니다</td></tr><tr><td>시험하기</td><td>비교할 전술 파일을 고르고 돌립니다</td></tr><tr><td>자동 탐색</td><td>전술 하나에서 지침을 한 가지씩 바꿔 가며 더 나은 조합을 찾게 합니다</td></tr><tr><td>시험지</td><td>전술을 쓸 팀과 상대 팀을 정합니다</td></tr><tr><td>공식 시험</td><td>모든 이용자가 같은 조건으로 치르는 시험입니다. <a href="lab.html">공식 시험과 전술 랩</a>에 따로 적었습니다</td></tr></tbody></table></div>
+<p>오른쪽 위의 <strong>쓰는 법</strong>은 처음부터 순위표를 읽기까지의 세 단계를 보여 줍니다.</p>
+<aside class="note is-warn"><b>주의</b><p>시험이 도는 동안에는 게임을 쓸 수 없습니다. 게임 날짜를 멈춘 채로 두세요. 편의 기능의 AI 감독 전술 고정과 전술 효율성 100%는 시험하는 동안 잠시 멈췄다가 끝나면 다시 켜집니다.</p></aside>
+<h2 id="처음이라면-세-단계"><a class="hash" href="#처음이라면-세-단계" aria-hidden="true">#</a>처음이라면: 세 단계</h2>
+<ol><li><strong>시험지 만들기.</strong> 전술을 쓸 팀과 상대 팀을 고릅니다. 한 번 만들어 두면 계속 씁니다.</li><li><strong>전술 돌리기.</strong> 비교할 전술 파일을 고르고 시작을 누릅니다. 게임이 경기를 대신 치릅니다.</li><li><strong>순위표 읽기.</strong> 예상 승점이 높을수록 센 전술입니다. 범위가 겹치면 아직 우열을 가릴 수 없습니다.</li></ol>
+<p>전술 파일은 게임의 전술 폴더(문서 폴더의 <code>Sports Interactive\Football Manager 27\tactics</code>)에 있는 것을 씁니다. 게임의 전술 화면에서 저장한 전술이 여기에 나옵니다.</p>
+<h2 id="시험지"><a class="hash" href="#시험지" aria-hidden="true">#</a>시험지</h2>
+<p>시험지는 모든 전술이 똑같이 치르는 시험 문제입니다. 전술을 쓸 팀, 상대 팀들, 선수단 조건을 한 번 정해 두고, 그 위에서 돌린 전술끼리 순위를 매깁니다.</p>
+<div class="table"><table><thead><tr><th>칸</th><th>뜻</th></tr></thead><tbody><tr><td>전술을 쓸 팀</td><td>시험할 전술을 이 팀이 씁니다. AI 감독이 맡은 구단의 1군만 고를 수 있습니다</td></tr><tr><td>상대 팀</td><td>고른 팀마다 홈·원정 한 번씩 붙습니다. 40팀까지 넣을 수 있습니다. 상대가 쓸 전술을 파일로 정해 두면 언제 돌려도 같은 상대가 되고, 비워 두면 그 팀의 AI 감독이 알아서 고릅니다</td></tr><tr><td>같은 선수단으로 맞추기</td><td>켜면 모든 팀이 같은 시험용 선수단을 써서, 선수 차이 없이 전술만 비교됩니다. 끄면 각 팀의 실제 선수로 돌립니다</td></tr><tr><td>전술 숙련도 최대</td><td>양쪽 팀 모두 전술을 완전히 익힌 상태로 돌립니다. 새 전술이 덜 익어서 손해 보는 일이 없습니다</td></tr><tr><td>기준 세트피스</td><td>전술끼리 비교할 때 모든 전술이 똑같이 쓰는 세트피스입니다. 정해 두어야 전술 비교와 자동 탐색을 쓸 수 있습니다</td></tr><tr><td>이름</td><td>비워 두면 팀 이름과 상대 수로 짓습니다</td></tr></tbody></table></div>
+<p>시험지에는 두 가지가 있습니다.</p>
+<ul><li><strong>표준 시험</strong>: 상대의 전술과 세트피스를 모두 파일로 고정하고, 선수단과 전술 숙련도를 똑같이 맞춘 시험입니다. 어느 세이브에서 돌려도 같은 시험이라, 같은 게임 버전의 다른 FMAX 이용자와 순위표를 합칠 수 있습니다.</li><li><strong>내 세이브 시험</strong>: 상대 AI 감독이 전술을 고르거나 실제 선수·실제 숙련도로 돌리는 시험입니다. 이 세이브에서만 뜻이 있어서 다른 사람의 순위표와는 합쳐지지 않습니다.</li></ul>
+<p>시험지를 만드는 화면 아래에 지금 어느 쪽이 되는지와, 표준 시험지가 되려면 무엇을 더 채워야 하는지가 나옵니다.</p>
+<p>'예전 방식'이라고 붙은 시험지는 예전 FMAX로 돌린 기록입니다. 볼 수는 있지만 더 돌릴 수 없습니다. 새 시험지를 만들어 다시 돌리세요.</p>
+<h2 id="시험하기"><a class="hash" href="#시험하기" aria-hidden="true">#</a>시험하기</h2>
+<ol><li><strong>시험지 고르기.</strong> 어느 시험지로 돌릴지 고릅니다.</li><li><strong>무엇을 비교할까요.</strong><ul><li><strong>전술 비교</strong>: 전술만 바꿔 가며 돌립니다. 세트피스는 시험지의 기준 세트피스 하나로 맞춥니다. 가장 흔히 쓰는 비교입니다.</li><li><strong>세트피스 비교</strong>: 세트피스만 바꿔 가며 돌립니다. 전술은 고정한 것을 그대로 씁니다.</li><li><strong>조합 평가</strong>: 전술과 세트피스를 한 쌍씩 묶어 돌립니다. 점수가 전술 덕인지 세트피스 덕인지는 가르지 않습니다.</li></ul></li><li><strong>시험할 전술.</strong> 전술 파일을 고릅니다. 한 번에 16개까지 넣을 수 있고, 하나가 순위표의 후보 하나가 됩니다. 이미 돌린 전술을 다시 넣으면 그 기록에 더해집니다.</li><li><strong>얼마나 돌릴까요.</strong> 후보 하나마다 돌릴 경기 수입니다(빠르게 200, 보통 1,000, 정밀하게 2,000). 많이 돌릴수록 범위가 좁아져 순위가 확실해지고, 그만큼 오래 걸립니다.</li><li><strong>시작</strong>을 누릅니다. 오른쪽에 걸리는 시간과 모두 몇 경기인지가 먼저 나옵니다.</li></ol>
+<p><strong>시간 아끼기</strong>는 켜 두는 것을 권합니다.</p>
+<ul><li><strong>중간 순위 먼저 보기</strong>: 모든 후보를 조금씩 먼저 돌려 순위표에 일찍 올린 뒤, 나머지를 돌립니다.</li><li><strong>가망 없는 후보는 일찍 멈추기</strong>: 상위권에 들 가능성이 거의 없는 후보는 나머지를 돌리지 않습니다.</li><li><strong>충분히 정확하면 멈추기</strong>: 범위가 고른 만큼 좁아진 후보는 나머지를 돌리지 않습니다.</li></ul>
+<p>도는 동안에는 후보마다 지금까지의 경기, 승-무-패, 골, 예상 승점이 나옵니다. <strong>멈춤</strong>을 누르면 지금 도는 경기까지만 기록하고 멈춥니다. 그때까지의 결과는 순위표에 남습니다.</p>
+<h2 id="순위표-읽기"><a class="hash" href="#순위표-읽기" aria-hidden="true">#</a>순위표 읽기</h2>
+<p>위쪽에서 시험지를 고르면 그 시험지의 순위표가 나옵니다. 보기는 <strong>전술 순위</strong>, <strong>세트피스 순위</strong>, <strong>조합</strong> 세 가지입니다.</p>
+<div class="table"><table><thead><tr><th>말</th><th>뜻</th></tr></thead><tbody><tr><td>예상 승점</td><td>이 전술로 38경기 한 시즌을 치렀을 때 기대되는 승점입니다. 높을수록 좋습니다</td></tr><tr><td>범위 (±)</td><td>운에 따라 결과가 흔들릴 수 있는 폭입니다. 경기를 더 돌릴수록 좁아집니다. 두 전술의 범위가 겹치면 아직 어느 쪽이 더 센지 가릴 수 없습니다</td></tr><tr><td>순위 범위</td><td>운을 감안한 진짜 순위의 범위입니다. 범위가 넓으면 더 돌려야 순위가 정해집니다</td></tr><tr><td>1위 확률</td><td>지금까지의 결과로 볼 때 이 후보가 진짜 1위일 가능성입니다</td></tr><tr><td>득실, 득점, 실점</td><td>38경기 한 시즌으로 환산한 값입니다</td></tr><tr><td>홈, 원정</td><td>각각 19경기로 환산한 승점입니다</td></tr><tr><td>xG차</td><td>한 시즌으로 환산한 기대 득점에서 기대 실점을 뺀 값입니다. 클수록 경기 내용이 좋았습니다</td></tr><tr><td>경기</td><td>돌린 경기 수와 승-무-패입니다</td></tr></tbody></table></div>
+<p>표 위에는 지금 1위가 누구인지와, 아직 확실하지 않으면 그 이유(범위가 겹치는 후보)가 한 줄로 나옵니다. 낯선 말에 마우스를 올리면 뜻이 나옵니다.</p>
+<h3 id="더-돌리기와-확인-시험"><a class="hash" href="#더-돌리기와-확인-시험" aria-hidden="true">#</a>더 돌리기와 확인 시험</h3>
+<p>순위표에서 후보를 고르면(<strong>1위 후보 고르기</strong>는 1위일 수 있는 후보를 한꺼번에 고릅니다) 아래 막대가 나옵니다.</p>
+<ul><li><strong>더 돌리기</strong>: 고른 후보를 시험하기 탭의 목록에 넣습니다. 더 돌리면 범위가 좁아집니다.</li><li><strong>확인 시험</strong>: 고른 것만 새 경기로 다시 돌려 보는 재시험입니다. 여럿 중 1등은 운이 좋아서 1등일 수도 있어서, 따로 돌린 경기만으로 점수를 다시 냅니다. 끝나면 순위표에 '확인'으로 따로 적힙니다.</li><li><strong>고른 것 내보내기</strong>: 고른 후보의 기록과 전술 파일만 파일로 저장합니다.</li></ul>
+<h3 id="전술-하나의-기록"><a class="hash" href="#전술-하나의-기록" aria-hidden="true">#</a>전술 하나의 기록</h3>
+<p>순위표에서 전술 이름을 누르면 그 전술의 기록 화면이 열립니다. 예상 승점과 범위, 승-무-패, 홈·원정, 그리고 누가 넣고 누가 돕는지, 패스맵과 히트맵, 득점 시간, 스코어, 세트피스, 상대별 결과 같은 묶음이 나옵니다.</p>
+<p>위의 단추: <strong>순위표로</strong>, <strong>상세 전술 보기</strong>(그 전술의 자리, 역할, 지침), <strong>게임에 넣기</strong>(전술 파일을 게임의 전술 폴더에 넣습니다), <strong>이름 바꾸기</strong>, <strong>지우기</strong>.</p>
+<h3 id="내보내기와-불러오기"><a class="hash" href="#내보내기와-불러오기" aria-hidden="true">#</a>내보내기와 불러오기</h3>
+<ul><li><strong>내보내기</strong>: 이 순위표와 전술 파일을 파일 하나로 저장합니다. 다른 FMAX 이용자가 불러와 자기 순위표에 합칠 수 있습니다.</li><li><strong>순위표 파일 불러오기</strong>: 다른 이용자가 내보낸 순위표 파일을 내 순위표에 합칩니다. 같은 게임 버전과 같은 매치엔진에서 돌린 표준 시험만 합쳐집니다.</li><li><strong>그림으로 저장</strong>: 이 순위표를 PNG 그림 파일로 저장합니다.</li><li><strong>에리에게 묻기</strong>: <a href="eri.html">에리</a> 창을 열고 이 순위표에 대한 질문을 적어 둡니다.</li></ul>
+<h2 id="자동-탐색"><a class="hash" href="#자동-탐색" aria-hidden="true">#</a>자동 탐색</h2>
+<p>전술 하나를 주면, FMAX가 지침을 한 가지씩 바꿔 가며 더 나은 조합을 알아서 찾습니다. 대형은 그대로 둡니다. 기준 세트피스가 있는 시험지에서만 됩니다.</p>
+<ol><li><strong>어느 전술에서 시작할까요.</strong> 전술 파일을 고릅니다.</li><li><strong>무엇을 바꿔 볼까요.</strong> 플레이 성향, 공 미소유 시 팀 지침, 공 소유 시 팀 지침, 역할 가운데 켭니다. 많이 켤수록 볼 후보가 늘어 시간이 더 필요합니다. 역할은 후보가 크게 늘어 시간이 많이 듭니다.</li><li><strong>얼마나 오래 찾을까요.</strong> 30분부터 8시간까지 고릅니다. 짧게 찾으면 큰 차이만 잡아내고, 길게 찾을수록 작은 차이도 가려냅니다.</li><li><strong>탐색 시작</strong>을 누릅니다.</li></ol>
+<p>후보를 조금씩 돌려 넓게 본 뒤, 나은 쪽만 남겨 점점 더 많이 돌립니다. 마지막에는 처음 전술과 가장 나은 후보를 새 경기로 다시 붙여 확인 시험을 합니다.</p>
+<p>끝난 탐색은 <strong>지난 탐색</strong>에 남습니다. 가장 나은 후보, 확인 시험에서의 차이, 돌린 경기, 찾아간 과정을 볼 수 있고, <strong>가장 나은 후보를 게임에 넣기</strong>는 그 전술 파일을 게임의 전술 폴더에 넣습니다.</p>
+<aside class="note is-tip"><b>알아 두기</b><p>여러 후보 중에서 고른 것은 운이 섞여 실제보다 좋아 보일 수 있습니다. 판단은 새 경기로 다시 붙인 확인 시험의 차이로 하세요. 그 범위가 0을 걸치면 아직 어느 쪽이 나은지 가릴 수 없습니다.</p></aside>
+<h2 id="전술-화면에서-넘겨받기"><a class="hash" href="#전술-화면에서-넘겨받기" aria-hidden="true">#</a>전술 화면에서 넘겨받기</h2>
+<p><a href="tactics.html">전술</a> 화면의 '어느 쪽이 더 나은지 아레나에서 비교하기'로 만든 변형 전술은 시험하기 탭의 목록에 들어옵니다.</p>
+    </article>
+    <nav class="pn"><a class="prev" href="tactics.html"><small>이전</small>전술</a><a class="next" href="lab.html"><small>다음</small>공식 시험과 전술 랩</a></nav>
+  </main>
+  <aside class="toc" aria-label="이 페이지"><b>이 페이지</b><a class="lv2" href="#전술-아레나란">전술 아레나란</a><a class="lv2" href="#처음이라면-세-단계">처음이라면: 세 단계</a><a class="lv2" href="#시험지">시험지</a><a class="lv2" href="#시험하기">시험하기</a><a class="lv2" href="#순위표-읽기">순위표 읽기</a><a class="lv3" href="#더-돌리기와-확인-시험">더 돌리기와 확인 시험</a><a class="lv3" href="#전술-하나의-기록">전술 하나의 기록</a><a class="lv3" href="#내보내기와-불러오기">내보내기와 불러오기</a><a class="lv2" href="#자동-탐색">자동 탐색</a><a class="lv2" href="#전술-화면에서-넘겨받기">전술 화면에서 넘겨받기</a></aside>
+</div>
+<div class="zoom" id="zoom" hidden><img alt=""></div>
+<script src="assets/wiki.js?v=91b4ce655b"></script>
+</body>
+</html>

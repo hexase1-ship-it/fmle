@@ -35,6 +35,8 @@
  "lock": "lock",
  "compare": "compare",
  "room": "stats",
+ "tactics": "tactics",
+ "sim": "arena",
  "cheat": "cheat",
  "localize": "localize",
  "settings": "settings",
