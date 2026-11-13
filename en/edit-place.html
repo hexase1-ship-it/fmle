@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>City &amp; stadium · FMAX Guide</title>
-<meta name="description" content="How to edit a city&#x27;s altitude and attraction, and how to edit a stadium&#x27;s capacity, pitch dimensions, surface, facilities, and national team use.">
+<meta name="description" content="How to edit a city&#x27;s altitude, attraction, inhabitants range and region population, and how to edit a stadium&#x27;s capacity, pitch dimensions, surface, facilities, and national team use.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/wiki.css?v=51d5403995">
@@ -14,7 +14,7 @@
 <header class="top">
   <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
   <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
-  <span class="ver" title="The FMAX version this wiki describes">for 26.1113.723</span>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1114.430</span>
   <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
   <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
   <a class="lang" href="../edit-place.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
@@ -26,7 +26,7 @@
     <article>
       <p class="crumb">Edit tabs</p>
       <h1>City &amp; stadium</h1>
-      <p class="lead">How to edit a city's altitude and attraction, and how to edit a stadium's capacity, pitch dimensions, surface, facilities, and national team use.</p>
+      <p class="lead">How to edit a city's altitude, attraction, inhabitants range and region population, and how to edit a stadium's capacity, pitch dimensions, surface, facilities, and national team use.</p>
       <p>The City tab and the Stadium tab each have a single page. Editing values and saving work the same way as on the Player tab. <a href="edit-player.html#editing-values">Editing values on the Player page</a></p>
 <aside class="note is-save"><b>Goes into the game when you press Save</b><p>Changes made on the City and Stadium tabs are written to the game only when you click Save in the bottom bar (or Save at the top / <span class="keys"><kbd>Ctrl</kbd><i>+</i><kbd>S</kbd></span>).</p></aside>
 <p>On both tabs, the buttons at the top right are Presets, Locks, Favourites, Compare, and Reload from game. There is no ⚡ button. <a href="edit-player.html#tab-header">Player tab header</a></p>
@@ -37,7 +37,7 @@
 <h3 id="tab-header"><a class="hash" href="#tab-header" aria-hidden="true">#</a>Tab header</h3>
 <p>Below the name you'll see the Unique ID, Nation, and Region. There are no number cards.</p>
 <h3 id="city-page"><a class="hash" href="#city-page" aria-hidden="true">#</a>City page</h3>
-<div class="table"><table><thead><tr><th>Section</th><th>Field</th><th>Description</th><th>Editable range</th></tr></thead><tbody><tr><td>Overview</td><td>Unique ID, Name, Region, Language</td><td></td><td>Read-only</td></tr><tr><td>Overview</td><td>Nation</td><td>Click to open the Nation tab</td><td>Read-only</td></tr><tr><td>Location</td><td>Latitude, Longitude</td><td>Coordinates of the city</td><td>Read-only</td></tr><tr><td>Location</td><td>Altitude</td><td>In feet (ft)</td><td>0–20,000</td></tr><tr><td>Location</td><td>Population tier</td><td></td><td>Read-only</td></tr><tr><td>Location</td><td>Attraction</td><td></td><td>0–20</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th>Section</th><th>Field</th><th>Description</th><th>Editable range</th></tr></thead><tbody><tr><td>Overview</td><td>Unique ID, Name, Region, Language</td><td></td><td>Read-only</td></tr><tr><td>Overview</td><td>Nation</td><td>Click to open the Nation tab</td><td>Read-only</td></tr><tr><td>Population &amp; location</td><td>Latitude, Longitude</td><td>Coordinates of the city</td><td>Read-only</td></tr><tr><td>Population &amp; location</td><td>Altitude</td><td>In feet (ft)</td><td>0–20,000</td></tr><tr><td>Population &amp; location</td><td>Inhabitants range</td><td>15 levels, from up to 1,000 to over 20 million. The game uses this range to rank cities and to work out club and owner takeovers</td><td>Options</td></tr><tr><td>Population &amp; location</td><td>Attraction</td><td>Values over 20 can break the game's calculations, so only up to 20 is accepted</td><td>0–20</td></tr><tr><td>Population &amp; location</td><td>Region population</td><td>Population of the region the city belongs to. Cities in the same region share it, so if you change it on one city, the other cities in that region show the same value</td><td>0 to 2 billion</td></tr></tbody></table></div>
 <h2 id="stadium"><a class="hash" href="#stadium" aria-hidden="true">#</a>Stadium</h2>
 <figure class="shot"><a class="shot-zoom" href="img/stadium-main-light.webp" data-dark="img/stadium-main-dark.webp"><img class="for-light" src="img/stadium-main-light.webp" alt="The Stadium tab." width="1320" height="840" loading="lazy"><img class="for-dark" src="img/stadium-main-dark.webp" alt="The Stadium tab." width="1320" height="840" loading="lazy"></a><figcaption>The Stadium tab.</figcaption></figure>
 <h3 id="how-to-open-2"><a class="hash" href="#how-to-open-2" aria-hidden="true">#</a>How to open</h3>

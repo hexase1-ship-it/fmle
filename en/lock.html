@@ -14,7 +14,7 @@
 <header class="top">
   <button class="menu-btn" id="menu-btn" aria-label="Open contents" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
   <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><b>FMAX</b><span>Guide</span></a>
-  <span class="ver" title="The FMAX version this wiki describes">for 26.1113.723</span>
+  <span class="ver" title="The FMAX version this wiki describes">for 26.1114.430</span>
   <div class="search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.4 10.4l3.1 3.1"/></svg><input id="q" type="search" placeholder="Search the guide" autocomplete="off" aria-label="Search the guide"><kbd>/</kbd><div class="results" id="results" role="listbox" hidden></div></div>
   <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark"><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 016.4 2.8a5.6 5.6 0 106.8 6.8z"/></svg></button>
   <a class="lang" href="../lock.html" hreflang="ko" lang="ko" title="이 페이지를 한국어로 보기">한국어</a>
@@ -52,10 +52,12 @@
 <h3 id="values-for-the-lock-button"><a class="hash" href="#values-for-the-lock-button" aria-hidden="true">#</a>Values for the Lock button</h3>
 <p>Pick a type (Player, Staff, Club, etc.) at the top right to choose which fields the 'Lock' button and 'Lock selected' will lock for that type.</p>
 <ol><li>Click <strong>'Add value'</strong> and pick a field, or click 'All in group' next to a group heading to add every field in that group.</li><li>Choose a mode for each row:<ul><li><strong>Keep exact value</strong>: Reverts the value whether the game raises or lowers it.</li><li><strong>Allow increases</strong>: Lets the game raise the value and only blocks drops. Whenever the value goes up, the locked value moves up to match it.</li></ul></li><li>Click the trash button to remove a row.</li></ol>
+<p>When there are two or more values, <strong>Change all modes</strong> appears below the list. Pick <strong>All: keep exact value</strong> or <strong>All: allow increases</strong> to switch every row of this type at once; FMAX tells you how many it changed. Values that have only one mode, such as a lock that keeps something empty, are left as they are.</p>
 <p>For players, <strong>Injury Proneness</strong> and <strong>Dirtiness</strong> are included by default—feel free to change them.</p>
 <h3 id="currently-locked"><a class="hash" href="#currently-locked" aria-hidden="true">#</a>Currently locked</h3>
 <p>Active locks are listed grouped by person or club.</p>
 <ul><li><strong>Open</strong> next to a name: Opens that item's tab.</li><li><strong>Unlock all</strong>: Unlocks every field on that person or club.</li><li>Value chips: Shown as 'Field name value', with '↑ allowed' added when set to 'Allow increases'. Click × on a chip to unlock just that field.</li></ul>
+<p><strong>Change all modes</strong> is also at the top of 'Currently locked' (when two or more values are locked). It switches the locks of every person and club at once to 'All: keep exact value' or 'All: allow increases'.</p>
 <h2 id="items-not-found-in-game"><a class="hash" href="#items-not-found-in-game" aria-hidden="true">#</a>Items not found in game</h2>
 <p>If FMAX can't find a locked person or club in the game, <strong>'Not found in game'</strong> appears next to them in the 'Currently locked' list, the status bar notes 'N not found', and the 'Locks N' badge at the top of the window switches to a warning color.</p>
 <p>This can happen if you loaded a different save or the item no longer exists in the game. FMAX keeps checking for missing items and resumes protecting them automatically if they reappear. If you no longer need them, remove them with 'Unlock all'.</p>
